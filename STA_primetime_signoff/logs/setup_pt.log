@@ -1,0 +1,159 @@
+[SCL] 10/24/2026 16:02:55 Checking status for feature PrimeTime
+[SCL] 10/24/2026 16:02:55 PID:51597 Client:avanti.iitg.ac.in Server:27020@14.139.1.126 Checkout succeeded PrimeTime 2022.03
+[SCL] 10/24/2026 16:02:55 PID:51597 Client:avanti.iitg.ac.in Authorization failed Synopsys-Release 2022.03
+[SCL] 10/24/2026 16:02:56 PID:51597 Client:avanti.iitg.ac.in Authorization failed PrimeTime-New-Technology 2022.03
+Error: Library Compiler executable path is not set. (PT-063)
+[SCL] 10/24/2026 16:02:56 PID:51597 Client:avanti.iitg.ac.in Authorization failed PrimeTime-New-Technology8 2022.03
+
+                                 PrimeTime (R)
+
+               Version T-2022.03-SP2 for linux64 - Jun 01, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+[SCL] 10/24/2026 16:02:56 PID:51597 Client:avanti.iitg.ac.in Authorization failed PrimeTime-C-Interface 2022.03
+# ==============================================================================
+# Script : sta_setup_ss.tcl
+# Path   : /storage/EE5239G2/RFID_v2/pnr_icc2/STA_Primetime/TCL_primetime/sta_setup_ss.tcl
+# Tool   : Synopsys PrimeTime (pt_shell)
+# Corner : func_ss (Slow-Slow: 1.62V, 125C) - Setup & DRV Signoff
+# ==============================================================================
+set DESIGN_NAME "baseband_crypto_macro"
+baseband_crypto_macro
+set PNR_DIR     "/storage/EE5239G2/RFID_v2/pnr_icc2"
+/storage/EE5239G2/RFID_v2/pnr_icc2
+set PNR_OUT     "${PNR_DIR}/outputs"
+/storage/EE5239G2/RFID_v2/pnr_icc2/outputs
+set PDK_LIB     "/storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss"
+/storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss
+set STA_BASE    "${PNR_DIR}/STA_Primetime"
+/storage/EE5239G2/RFID_v2/pnr_icc2/STA_Primetime
+set RPT_DIR     "${STA_BASE}/reports_setup_ss"
+/storage/EE5239G2/RFID_v2/pnr_icc2/STA_Primetime/reports_setup_ss
+set OUT_DIR     "${STA_BASE}/outputs"
+/storage/EE5239G2/RFID_v2/pnr_icc2/STA_Primetime/outputs
+set LOG_DIR     "${STA_BASE}/logs"
+/storage/EE5239G2/RFID_v2/pnr_icc2/STA_Primetime/logs
+file mkdir $RPT_DIR
+file mkdir $OUT_DIR
+file mkdir $LOG_DIR
+# 1. Target & Link Libraries
+set target_library "${PDK_LIB}/tsl18fs120_scl_ss.db"
+/storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db
+set link_library   "* ${target_library}"
+* /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db
+# 2. Ingest Gate-Level Netlist
+read_verilog "${PNR_OUT}/${DESIGN_NAME}_pnr_sim.v"
+1
+current_design $DESIGN_NAME
+Information: current_design won't return any data before link (DES-071)
+link
+Loading verilog file '/storage/EE5239G2/RFID_v2/pnr_icc2/outputs/baseband_crypto_macro_pnr_sim.v'
+Loading db file '/storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db'
+Linking design baseband_crypto_macro...
+Information: Removing 30 unneeded designs..... (LNK-034)
+Information: 444 (83.15%) library cells are unused in library tsl18fs120_scl_ss..... (LNK-045)
+Information: total 444 library cells are unused (LNK-046)
+Design 'baseband_crypto_macro' was successfully linked.
+Information: There are 5389 leaf cells, ports, hiers and 7849 nets in the design (LNK-047)
+1
+# 3. Read SDC Timing Constraints
+read_sdc "${PNR_OUT}/${DESIGN_NAME}_pnr.sdc"
+
+Reading SDC version 2.1...
+Warning: Creating virtual clock named 'VCLK_APB' with no sources. (UITE-121)
+Warning: Creating virtual clock named 'VCLK_RF' with no sources. (UITE-121)
+Warning: Converting a propagated clock 'PCLK' to an ideal clock. (UITE-305)
+Information: Loading library 'tsl18fs120_scl_ss' data due to accessing lib cells not linked in the current design. (LNK-041)
+1
+1
+set_propagated_clock [all_clocks]
+Warning: Converting clock object 'PCLK' from ideal to propagated. (UITE-315)
+Warning: Virtual clock 'VCLK_APB' cannot be made propagated. (UITE-316)
+Warning: Virtual clock 'VCLK_RF' cannot be made propagated. (UITE-316)
+1
+# 4. Ingest Extracted Interconnect Parasitics (SPEF)
+read_parasitics -format spef "${PNR_OUT}/${DESIGN_NAME}_spef.TYPICAL_RC_125.spef"
+Information: Log for 'read_parasitics command' will be generated in 'parasitics_command.log'. (PARA-107)
+1
+complete_net_parasitics
+1
+# 5. Enable Signal Integrity
+set si_enable_analysis true
+true
+set timing_save_pin_arrival_and_slack true
+true
+# 6. Sanity Checks & Timing Analysis
+check_timing -verbose > "${RPT_DIR}/check_timing.rpt"
+update_timing -full
+Information: Invalidating logical update. (PTE-139)
+Information: Abandoning fast timing updates. Forced full update. (PTE-018)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic max wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+Information: Building multi voltage information for entire design. (MV-022)
+Information: Signal integrity analysis is enabled but the design has no signal integrity data. (XTALK-011)
+Information: Starting crosstalk aware timing iteration 1. (XTALK-001)
+Information: Number of nets evaluated in the previous iteration: 5331. (XTALK-105)
+1
+# ------------------------------------------------------------------------------
+# 7. Generate Populated Signoff Reports
+# ------------------------------------------------------------------------------
+# Overall QoR & Endpoint Coverage
+report_qor > "${RPT_DIR}/qor.rpt"
+report_global_timing > "${RPT_DIR}/global_timing.rpt"
+report_analysis_coverage > "${RPT_DIR}/analysis_coverage.rpt"
+# Verbose DRV reports: -verbose forces PrimeTime to print MET nets with actual values
+report_constraint -max_transition -verbose -significant_digits 4 > "${RPT_DIR}/max_transition.rpt"
+report_constraint -max_capacitance -verbose -significant_digits 4 > "${RPT_DIR}/max_capacitance.rpt"
+# Summary of all active clocks, skew, latency
+report_clock -skew -attribute > "${RPT_DIR}/clock_summary.rpt"
+# Top 50 Setup Critical Paths
+report_timing -delay_type max \
+              -max_paths 50 \
+              -path_type full_clock_expanded \
+              -significant_digits 4 > "${RPT_DIR}/setup_critical_paths.rpt"
+# Export Signoff SDF
+write_sdf -version 3.0 "${OUT_DIR}/${DESIGN_NAME}_ss_signoff.sdf"
+****************************************
+Report : write_sdf /storage/EE5239G2/RFID_v2/pnr_icc2/STA_Primetime/outputs/baseband_crypto_macro_ss_signoff.sdf
+Design : baseband_crypto_macro
+Version: T-2022.03-SP2
+Date   : Sat Oct 24 16:02:59 2026
+****************************************
+
+1
+puts ">>> [date] PrimeTime Setup Signoff Complete. Results saved in: ${RPT_DIR}"
+>>> Sat Oct 24 16:02:59 2026 PrimeTime Setup Signoff Complete. Results saved in: /storage/EE5239G2/RFID_v2/pnr_icc2/STA_Primetime/reports_setup_ss
+exitInformation: Defining new variable 'PNR_OUT'. (CMD-041)
+Information: Defining new variable 'OUT_DIR'. (CMD-041)
+Information: Defining new variable 'RPT_DIR'. (CMD-041)
+Information: Defining new variable 'DESIGN_NAME'. (CMD-041)
+Information: Defining new variable 'STA_BASE'. (CMD-041)
+Information: Defining new variable 'PDK_LIB'. (CMD-041)
+Information: Defining new variable 'LOG_DIR'. (CMD-041)
+Information: Defining new variable 'PNR_DIR'. (CMD-041)
+
+Timing updates: 2 (1 implicit, 1 explicit) (0 incremental, 2 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 2530.33 MB
+CPU usage for this session: 8 seconds 
+Elapsed time for this session: 7 seconds
+Diagnostics summary: 1 error, 6 warnings, 32 informationals
+
+Thank you for using pt_shell!
+[SCL] 10/24/2026 16:02:59 PID:51597 Client:avanti.iitg.ac.in checkin-incr Feature:PrimeTime Count:1 
+this API scl_mt_init() needs to be used with the threaded version of SCL library.

@@ -1,0 +1,41 @@
+****************************************
+Report : constraint
+	-verbose
+	-min_pulse_width
+Design : baseband_crypto_macro
+Version: T-2022.03-SP2
+Date   : Mon Nov  2 21:01:49 2026
+****************************************
+
+
+  Pin: U_APB/status_reg_reg[0]/CP
+  Related clock: PCLK
+  Check: sequential_clock_pulse_width
+  Common point: U_APB/status_reg_reg[0]/CP
+
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (fall edge)                               10.0000    10.0000
+  clock network delay (propagated)                      0.3180    10.3180 f
+  U_APB/status_reg_reg[0]/CP                            0.0000    10.3180 f
+  open edge clock latency                                         10.3180
+
+  clock PCLK (rise edge)                               20.0000    20.0000
+  clock network delay (propagated)                      0.2688    20.2688 r
+  U_APB/status_reg_reg[0]/CP                            0.0000    20.2688 r
+  clock reconvergence pessimism                         0.0000    20.2688
+  clock uncertainty                                    -0.5000    19.7688
+  close edge clock latency                                        19.7688
+  ------------------------------------------------------------------------------
+  open edge clock latency                                         10.3180
+  close edge clock latency                                        19.7688
+  ------------------------------------------------------------------------------
+  actual pulse width                                               9.4508
+  ------------------------------------------------------------------------------
+  required pulse width (low)                                       0.1337
+  actual pulse width                                               9.4508
+  ------------------------------------------------------------------------------
+  slack (MET)                                                      9.3171
+
+1

@@ -1,0 +1,19 @@
+****************************************
+Report : constraint
+	-verbose
+	-max_transition
+Design : baseband_crypto_macro
+Version: T-2022.03-SP2
+Date   : Mon Nov  2 21:06:49 2026
+****************************************
+
+
+
+    Pin: U_DBB/U_FRAMER/shift_data_reg[8]/CP
+
+    max_transition             0.5000
+  - Transition Time            0.4377
+  ------------------------------
+    Slack                      0.0623  (MET)
+
+1

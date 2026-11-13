@@ -1,0 +1,85 @@
+****************************************
+Report : qor
+Design : baseband_crypto_macro
+Version: T-2022.03-SP2
+Date   : Mon Nov  2 21:01:49 2026
+****************************************
+
+  Timing Path Group 'PCLK' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           10
+  Critical Path Length:                    8.27
+  Critical Path Slack:                    11.34
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'VCLK_APB' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            7
+  Critical Path Length:                    7.55
+  Critical Path Slack:                     5.95
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'VCLK_RF' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            4
+  Critical Path Length:                    1.18
+  Critical Path Slack:                     8.32
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'PCLK' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                    0.57
+  Critical Path Slack:                     0.21
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'VCLK_APB' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            3
+  Critical Path Length:                    0.51
+  Critical Path Slack:                     0.91
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'VCLK_RF' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                    0.64
+  Critical Path Slack:                     1.54
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:                6475.58
+  Total cell area:                    150376.03
+  Design Area:                        156851.61
+  ---------------------------------------------
+
+
+  Cell & Pin Count
+  ---------------------------------------------
+  Pin Count:                              16732
+  Hierarchical Cell Count:                   30
+  Hierarchical Port Count:                 2394
+  Leaf Cell Count:                         4353
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:            16732
+  Total DRC Cost:                          0.00
+  ---------------------------------------------
+
+1

@@ -1,0 +1,38 @@
+****************************************
+Report : clock_skew
+Design : baseband_crypto_macro
+Version: T-2022.03-SP2
+Date   : Mon Nov  2 21:06:49 2026
+****************************************
+
+              Min Rise  Min Fall  Max Rise  Max Fall     Hold          Setup        Related
+Object          Delay     Delay     Delay     Delay   Uncertainty   Uncertainty      Clock
+-----------------------------------------------------------------------------------------------
+PCLK                -         -         -         -      0.10          0.15           -- 
+VCLK_APB         0.00      0.00      0.00      0.00      0.10          0.50           -- 
+VCLK_RF          0.00      0.00      0.00      0.00      0.10          0.50           -- 
+
+              Min Rise  Min Fall  Max Rise  Max Fall
+Object          Transition   Transition   Transition   Transition
+--------------------------------------------------------------------------------
+PCLK             0.20      0.20      0.20      0.20
+
+****************************************
+Report : clock
+Design : baseband_crypto_macro
+Version: T-2022.03-SP2
+Date   : Mon Nov  2 21:06:49 2026
+****************************************
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    I - Inactive   clock
+
+Clock             Period          Waveform            Attrs     Sources
+-----------------------------------------------------------------------
+PCLK               20.00          {0 10}              p         {PCLK}
+VCLK_APB           20.00          {0 10}                        {}
+VCLK_RF            20.00          {0 10}                        {}
+
+1

@@ -1,0 +1,36 @@
+****************************************
+Report : constraint
+Design : baseband_crypto_macro
+Version: T-2022.03-SP2
+Date   : Mon Nov  2 21:06:49 2026
+****************************************
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    PCLK                       0.0000    1.0000    0.0000
+    VCLK_APB                   0.0000    1.0000    0.0000
+    VCLK_RF                    0.0000    1.0000    0.0000
+    -----------------------------------------------------
+    max_delay/setup                                0.0000
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    PCLK                       0.0000    1.0000    0.0000
+    VCLK_APB                   0.0000    1.0000    0.0000
+    VCLK_RF                    0.0000    1.0000    0.0000
+    -----------------------------------------------------
+    min_delay/hold                                 0.0000
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                                0.0000  (MET)
+    min_delay/hold                                 0.0000  (MET)
+    sequential_clock_pulse_width                   0.0000  (MET)
+    max_capacitance                                0.0000  (MET)
+    min_capacitance                                0.0000  (MET)
+    max_transition                                 0.0000  (MET)
+    max_fanout                                     0.0000  (MET)
+
+1
