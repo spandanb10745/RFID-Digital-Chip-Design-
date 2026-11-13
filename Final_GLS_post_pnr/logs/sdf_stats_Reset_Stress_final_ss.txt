@@ -1,0 +1,1175 @@
+<SDF annotation statistics>
+
+Instance fullname= Reset_Stress_final.dut.U_MUX.ctmTdsLR_1_563 -- lib="tsl18fs120_scl" cell="mx02d0" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((I1==1)&&(I0==0))> (S-->Z)
+	<cond ((I1==0)&&(I0==1))> (S-->Z)
+	(S-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_DBB.U_FRAMER.add_78.U1_1_4 -- lib="tsl18fs120_scl" cell="ah01d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A==1)> (B-->S)
+	<cond (A==0)> (B-->S)
+	(B-->S)
+	<cond (B==1)> (A-->S)
+	<cond (B==0)> (A-->S)
+	(A-->S)
+
+Instance fullname= Reset_Stress_final.dut.U_DBB.U_FRAMER.add_78.U1_1_3 -- lib="tsl18fs120_scl" cell="ah01d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A==1)> (B-->S)
+	<cond (A==0)> (B-->S)
+	(B-->S)
+	<cond (B==1)> (A-->S)
+	<cond (B==0)> (A-->S)
+	(A-->S)
+
+Instance fullname= Reset_Stress_final.dut.U_DBB.U_FRAMER.add_78.U1_1_2 -- lib="tsl18fs120_scl" cell="ah01d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A==1)> (B-->S)
+	<cond (A==0)> (B-->S)
+	(B-->S)
+	<cond (B==1)> (A-->S)
+	<cond (B==0)> (A-->S)
+	(A-->S)
+
+Instance fullname= Reset_Stress_final.dut.U_DBB.U_FRAMER.add_78.U1_1_1 -- lib="tsl18fs120_scl" cell="ah01d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A==1)> (B-->S)
+	<cond (A==0)> (B-->S)
+	(B-->S)
+	<cond (B==1)> (A-->S)
+	<cond (B==0)> (A-->S)
+	(A-->S)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U362 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U363 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U364 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U365 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U366 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U367 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U368 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U369 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U370 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U371 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U372 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U373 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U374 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U375 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U376 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U377 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U378 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U379 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U380 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U381 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U382 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U383 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U384 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U385 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U386 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U387 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U388 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U389 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U390 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U391 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U392 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U393 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U394 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U395 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U396 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U397 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U398 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U399 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U400 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U401 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U402 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U403 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U404 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U405 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U406 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U407 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U408 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U409 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U410 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U411 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U412 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U413 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U414 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U415 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U416 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U417 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U418 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U419 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U420 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U421 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U422 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U423 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U424 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.U425 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[0].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[1].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[2].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[3].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[4].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[5].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[6].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[7].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[8].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[9].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[10].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[11].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[12].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[13].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[14].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.SL.\GEN_SBOXES[15].SX .U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.KS.U1 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.KS.U2 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.KS.U3 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.KS.U4 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.KS.U5 -- lib="tsl18fs120_scl" cell="xr02d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A1==1)> (A2-->Z)
+	<cond (A1==0)> (A2-->Z)
+	(A2-->Z)
+	<cond (A2==1)> (A1-->Z)
+	<cond (A2==0)> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.KS.SB.U20 -- lib="tsl18fs120_scl" cell="xr03d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond ((A2==1)&&(A1==1))> (A3-->Z)
+	<cond ((A2==1)&&(A1==0))> (A3-->Z)
+	<cond ((A2==0)&&(A1==1))> (A3-->Z)
+	<cond ((A2==0)&&(A1==0))> (A3-->Z)
+	(A3-->Z)
+	<cond ((A3==1)&&(A1==1))> (A2-->Z)
+	<cond ((A3==1)&&(A1==0))> (A2-->Z)
+	<cond ((A3==0)&&(A1==1))> (A2-->Z)
+	<cond ((A3==0)&&(A1==0))> (A2-->Z)
+	(A2-->Z)
+	<cond ((A3==1)&&(A2==1))> (A1-->Z)
+	<cond ((A3==1)&&(A2==0))> (A1-->Z)
+	<cond ((A3==0)&&(A2==1))> (A1-->Z)
+	<cond ((A3==0)&&(A2==0))> (A1-->Z)
+	(A1-->Z)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.\add_89/U1_1_1  -- lib="tsl18fs120_scl" cell="ah01d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A==1)> (B-->S)
+	<cond (A==0)> (B-->S)
+	(B-->S)
+	<cond (B==1)> (A-->S)
+	<cond (B==0)> (A-->S)
+	(A-->S)
+
+Instance fullname= Reset_Stress_final.dut.U_CRYPTO.\add_89/U1_1_2  -- lib="tsl18fs120_scl" cell="ah01d1" view="v"
+
+    List of Unannotated Paths: 
+
+	<cond (A==1)> (B-->S)
+	<cond (A==0)> (B-->S)
+	(B-->S)
+	<cond (B==1)> (A-->S)
+	<cond (B==0)> (A-->S)
+	(A-->S)
+
