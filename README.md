@@ -82,7 +82,7 @@ An internal loopback multiplexer, controlled via the `CTRL_REG`, facilitates iso
 Every directory and file in this repository is self-explanatory:
 
 ```text
-RFID_Crypto/
+RFID-Digital-Chip-Design-/
 ├── FINAL_CALIBRE_signoff/                  # Final Calibre DRC, Dummy-Fill, Antenna & LVS signoff reports and logs
 ├── Final_GLS_post_pnr/                     # Post-PnR Gate-Level Simulation (SDF back-annotated) scripts and logs
 ├── Formality(LEC)/                         # Synopsys Formality Logical Equivalence Checking (LEC) scripts and reports
