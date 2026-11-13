@@ -7,9 +7,12 @@
 * **Spandan Bharadwaj** (230102108)
 * **Shreyas Sagar** (230102118)
 * **Patel Dhruv Utkarsh** (230102112)
-* **Akhilesh Arun Reddy**
 
 ---
+
+<p align="center">
+  <img src="image/Chip.png" alt="Baseband Crypto Macro Chip Layout" width="600">
+</p>
 
 ## 📌 Project 4 Overview: Baseband and Cryptographic Subsystem
 
