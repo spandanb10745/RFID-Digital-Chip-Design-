@@ -1,0 +1,41 @@
+//  v2lvs v2022.4_37.20    Fri Dec 2 17:42:37 PST 2022
+//
+//  Copyright (c) 1992, 1993 Regents of the University of California
+//         All rights reserved.
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//
+//  Starting time: Tue Nov  3 20:54:24 2026
+//
+Running /home/mentor_tools/calibre/aok_cal_2022.4_37.20/pkgs/icv/pvt/v2lvs -v /storage/EE5239G2/RFID_v2/pnr_icc2/outputs/baseband_crypto_macro_pnr_pg.v -lsp /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/cdl/scl18fs120_supply_pins.cdl -lsp /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/cdl/tsl18cio250.cdl -s /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/cdl/scl18fs120_supply_pins.cdl -s /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/cdl/tsl18cio250.cdl -o baseband_crypto_macro.sp
+
+
+Info: Creating Spice Library Database ...
+Warning: No BUSDELIMITER statement in /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/cdl/scl18fs120_supply_pins.cdl spice file, it will be set to [
+Warning: No BUSDELIMITER statement in /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/cdl/tsl18cio250.cdl spice file, it will be set to [
+Info: Spice Library Database Creation completed. CPU TIME = 0  REAL TIME = 0  MALLOC = 10/10/10  ELAPSED TIME = 1 
+
+Info: Creating Verilog Library Database ...
+Info: Verilog Library Database Creation completed. CPU TIME = 0  REAL TIME = 0  MALLOC = 10/10/10  ELAPSED TIME = 1 
+
+Info: Creating Design Database of Module Interfaces ...
+Info: Design Database of Module Interfaces Creation completed. CPU TIME = 0  REAL TIME = 0  MALLOC = 10/10/10  ELAPSED TIME = 1 
+
+Info: Creating Design Database of Module Instantiations ...
+Info: Design Database of Module Instantiations Creation completed. CPU TIME = 0  REAL TIME = 0  MALLOC = 10/10/10  ELAPSED TIME = 1 
+Info: 31 modules parsed, containing 4383 instances and 0 gate instance calls 
+
+Info: Converting Design ...
+Info: Design Conversion completed. CPU TIME = 0  REAL TIME = 0  MALLOC = 12/12/12  ELAPSED TIME = 1 
+
+TOTAL CPU TIME = 0  REAL TIME = 1  MALLOC = 12/12/12  ELAPSED TIME = 1 

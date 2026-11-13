@@ -1,0 +1,23 @@
+LAYOUT PATH "/storage/EE5239G2/RFID_v2/pnr_icc2/outputs/baseband_crypto_macro_routed.gds"
+LAYOUT PRIMARY "baseband_crypto_macro"
+LAYOUT SYSTEM GDSII
+
+SOURCE PATH "baseband_crypto_macro.sp"
+SOURCE PRIMARY "baseband_crypto_macro"
+SOURCE SYSTEM SPICE
+
+LVS REPORT "baseband_crypto_macro_lvs.report"
+LVS REPORT OPTION S
+
+MASK SVDB DIRECTORY "lvs.db" QUERY
+
+LVS POWER NAME "VDD" "vdd" "VCC" "vcc" "VDDD" "VDD!" "vdd!" "VCC!" "vcc!" "AVDD" "DVDD"
+LVS GROUND NAME "VSS" "GND" "gnd" "vss" "GNDD" "GND!" "gnd!" "VSS!" "vss!" "AVSS" "DVSS"
+
+LVS GLOBALS ARE PORTS YES
+LVS SPICE OVERRIDE GLOBALS YES
+
+#define 4LM
+#define FILTER_DWN2PSUB
+
+INCLUDE "/storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/pdk/cdns/sclpdk_v3/HOTCODE/techs/ts18scl/calibre/t.00_00_01_scr/LVS_TS18SL_SCL_CALIBRE"
