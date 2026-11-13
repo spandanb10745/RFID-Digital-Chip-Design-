@@ -106,7 +106,7 @@ RFID-Digital-Chip-Design-/
 ## ⚠️ COMPULSORY WORKSPACE SETUP IN MOBAXTERM
 
 1. **Download `RFID_v2.zip` from the Releases link:**  
-   👉 **[http://172.16.117.242:8080/Group2/RFID_Crypto/releases/download/RFID_v2/RFID_v2.zip](http://172.16.117.242:8080/Group2/RFID_Crypto/releases/download/RFID_v2/RFID_v2.zip)**
+   👉 **[https://github.com/spandanb10745/RFID-Digital-Chip-Design-/releases/download/RFID/RFID_v2.zip](https://github.com/spandanb10745/RFID-Digital-Chip-Design-/releases/download/RFID/RFID_v2.zip)**
 2. **Download `project.zip` from the root of this repository:**  
    👉 **[Download `project.zip`](./project.zip)**
 3. **Download the compulsory root TCL scripts:**
