@@ -1,0 +1,1079 @@
+[EE5239G2@avanti ~]$ csh
+[EE5239G2@avanti ~]$ source cad_cshrc
+
+Welcome to Cadence tools Suite
+
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Golden_Vectors RFID_v2/TB/Golden_Vectors.sv RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 20:58:00 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 20:58:00 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Loading snapshot worklib.Golden_Vectors:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING MODE 2 (CRYPTO LOOPBACK) SIMULATION
+============================================================
+
+[65000] Switched to Mode 2
+[155000] Uploaded 80-bit Key
+[185000] Writing ADDR_DATA_1. CPU will now STALL due to PREADY=0...
+[215000] PREADY stall released. CPU un-frozen.
+[215000] Polling STATUS_REG for completion...
+[565000] crypto_done asserted!
+--> Test Vector 1: PASS. Got 5579c1387b228445
+
+[775000] Polling STATUS_REG for completion...
+[1125000] crypto_done asserted!
+--> Test Vector 2: PASS. Got e72c46c0f5945049
+
+[1335000] Polling STATUS_REG for completion...
+[1685000] crypto_done asserted!
+--> Test Vector 3: PASS. Got a112ffc72f68417b
+
+============================================================
+SIMULATION COMPLETE
+============================================================
+
+Simulation complete via $finish(1) at time 1745 NS + 0
+./RFID_v2/TB/Golden_Vectors.sv:265         $finish;
+xcelium> exit
+TOOL:   xrun(64)        22.09-s003: Exiting on Sep 27, 2026 at 20:58:06 IST  (total: 00:00:06)
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Mode_0 RFID_v2/TB/Mode_0.sv RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 20:58:30 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 20:58:30 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: RFID_v2/TB/Mode_0.sv
+        module worklib.Mode_0:sv
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/apb_wrapper.v
+        module worklib.apb_wrapper:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/baseband_crypto_macro.v
+        module worklib.baseband_crypto_macro:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_framer.v
+        module worklib.dbb_framer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_manchester_fsm.v
+        module worklib.dbb_manchester_fsm:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_oversampler.v
+        module worklib.dbb_oversampler:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_sync.v
+        module worklib.dbb_sync:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_top.v
+        module worklib.dbb_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_voter.v
+        module worklib.dbb_voter:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/key_schedule.v
+        module worklib.key_schedule:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/loopback_mux.v
+        module worklib.loopback_mux:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/perm_layer.v
+        module worklib.perm_layer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/present_top.v
+        module worklib.present_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sbox.v
+        module worklib.sbox:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sub_layer.v
+        module worklib.sub_layer:v
+                errors: 0, warnings: 0
+        Elaborating the design hierarchy:
+                Caching library 'worklib' ....... Done
+        Top level design units:
+                Mode_0
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        Building instance overlay tables: .................... Done
+        Generating native compiled code:
+                worklib.key_schedule:v <0x05e698f7>
+                        streams:   4, words:  1776
+                worklib.perm_layer:v <0x7789df79>
+                        streams:   0, words:     0
+                worklib.sbox:v <0x7d820130>
+                        streams:   1, words:   735
+                worklib.present_top:v <0x60296053>
+                        streams:  10, words:  6117
+                worklib.dbb_framer:v <0x612a0f6d>
+                        streams:  10, words:  4467
+                worklib.dbb_manchester_fsm:v <0x7c438eb2>
+                        streams:   8, words:  3746
+                worklib.dbb_voter:v <0x4bcb3d20>
+                        streams:   2, words:   569
+                worklib.dbb_oversampler:v <0x0ddeda54>
+                        streams:   2, words:   509
+                worklib.dbb_sync:v <0x2ecf84f3>
+                        streams:   3, words:   810
+                worklib.dbb_top:v <0x49e02b05>
+                        streams:   0, words:     0
+                worklib.loopback_mux:v <0x58b77281>
+                        streams:  10, words:  9560
+                worklib.apb_wrapper:v <0x742579ea>
+                        streams:  31, words: 16669
+                worklib.baseband_crypto_macro:v <0x487eef3e>
+                        streams:   1, words:   123
+                worklib.Mode_0:sv <0x28d5b0a0>
+                        streams:  15, words: 37440
+                worklib.sub_layer:v <0x7557fe8d>
+                        streams:  16, words:  2247
+        Building instance specific data structures.
+        Loading native compiled code:     .................... Done
+        Design hierarchy summary:
+                                 Instances  Unique
+                Modules:                31      15
+                Registers:              84      68
+                Scalar wires:           26       -
+                Expanded wires:        144      20
+                Vectored wires:         34       -
+                Always blocks:          30      14
+                Initial blocks:          2       2
+                Cont. assignments:       8      14
+                Pseudo assignments:     28      28
+                Simulation timescale:  1ps
+        Writing initial simulation snapshot: worklib.Mode_0:sv
+Loading snapshot worklib.Mode_0:sv .................... Done
+SVSEED default: 1
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING MODE 0 (LIVE RF) SIMULATION
+============================================================
+
+[65000] Switched to Mode 0 (Live RF)
+
+--- Running Test 1: All Zeros ---
+[155000] Incoming Radio Wave Detected. Streaming 432 bits...
+[4475000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[4475000] CPU polling STATUS_REG for Crypto completion...
+[4865000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 1 PASS! Got 5579c1387b228445
+
+--- Running Test 2: All F's Key ---
+[5015000] Incoming Radio Wave Detected. Streaming 432 bits...
+[9335000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[9335000] CPU polling STATUS_REG for Crypto completion...
+[9725000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 2 PASS! Got e72c46c0f5945049
+
+--- Running Test 3: Mixed Plaintext Payload ---
+[9875000] Incoming Radio Wave Detected. Streaming 432 bits...
+[14195000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[14195000] CPU polling STATUS_REG for Crypto completion...
+[14585000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 3 Completed. Ciphertext for Mixed Payload: c692d9499a3107e9
+
+--- Running Corner Case: Pre-Packet Noise & Preamble Aliasing ---
+xmsim: *W,OLDURR: The default algorithm for $urandom_range and randcase is used. It can have distribution problems..
+[15635000] Incoming Radio Wave Detected. Streaming 432 bits...
+[19955000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[19955000] CPU polling STATUS_REG for Crypto completion...
+[20345000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Corner Case Done. Ciphertext for 0xAB Payload: 7c28e2e50f5d4f12
+
+============================================================
+SIMULATION COMPLETE
+============================================================
+
+Simulation complete via $finish(1) at time 20405 NS + 0
+./RFID_v2/TB/Mode_0.sv:268         $finish;
+xcelium> exit
+TOOL:   xrun(64)        22.09-s003: Exiting on Sep 27, 2026 at 20:58:36 IST  (total: 00:00:06)
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Mode_0_async_data RFID_v2/TB/Mode_0_async_data.v RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 20:59:09 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 20:59:09 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: RFID_v2/TB/Mode_0_async_data.v
+        module worklib.Mode_0_async_data:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/apb_wrapper.v
+        module worklib.apb_wrapper:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/baseband_crypto_macro.v
+        module worklib.baseband_crypto_macro:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_framer.v
+        module worklib.dbb_framer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_manchester_fsm.v
+        module worklib.dbb_manchester_fsm:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_oversampler.v
+        module worklib.dbb_oversampler:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_sync.v
+        module worklib.dbb_sync:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_top.v
+        module worklib.dbb_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_voter.v
+        module worklib.dbb_voter:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/key_schedule.v
+        module worklib.key_schedule:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/loopback_mux.v
+        module worklib.loopback_mux:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/perm_layer.v
+        module worklib.perm_layer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/present_top.v
+        module worklib.present_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sbox.v
+        module worklib.sbox:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sub_layer.v
+        module worklib.sub_layer:v
+                errors: 0, warnings: 0
+        Elaborating the design hierarchy:
+                Caching library 'worklib' ....... Done
+        Top level design units:
+                Mode_0_async_data
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        Building instance overlay tables: .................... Done
+        Generating native compiled code:
+                worklib.key_schedule:v <0x4082a64f>
+                        streams:   4, words:  1776
+                worklib.perm_layer:v <0x29111dcb>
+                        streams:   0, words:     0
+                worklib.sbox:v <0x6d99b9ee>
+                        streams:   1, words:   735
+                worklib.present_top:v <0x6aa08d47>
+                        streams:  10, words:  6117
+                worklib.dbb_framer:v <0x78128d80>
+                        streams:  10, words:  4467
+                worklib.dbb_manchester_fsm:v <0x1b2bd0d8>
+                        streams:   8, words:  3746
+                worklib.dbb_voter:v <0x792cf256>
+                        streams:   2, words:   569
+                worklib.dbb_oversampler:v <0x3320b8ec>
+                        streams:   2, words:   509
+                worklib.dbb_sync:v <0x0c6d29fe>
+                        streams:   3, words:   810
+                worklib.dbb_top:v <0x6cdb929c>
+                        streams:   0, words:     0
+                worklib.loopback_mux:v <0x04c5079f>
+                        streams:  10, words:  9560
+                worklib.apb_wrapper:v <0x57438010>
+                        streams:  31, words: 16669
+                worklib.baseband_crypto_macro:v <0x4942a9bd>
+                        streams:   1, words:   123
+                worklib.Mode_0_async_data:v <0x36ce8080>
+                        streams:  16, words: 51501
+                worklib.sub_layer:v <0x2827c731>
+                        streams:  16, words:  2247
+        Building instance specific data structures.
+        Loading native compiled code:     .................... Done
+        Design hierarchy summary:
+                                 Instances  Unique
+                Modules:                31      15
+                Registers:              86      70
+                Scalar wires:           26       -
+                Expanded wires:        144      20
+                Vectored wires:         34       -
+                Always blocks:          30      14
+                Initial blocks:          2       2
+                Cont. assignments:       8      14
+                Pseudo assignments:     28      28
+                Simulation timescale:  1ps
+        Writing initial simulation snapshot: worklib.Mode_0_async_data:v
+Loading snapshot worklib.Mode_0_async_data:v .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING MODE 0 (LIVE RF) SIMULATION
+============================================================
+
+[65000] Switched to Mode 0 (Live RF)
+
+
+============================================================
+PHASE 1: SYNCHRONOUS RF TESTING
+============================================================
+
+--- Running Test 1 (Sync): All Zeros ---
+[155000] Incoming SYNCHRONOUS Radio Wave Detected...
+[4475000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[4475000] CPU polling STATUS_REG for Crypto completion...
+[4865000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 1 PASS! Got 5579c1387b228445
+
+--- Running Test 2 (Sync): All F's Key ---
+[5015000] Incoming SYNCHRONOUS Radio Wave Detected...
+[9335000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[9335000] CPU polling STATUS_REG for Crypto completion...
+[9725000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 2 PASS! Got e72c46c0f5945049
+
+--- Running Test 3 (Sync): All F's Plaintext ---
+[9875000] Incoming SYNCHRONOUS Radio Wave Detected...
+[14195000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[14195000] CPU polling STATUS_REG for Crypto completion...
+[14585000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 3 PASS! Got a112ffc72f68417b
+
+
+============================================================
+PHASE 2: ASYNCHRONOUS RF TESTING (DBB_SYNC CHECK)
+============================================================
+
+--- Running Test 4 (Async): All Zeros ---
+[14735000] Incoming ASYNCHRONOUS Radio Wave Detected (Phase Shifted 3.7ns)...
+[19075000] Async Radio stream complete. Awaiting DBB & Crypto handoff.
+[19075000] CPU polling STATUS_REG for Crypto completion...
+[19465000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 4 PASS! Got 5579c1387b228445
+
+--- Running Test 5 (Async): All F's Key ---
+[19615000] Incoming ASYNCHRONOUS Radio Wave Detected (Phase Shifted 3.7ns)...
+[23955000] Async Radio stream complete. Awaiting DBB & Crypto handoff.
+[23955000] CPU polling STATUS_REG for Crypto completion...
+[24345000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 5 PASS! Got e72c46c0f5945049
+
+--- Running Test 6 (Async): All F's Plaintext ---
+[24495000] Incoming ASYNCHRONOUS Radio Wave Detected (Phase Shifted 3.7ns)...
+[28835000] Async Radio stream complete. Awaiting DBB & Crypto handoff.
+[28835000] CPU polling STATUS_REG for Crypto completion...
+[29225000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 6 PASS! Got a112ffc72f68417b
+
+============================================================
+SIMULATION COMPLETE
+============================================================
+
+Simulation complete via $finish(1) at time 29285 NS + 0
+./RFID_v2/TB/Mode_0_async_data.v:304         $finish;
+xcelium> exit
+TOOL:   xrun(64)        22.09-s003: Exiting on Sep 27, 2026 at 20:59:16 IST  (total: 00:00:07)
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Mode_1 RFID_v2/TB/Mode_1.sv RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 20:59:29 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 20:59:30 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: RFID_v2/TB/Mode_1.sv
+        module worklib.Mode_1:sv
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/apb_wrapper.v
+        module worklib.apb_wrapper:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/baseband_crypto_macro.v
+        module worklib.baseband_crypto_macro:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_framer.v
+        module worklib.dbb_framer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_manchester_fsm.v
+        module worklib.dbb_manchester_fsm:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_oversampler.v
+        module worklib.dbb_oversampler:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_sync.v
+        module worklib.dbb_sync:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_top.v
+        module worklib.dbb_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_voter.v
+        module worklib.dbb_voter:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/key_schedule.v
+        module worklib.key_schedule:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/loopback_mux.v
+        module worklib.loopback_mux:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/perm_layer.v
+        module worklib.perm_layer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/present_top.v
+        module worklib.present_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sbox.v
+        module worklib.sbox:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sub_layer.v
+        module worklib.sub_layer:v
+                errors: 0, warnings: 0
+        Elaborating the design hierarchy:
+                Caching library 'worklib' ....... Done
+        Top level design units:
+                Mode_1
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        Building instance overlay tables: .................... Done
+        Generating native compiled code:
+                worklib.key_schedule:v <0x4082a64f>
+                        streams:   4, words:  1776
+                worklib.perm_layer:v <0x29111dcb>
+                        streams:   0, words:     0
+                worklib.sbox:v <0x6d99b9ee>
+                        streams:   1, words:   735
+                worklib.present_top:v <0x6aa08d47>
+                        streams:  10, words:  6117
+                worklib.dbb_framer:v <0x78128d80>
+                        streams:  10, words:  4467
+                worklib.dbb_manchester_fsm:v <0x1b2bd0d8>
+                        streams:   8, words:  3746
+                worklib.dbb_voter:v <0x792cf256>
+                        streams:   2, words:   569
+                worklib.dbb_oversampler:v <0x3320b8ec>
+                        streams:   2, words:   509
+                worklib.dbb_sync:v <0x0c6d29fe>
+                        streams:   3, words:   810
+                worklib.dbb_top:v <0x6cdb929c>
+                        streams:   0, words:     0
+                worklib.loopback_mux:v <0x04c5079f>
+                        streams:  10, words:  9560
+                worklib.apb_wrapper:v <0x57438010>
+                        streams:  31, words: 16669
+                worklib.baseband_crypto_macro:v <0x4942a9bd>
+                        streams:   1, words:   123
+                worklib.Mode_1:sv <0x031687fa>
+                        streams:  15, words: 35763
+                worklib.sub_layer:v <0x2827c731>
+                        streams:  16, words:  2247
+        Building instance specific data structures.
+        Loading native compiled code:     .................... Done
+        Design hierarchy summary:
+                                 Instances  Unique
+                Modules:                31      15
+                Registers:              83      67
+                Scalar wires:           26       -
+                Expanded wires:        144      20
+                Vectored wires:         34       -
+                Always blocks:          30      14
+                Initial blocks:          2       2
+                Cont. assignments:       8      14
+                Pseudo assignments:     28      28
+                Simulation timescale:  1ps
+        Writing initial simulation snapshot: worklib.Mode_1:sv
+Loading snapshot worklib.Mode_1:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING MODE 1 (DBB LOOPBACK) SIMULATION
+============================================================
+
+[65000] Switched to Mode 1 (DBB Loopback)
+
+--- Running Test 1: Alternating Bits ---
+[455000] Writing ADDR_DATA_13. PREADY will stall CPU for 432 cycles...
+[485000] PREADY stall released! Stream injection complete.
+[485000] Polling STATUS_REG for DBB completion...
+[4865000] dbb_data_ready asserted!
+--> Test 1 PASS!
+
+--- Running Test 2: All Zeros ---
+[5315000] Writing ADDR_DATA_13. PREADY will stall CPU for 432 cycles...
+[5345000] PREADY stall released! Stream injection complete.
+[5345000] Polling STATUS_REG for DBB completion...
+[9725000] dbb_data_ready asserted!
+--> Test 2 PASS!
+
+--- Running Test 3: All Ones ---
+[10175000] Writing ADDR_DATA_13. PREADY will stall CPU for 432 cycles...
+[10205000] PREADY stall released! Stream injection complete.
+[10205000] Polling STATUS_REG for DBB completion...
+[14585000] dbb_data_ready asserted!
+--> Test 3 PASS!
+
+--- Running Test 4: Mixed Blocks ---
+[15035000] Writing ADDR_DATA_13. PREADY will stall CPU for 432 cycles...
+[15065000] PREADY stall released! Stream injection complete.
+[15065000] Polling STATUS_REG for DBB completion...
+[19445000] dbb_data_ready asserted!
+--> Test 4 PASS!
+
+============================================================
+SIMULATION COMPLETE
+============================================================
+
+Simulation complete via $finish(1) at time 19505 NS + 0
+./RFID_v2/TB/Mode_1.sv:244         $finish;
+xcelium> exit
+TOOL:   xrun(64)        22.09-s003: Exiting on Sep 27, 2026 at 20:59:35 IST  (total: 00:00:05)
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Mode_switching RFID_v2/TB/Mode_switching.sv RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 21:00:00 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 21:00:01 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: RFID_v2/TB/Mode_switching.sv
+        module worklib.Mode_switching:sv
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/apb_wrapper.v
+        module worklib.apb_wrapper:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/baseband_crypto_macro.v
+        module worklib.baseband_crypto_macro:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_framer.v
+        module worklib.dbb_framer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_manchester_fsm.v
+        module worklib.dbb_manchester_fsm:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_oversampler.v
+        module worklib.dbb_oversampler:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_sync.v
+        module worklib.dbb_sync:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_top.v
+        module worklib.dbb_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_voter.v
+        module worklib.dbb_voter:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/key_schedule.v
+        module worklib.key_schedule:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/loopback_mux.v
+        module worklib.loopback_mux:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/perm_layer.v
+        module worklib.perm_layer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/present_top.v
+        module worklib.present_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sbox.v
+        module worklib.sbox:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sub_layer.v
+        module worklib.sub_layer:v
+                errors: 0, warnings: 0
+        Elaborating the design hierarchy:
+                Caching library 'worklib' ....... Done
+        Top level design units:
+                Mode_switching
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        Building instance overlay tables: .................... Done
+        Generating native compiled code:
+                worklib.key_schedule:v <0x4082a64f>
+                        streams:   4, words:  1776
+                worklib.perm_layer:v <0x29111dcb>
+                        streams:   0, words:     0
+                worklib.sbox:v <0x6d99b9ee>
+                        streams:   1, words:   735
+                worklib.present_top:v <0x6aa08d47>
+                        streams:  10, words:  6117
+                worklib.dbb_framer:v <0x78128d80>
+                        streams:  10, words:  4467
+                worklib.dbb_manchester_fsm:v <0x1b2bd0d8>
+                        streams:   8, words:  3746
+                worklib.dbb_voter:v <0x792cf256>
+                        streams:   2, words:   569
+                worklib.dbb_oversampler:v <0x3320b8ec>
+                        streams:   2, words:   509
+                worklib.dbb_sync:v <0x0c6d29fe>
+                        streams:   3, words:   810
+                worklib.dbb_top:v <0x6cdb929c>
+                        streams:   0, words:     0
+                worklib.loopback_mux:v <0x04c5079f>
+                        streams:  10, words:  9560
+                worklib.apb_wrapper:v <0x57438010>
+                        streams:  31, words: 16669
+                worklib.baseband_crypto_macro:v <0x4942a9bd>
+                        streams:   1, words:   123
+                worklib.Mode_switching:sv <0x3ddc2cd6>
+                        streams:  16, words: 47254
+                worklib.sub_layer:v <0x2827c731>
+                        streams:  16, words:  2247
+        Building instance specific data structures.
+        Loading native compiled code:     .................... Done
+        Design hierarchy summary:
+                                 Instances  Unique
+                Modules:                31      15
+                Registers:              99      83
+                Scalar wires:           26       -
+                Expanded wires:        144      20
+                Vectored wires:         34       -
+                Always blocks:          30      14
+                Initial blocks:          2       2
+                Cont. assignments:       8      14
+                Pseudo assignments:     28      28
+                Simulation timescale:  1ps
+        Writing initial simulation snapshot: worklib.Mode_switching:sv
+Loading snapshot worklib.Mode_switching:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING MODE SWITCHING PERMUTATION TESTS
+============================================================
+
+--- TESTCASE: mode01 (Mode 0 -> Mode 1) ---
+  > Switch to Mode 0 (Zeros Payload)
+    [MODE 0] PASS! Output: 5579c1387b228445
+  > Switch to Mode 1 (Ones Payload)
+    [MODE 1] PASS! Output: ffffffffffffffff
+
+--- TESTCASE: mode10 (Mode 1 -> Mode 0) ---
+  > Switch to Mode 1 (Zeros Payload)
+    [MODE 1] PASS! Output: 0000000000000000
+  > Switch to Mode 0 (Ones Payload)
+    [MODE 0] PASS! Output: a112ffc72f68417b
+
+--- TESTCASE: mode12 (Mode 1 -> Mode 2) ---
+  > Switch to Mode 1 (Zeros Payload)
+    [MODE 1] PASS! Output: 0000000000000000
+  > Switch to Mode 2 (Ones Payload)
+    [MODE 2] PASS! Output: a112ffc72f68417b
+
+--- TESTCASE: mode21 (Mode 2 -> Mode 1) ---
+  > Switch to Mode 2 (Zeros Payload)
+    [MODE 2] PASS! Output: 5579c1387b228445
+  > Switch to Mode 1 (Ones Payload)
+    [MODE 1] PASS! Output: ffffffffffffffff
+
+--- TESTCASE: mode02 (Mode 0 -> Mode 2) ---
+  > Switch to Mode 0 (Zeros Payload)
+    [MODE 0] PASS! Output: 5579c1387b228445
+  > Switch to Mode 2 (Ones Payload)
+    [MODE 2] PASS! Output: a112ffc72f68417b
+
+--- TESTCASE: mode20 (Mode 2 -> Mode 0) ---
+  > Switch to Mode 2 (Zeros Payload)
+    [MODE 2] PASS! Output: 5579c1387b228445
+  > Switch to Mode 0 (Ones Payload)
+    [MODE 0] PASS! Output: a112ffc72f68417b
+
+============================================================
+ALL PERMUTATION TESTS COMPLETE
+============================================================
+
+Simulation complete via $finish(1) at time 41515 NS + 0
+./RFID_v2/TB/Mode_switching.sv:288         $finish;
+xcelium> exit
+TOOL:   xrun(64)        22.09-s003: Exiting on Sep 27, 2026 at 21:00:07 IST  (total: 00:00:06)
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Reset_Stress_final RFID_v2/TB/Reset_Stress_final.sv RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 21:00:20 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 21:00:20 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: RFID_v2/TB/Reset_Stress_final.sv
+        module worklib.Reset_Stress_final:sv
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/apb_wrapper.v
+        module worklib.apb_wrapper:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/baseband_crypto_macro.v
+        module worklib.baseband_crypto_macro:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_framer.v
+        module worklib.dbb_framer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_manchester_fsm.v
+        module worklib.dbb_manchester_fsm:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_oversampler.v
+        module worklib.dbb_oversampler:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_sync.v
+        module worklib.dbb_sync:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_top.v
+        module worklib.dbb_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_voter.v
+        module worklib.dbb_voter:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/key_schedule.v
+        module worklib.key_schedule:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/loopback_mux.v
+        module worklib.loopback_mux:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/perm_layer.v
+        module worklib.perm_layer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/present_top.v
+        module worklib.present_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sbox.v
+        module worklib.sbox:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sub_layer.v
+        module worklib.sub_layer:v
+                errors: 0, warnings: 0
+        Elaborating the design hierarchy:
+                Caching library 'worklib' ....... Done
+        Top level design units:
+                Reset_Stress_final
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        Building instance overlay tables: .................... Done
+        Generating native compiled code:
+                worklib.key_schedule:v <0x65be4bbc>
+                        streams:   4, words:  1776
+                worklib.perm_layer:v <0x2fb4570c>
+                        streams:   0, words:     0
+                worklib.sbox:v <0x27488a91>
+                        streams:   1, words:   735
+                worklib.present_top:v <0x0d0399fc>
+                        streams:  10, words:  6117
+                worklib.dbb_framer:v <0x30bc92cc>
+                        streams:  10, words:  4467
+                worklib.dbb_manchester_fsm:v <0x514e5a1a>
+                        streams:   8, words:  3746
+                worklib.dbb_voter:v <0x5355c6c2>
+                        streams:   2, words:   569
+                worklib.dbb_oversampler:v <0x39e7d01b>
+                        streams:   2, words:   509
+                worklib.dbb_sync:v <0x69765ee0>
+                        streams:   3, words:   810
+                worklib.dbb_top:v <0x6ea70d66>
+                        streams:   0, words:     0
+                worklib.loopback_mux:v <0x06a88596>
+                        streams:  10, words:  9560
+                worklib.apb_wrapper:v <0x36b659b9>
+                        streams:  31, words: 16669
+                worklib.baseband_crypto_macro:v <0x1e0eafe1>
+                        streams:   1, words:   123
+                worklib.Reset_Stress_final:sv <0x57e067cf>
+                        streams:  29, words: 75820
+                worklib.sub_layer:v <0x4d3e09b0>
+                        streams:  16, words:  2247
+        Building instance specific data structures.
+        Loading native compiled code:     .................... Done
+        Design hierarchy summary:
+                                 Instances  Unique
+                Modules:                31      15
+                Registers:             102      86
+                Scalar wires:           26       -
+                Expanded wires:        144      20
+                Vectored wires:         34       -
+                Always blocks:          30      14
+                Initial blocks:          2       2
+                Parallel blocks:         4       4
+                Cont. assignments:       8      14
+                Pseudo assignments:     28      28
+                Simulation timescale:  1ps
+        Writing initial simulation snapshot: worklib.Reset_Stress_final:sv
+Loading snapshot worklib.Reset_Stress_final:sv .................... Done
+SVSEED default: 1
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING RANDOM RESET STRESS TESTS
+============================================================
+
+--- STRESS TEST 1: Mode 0 (Live RF) Mid-Stream Disruption ---
+xmsim: *W,OLDURR: The default algorithm for $urandom_range and randcase is used. It can have distribution problems..
+    !!! [TIME 1435000] HOSTILE RESET INJECTED !!!
+    !!! [TIME 1595000] SYSTEM RECOVERED. RUNNING FRESH TRANSACTION...
+    [PASS] Expected: a112ffc72f68417b, Got: a112ffc72f68417b
+
+--- STRESS TEST 2: Mode 1 (DBB Loopback) PREADY Stall Disruption ---
+    !!! [TIME 7925000] HOSTILE RESET INJECTED !!!
+    !!! [TIME 8085000] SYSTEM RECOVERED. RUNNING FRESH TRANSACTION...
+    [PASS] Expected: ffffffffffffffff, Got: ffffffffffffffff
+
+--- STRESS TEST 3: Mode 2 (Crypto Loopback) Engine Disruption ---
+    !!! [TIME 13205000] HOSTILE RESET INJECTED !!!
+    !!! [TIME 13365000] SYSTEM RECOVERED. RUNNING FRESH TRANSACTION...
+    [PASS] Expected: a112ffc72f68417b, Got: a112ffc72f68417b
+
+--- STRESS TEST 4: Mode Switching Disruption (Mode 1 -> Reset -> Mode 2) ---
+    !!! [TIME 16835000] HOSTILE RESET INJECTED MID-MODE 1 !!!
+    !!! [TIME 16995000] SYSTEM RECOVERED. PIVOTING IMMEDIATELY TO MODE 2...
+    [PASS] Expected: a112ffc72f68417b, Got: a112ffc72f68417b
+
+============================================================
+ALL STRESS TESTS COMPLETED SUCCESSFULLY
+============================================================
+
+Simulation complete via $finish(1) at time 17585 NS + 0
+./RFID_v2/TB/Reset_Stress_final.sv:330         $finish;
+xcelium> exit
+TOOL:   xrun(64)        22.09-s003: Exiting on Sep 27, 2026 at 21:00:28 IST  (total: 00:00:08)
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Preamble_Validation_TB RFID_v2/TB/Preamble_Validation_TB.sv RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 21:00:33 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 21:00:33 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: RFID_v2/TB/Preamble_Validation_TB.sv
+        module worklib.Preamble_Validation_TB:sv
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/apb_wrapper.v
+        module worklib.apb_wrapper:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/baseband_crypto_macro.v
+        module worklib.baseband_crypto_macro:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_framer.v
+        module worklib.dbb_framer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_manchester_fsm.v
+        module worklib.dbb_manchester_fsm:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_oversampler.v
+        module worklib.dbb_oversampler:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_sync.v
+        module worklib.dbb_sync:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_top.v
+        module worklib.dbb_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_voter.v
+        module worklib.dbb_voter:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/key_schedule.v
+        module worklib.key_schedule:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/loopback_mux.v
+        module worklib.loopback_mux:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/perm_layer.v
+        module worklib.perm_layer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/present_top.v
+        module worklib.present_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sbox.v
+        module worklib.sbox:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sub_layer.v
+        module worklib.sub_layer:v
+                errors: 0, warnings: 0
+        Elaborating the design hierarchy:
+                Caching library 'worklib' ....... Done
+        Top level design units:
+                Preamble_Validation_TB
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        Building instance overlay tables: .................... Done
+        Generating native compiled code:
+                worklib.key_schedule:v <0x4082a64f>
+                        streams:   4, words:  1776
+                worklib.perm_layer:v <0x29111dcb>
+                        streams:   0, words:     0
+                worklib.sbox:v <0x6d99b9ee>
+                        streams:   1, words:   735
+                worklib.present_top:v <0x6aa08d47>
+                        streams:  10, words:  6117
+                worklib.dbb_framer:v <0x78128d80>
+                        streams:  10, words:  4467
+                worklib.dbb_manchester_fsm:v <0x1b2bd0d8>
+                        streams:   8, words:  3746
+                worklib.dbb_voter:v <0x792cf256>
+                        streams:   2, words:   569
+                worklib.dbb_oversampler:v <0x3320b8ec>
+                        streams:   2, words:   509
+                worklib.dbb_sync:v <0x0c6d29fe>
+                        streams:   3, words:   810
+                worklib.dbb_top:v <0x6cdb929c>
+                        streams:   0, words:     0
+                worklib.loopback_mux:v <0x04c5079f>
+                        streams:  10, words:  9560
+                worklib.apb_wrapper:v <0x57438010>
+                        streams:  31, words: 16669
+                worklib.baseband_crypto_macro:v <0x4942a9bd>
+                        streams:   1, words:   123
+                worklib.Preamble_Validation_TB:sv <0x5622df60>
+                        streams:  17, words: 35153
+                worklib.sub_layer:v <0x2827c731>
+                        streams:  16, words:  2247
+        Building instance specific data structures.
+        Loading native compiled code:     .................... Done
+        Design hierarchy summary:
+                                 Instances  Unique
+                Modules:                31      15
+                Registers:              89      73
+                Scalar wires:           26       -
+                Expanded wires:        144      20
+                Vectored wires:         34       -
+                Always blocks:          30      14
+                Initial blocks:          4       4
+                Cont. assignments:       8      14
+                Pseudo assignments:     28      28
+                Simulation timescale:  1ps
+        Writing initial simulation snapshot: worklib.Preamble_Validation_TB:sv
+Loading snapshot worklib.Preamble_Validation_TB:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING DBB PREAMBLE DETECTION & ERROR RECOVERY TESTBENCH
+============================================================
+
+[65000] Subsystem set to Mode 1 (DBB Loopback)
+
+--- TEST 1: Valid Preamble Transmission ---
+    --> PASS: Preamble locked (Status[2]), Data ready (Status[1]), Payload verified: a5a55a5adeadbeef
+
+--- TEST 2: Corrupted All-Zero Preamble Rejection ---
+    --> PASS: Corrupted stream rejected! Error asserted (Status[3]=1), DBB Ready remained 0.
+    --> Bus Liveness Check: PREADY was released cleanly without bus hang.
+
+--- TEST 3: Mutated Preamble Delimiter Rejection ---
+    --> PASS: Mutated preamble rejected! Error timeout flagged (Status[3]=1).
+
+--- TEST 4: Immediate Recovery with Valid Frame (No Reset) ---
+    --> PASS: Receiver recovered autonomously without manual reset. Got: cafebabe01234567
+
+============================================================
+PREAMBLE & TIMEOUT VALIDATION SUMMARY
+Passed: 4 / 4
+Failed: 0 / 4
+============================================================
+
+--> RESULT: ALL TESTCASES PASSED PERFECTLY!
+
+Simulation complete via $finish(1) at time 19685 NS + 0
+./RFID_v2/TB/Preamble_Validation_TB.sv:289         $finish;
+xcelium> exit
+TOOL:   xrun(64)        22.09-s003: Exiting on Sep 27, 2026 at 21:00:36 IST  (total: 00:00:03)
+[EE5239G2@avanti ~]$ xrun -access +rwc -sv -top Corner_Cases_TB RFID_v2/TB/Corner_Cases_TB.sv RFID_v2/RTL/*.v
+TOOL:   xrun    22.09-s003: Started on Sep 27, 2026 at 21:00:43 IST
+TOOL:   xrun(64)        22.09-s003: Started on Sep 27, 2026 at 21:00:43 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: RFID_v2/TB/Corner_Cases_TB.sv
+        module worklib.Corner_Cases_TB:sv
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/apb_wrapper.v
+        module worklib.apb_wrapper:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/baseband_crypto_macro.v
+        module worklib.baseband_crypto_macro:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_framer.v
+        module worklib.dbb_framer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_manchester_fsm.v
+        module worklib.dbb_manchester_fsm:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_oversampler.v
+        module worklib.dbb_oversampler:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_sync.v
+        module worklib.dbb_sync:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_top.v
+        module worklib.dbb_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/dbb_voter.v
+        module worklib.dbb_voter:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/key_schedule.v
+        module worklib.key_schedule:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/loopback_mux.v
+        module worklib.loopback_mux:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/perm_layer.v
+        module worklib.perm_layer:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/present_top.v
+        module worklib.present_top:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sbox.v
+        module worklib.sbox:v
+                errors: 0, warnings: 0
+file: RFID_v2/RTL/sub_layer.v
+        module worklib.sub_layer:v
+                errors: 0, warnings: 0
+        Elaborating the design hierarchy:
+                Caching library 'worklib' ....... Done
+        Top level design units:
+                Corner_Cases_TB
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        Building instance overlay tables: .................... Done
+        Generating native compiled code:
+                worklib.key_schedule:v <0x65be4bbc>
+                        streams:   4, words:  1776
+                worklib.perm_layer:v <0x2fb4570c>
+                        streams:   0, words:     0
+                worklib.sbox:v <0x27488a91>
+                        streams:   1, words:   735
+                worklib.dbb_framer:v <0x30bc92cc>
+                        streams:  10, words:  4467
+                worklib.dbb_manchester_fsm:v <0x514e5a1a>
+                        streams:   8, words:  3746
+                worklib.dbb_voter:v <0x5355c6c2>
+                        streams:   2, words:   569
+                worklib.dbb_oversampler:v <0x39e7d01b>
+                        streams:   2, words:   509
+                worklib.dbb_sync:v <0x69765ee0>
+                        streams:   3, words:   810
+                worklib.dbb_top:v <0x6ea70d66>
+                        streams:   0, words:     0
+                worklib.loopback_mux:v <0x06a88596>
+                        streams:  10, words:  9560
+                worklib.apb_wrapper:v <0x36b659b9>
+                        streams:  31, words: 16669
+                worklib.baseband_crypto_macro:v <0x1e0eafe1>
+                        streams:   1, words:   123
+                worklib.Corner_Cases_TB:sv <0x43f0c310>
+                        streams:  23, words: 50166
+                worklib.sub_layer:v <0x4d3e09b0>
+                        streams:  16, words:  2247
+                worklib.present_top:v <0x54b7b83c>
+                        streams:  10, words:  6437
+        Building instance specific data structures.
+        Loading native compiled code:     .................... Done
+        Design hierarchy summary:
+                                 Instances  Unique
+                Modules:                31      15
+                Registers:              96      80
+                Scalar wires:           26       -
+                Expanded wires:        144      20
+                Vectored wires:         34       -
+                Always blocks:          30      14
+                Initial blocks:          4       4
+                Parallel blocks:         2       2
+                Cont. assignments:       8      14
+                Pseudo assignments:     28      28
+                Simulation timescale:  1ps
+        Writing initial simulation snapshot: worklib.Corner_Cases_TB:sv
+Loading snapshot worklib.Corner_Cases_TB:sv .................... Done
+SVSEED default: 1
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING ADVANCED CORNER CASE VALIDATION
+============================================================
+
+--- TEST 1: Simultaneous Read-on-Assert at STATUS_REG (0x04) ---
+    --> PASS: Simultaneous read handled correctly. Status[0] retained = 1
+
+--- TEST 2: Dynamic RF Timing Jitter (2 to 4 Cycles Dynamic Jitter) ---
+xmsim: *W,OLDURR: The default algorithm for $urandom_range and randcase is used. It can have distribution problems..
+    --> PASS: Baseband tracked jittered edges. Ciphertext verified: 5579c1387b228445
+
+--- TEST 3: High Carrier Frequency Drift (Fast Reader, OSR = 5) ---
+    --> PASS: Fast stream (OSR=5) decoded cleanly. Ciphertext: 5579c1387b228445
+
+--- TEST 4: Low Carrier Frequency Drift (Slow Reader, OSR = 7) ---
+    --> PASS: Slow stream (OSR=7) decoded cleanly. Ciphertext: 5579c1387b228445
+
+============================================================
+ADVANCED CORNER CASES SUMMARY
+Passed: 4 / 4
+Failed: 0 / 4
+============================================================
+
+--> RESULT: ALL CORNER CASES PASSED PERFECTLY!
+
+Simulation complete via $finish(1) at time 19285 NS + 0
+./RFID_v2/TB/Corner_Cases_TB.sv:337         $finish;
