@@ -1,0 +1,335 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Oct 15, 2026 at 19:09:09 IST
+xrun
+	-64bit
+	-sv
+	-access +rwc
+	-timescale 1ns/1ps
+	-clean
+	-access +rwc
+	-v /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/verilog/vcs_sim_model/tsl18fs120_scl.v
+	/storage/EE5239G2/RFID_v2/TB_GLS_v2/TB/Mode_0_async_data.v
+	/storage/EE5239G2/RFID_v2/sdc_final/outputs/baseband_crypto_macro_syn.v
+	-top Mode_0_async_data
+	-log /storage/EE5239G2/RFID_v2/TB_GLS_v2_reports/Mode_0_async_data.log
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: /storage/EE5239G2/RFID_v2/TB_GLS_v2/TB/Mode_0_async_data.v
+	module worklib.Mode_0_async_data:v
+		errors: 0, warnings: 0
+file: /storage/EE5239G2/RFID_v2/sdc_final/outputs/baseband_crypto_macro_syn.v
+	module worklib.apb_wrapper:v
+		errors: 0, warnings: 0
+	module worklib.loopback_mux:v
+		errors: 0, warnings: 0
+	module worklib.dbb_sync:v
+		errors: 0, warnings: 0
+	module worklib.dbb_oversampler_WINDOW3:v
+		errors: 0, warnings: 0
+	module worklib.dbb_voter_WINDOW3:v
+		errors: 0, warnings: 0
+	module worklib.dbb_manchester_fsm_OSR6:v
+		errors: 0, warnings: 0
+	module worklib.dbb_framer_DW01_inc_0_DW01_inc_2:v
+		errors: 0, warnings: 0
+	module worklib.dbb_framer:v
+		errors: 0, warnings: 0
+	module worklib.dbb_top_OSR6_MAJORITY3:v
+		errors: 0, warnings: 0
+	module worklib.sbox_0:v
+		errors: 0, warnings: 0
+	module worklib.sbox_16:v
+		errors: 0, warnings: 0
+	module worklib.sbox_15:v
+		errors: 0, warnings: 0
+	module worklib.sbox_14:v
+		errors: 0, warnings: 0
+	module worklib.sbox_13:v
+		errors: 0, warnings: 0
+	module worklib.sbox_12:v
+		errors: 0, warnings: 0
+	module worklib.sbox_11:v
+		errors: 0, warnings: 0
+	module worklib.sbox_10:v
+		errors: 0, warnings: 0
+	module worklib.sbox_9:v
+		errors: 0, warnings: 0
+	module worklib.sbox_8:v
+		errors: 0, warnings: 0
+	module worklib.sbox_7:v
+		errors: 0, warnings: 0
+	module worklib.sbox_6:v
+		errors: 0, warnings: 0
+	module worklib.sbox_5:v
+		errors: 0, warnings: 0
+	module worklib.sbox_4:v
+		errors: 0, warnings: 0
+	module worklib.sbox_3:v
+		errors: 0, warnings: 0
+	module worklib.sbox_2:v
+		errors: 0, warnings: 0
+	module worklib.sub_layer:v
+		errors: 0, warnings: 0
+	module worklib.perm_layer:v
+		errors: 0, warnings: 0
+	module worklib.sbox_1:v
+		errors: 0, warnings: 0
+	module worklib.key_schedule:v
+		errors: 0, warnings: 0
+	module worklib.present_top:v
+		errors: 0, warnings: 0
+	module worklib.baseband_crypto_macro:v
+		errors: 0, warnings: 0
+file: /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/verilog/vcs_sim_model/tsl18fs120_scl.v
+	module tsl18fs120_scl.ah01d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.an02d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.an03d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.an04d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoi211d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoi21d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoi221d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoi22d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoi31d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoi31d2:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoim21d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aoim22d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aon211d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aor21d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aor221d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aor222d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aor22d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aor311d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.aor31d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.buffd1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.buffd3:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.cg01d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.dfnrb1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.dfnrn1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.dfnrq1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.inv0d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.inv0d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.inv0d2:v
+		errors: 0, warnings: 0
+	primitive tsl18fs120_scl.U_AO3:v
+		errors: 0, warnings: 0
+	primitive tsl18fs120_scl.U_FD_P_NO:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nd02d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nd02d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nd03d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nd03d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nd04d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nd04d2:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nd12d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr02d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr02d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr02d2:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr03d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr03d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr03d2:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr04d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr04d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.nr04d2:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oai211d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oai21d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oai221d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oai22d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oai31d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oai321d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oaim21d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oaim22d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.oan211d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.or02d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.or03d0:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.ora211d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.xn02d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.xr02d1:v
+		errors: 0, warnings: 0
+	module tsl18fs120_scl.xr03d1:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+		Caching library 'tsl18fs120_scl' ....... Done
+	Top level design units:
+		Mode_0_async_data
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.key_schedule:v <0x316920b5>
+			streams:   0, words:     0
+		worklib.perm_layer:v <0x04603652>
+			streams:   0, words:     0
+		worklib.dbb_framer:v <0x2abb1cfb>
+			streams:   0, words:     0
+		worklib.dbb_voter_WINDOW3:v <0x63691016>
+			streams:   0, words:     0
+		worklib.Mode_0_async_data:v <0x105179ea>
+			streams:  16, words: 56672
+		tsl18fs120_scl.xr03d1:v <0x26d57a87>
+			streams:   0, words:     0
+		tsl18fs120_scl.ah01d1:v <0x29156b2b>
+			streams:   0, words:     0
+		tsl18fs120_scl.aoim22d1:v <0x34242c77>
+			streams:   0, words:     0
+		tsl18fs120_scl.dfnrb1:v <0x63ada087>
+			streams:   0, words:     0
+		tsl18fs120_scl.oaim21d1:v <0x29f08661>
+			streams:   0, words:     0
+		tsl18fs120_scl.xn02d1:v <0x1a87afed>
+			streams:   0, words:     0
+		tsl18fs120_scl.oaim21d1:v <0x10d3086d>
+			streams:   0, words:     0
+		tsl18fs120_scl.dfnrn1:v <0x4dcac340>
+			streams:   0, words:     0
+		tsl18fs120_scl.dfnrq1:v <0x23bc3375>
+			streams:   0, words:     0
+		tsl18fs120_scl.xr02d1:v <0x21f51144>
+			streams:   0, words:     0
+		tsl18fs120_scl.aoim21d1:v <0x7c596f35>
+			streams:   0, words:     0
+		tsl18fs120_scl.oaim22d1:v <0x3e79b516>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:               4225      91
+		UDPs:                  1342       2
+		Primitives:            8208       8
+		Timing outputs:        4202      65
+		Registers:             1368      31
+		Scalar wires:          8284       -
+		Expanded wires:          64       2
+		Initial blocks:           2       2
+		Cont. assignments:        0     216
+		Pseudo assignments:       8       8
+		Timing checks:         8046    1342
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.Mode_0_async_data:v
+Loading snapshot worklib.Mode_0_async_data:v .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/Cadence_tools/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+
+============================================================
+STARTING MODE 0 (LIVE RF) SIMULATION
+============================================================
+
+[65000] Switched to Mode 0 (Live RF)
+
+
+============================================================
+PHASE 1: SYNCHRONOUS RF TESTING
+============================================================
+
+--- Running Test 1 (Sync): All Zeros ---
+[155000] Incoming SYNCHRONOUS Radio Wave Detected...
+[4475000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[4475000] CPU polling STATUS_REG for Crypto completion...
+[4865000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 1 PASS! Got 5579c1387b228445
+
+--- Running Test 2 (Sync): All F's Key ---
+[5015000] Incoming SYNCHRONOUS Radio Wave Detected...
+[9335000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[9335000] CPU polling STATUS_REG for Crypto completion...
+[9725000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 2 PASS! Got e72c46c0f5945049
+
+--- Running Test 3 (Sync): All F's Plaintext ---
+[9875000] Incoming SYNCHRONOUS Radio Wave Detected...
+[14195000] Radio stream complete. Awaiting DBB & Crypto handoff.
+[14195000] CPU polling STATUS_REG for Crypto completion...
+[14585000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 3 PASS! Got a112ffc72f68417b
+
+
+============================================================
+PHASE 2: ASYNCHRONOUS RF TESTING (DBB_SYNC CHECK)
+============================================================
+
+--- Running Test 4 (Async): All Zeros ---
+[14735000] Incoming ASYNCHRONOUS Radio Wave Detected (Phase Shifted 3.7ns)...
+[19075000] Async Radio stream complete. Awaiting DBB & Crypto handoff.
+[19425000] CPU polling STATUS_REG for Crypto completion...
+[19455000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 4 PASS! Got 5579c1387b228445
+
+--- Running Test 5 (Async): All F's Key ---
+[19605000] Incoming ASYNCHRONOUS Radio Wave Detected (Phase Shifted 3.7ns)...
+[23945000] Async Radio stream complete. Awaiting DBB & Crypto handoff.
+[24295000] CPU polling STATUS_REG for Crypto completion...
+[24325000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 5 PASS! Got e72c46c0f5945049
+
+--- Running Test 6 (Async): All F's Plaintext ---
+[24475000] Incoming ASYNCHRONOUS Radio Wave Detected (Phase Shifted 3.7ns)...
+[28815000] Async Radio stream complete. Awaiting DBB & Crypto handoff.
+[29165000] CPU polling STATUS_REG for Crypto completion...
+[29195000] crypto_done asserted! Hardware pipeline finished autonomously.
+--> Test 6 PASS! Got a112ffc72f68417b
+
+============================================================
+SIMULATION COMPLETE
+============================================================
+
+Simulation complete via $finish(1) at time 29255 NS + 0
+./RFID_v2/TB_GLS_v2/TB/Mode_0_async_data.v:322         $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.09-s003: Exiting on Oct 15, 2026 at 19:09:12 IST  (total: 00:00:03)
