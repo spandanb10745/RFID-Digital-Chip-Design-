@@ -1,0 +1,82 @@
+[icc2-lic Sun Oct 25 09:43:09 2026] Command 'report_power' requires licenses
+[icc2-lic Sun Oct 25 09:43:09 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : power
+        -significant_digits 2
+Design : baseband_crypto_macro
+Version: U-2022.12-SP3
+Date   : Sun Oct 25 09:43:09 2026
+****************************************
+Information: Activity propagation will be performed for scenario func_ss.
+Information: Doing activity propagation for mode 'mode_func' and corner 'corner_ss' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario func_ss (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: mode_func
+Corner: corner_ss
+Scenario: func_ss
+Voltage: 1.62
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell ZCTSBUF_33221_2278 for parameter Tinp. Lowest table value = 0.020000, highest table value = 3.000000, value = 0.015087 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell ZCTSBUF_22311_2290 for parameter Tinp. Lowest table value = 0.020000, highest table value = 3.000000, value = 0.015163 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell ZCTSBUF_44662_2298 for parameter Tinp. Lowest table value = 0.020000, highest table value = 3.000000, value = 0.015068 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell ZCTSBUF_62768_2309 for parameter Tinp. Lowest table value = 0.020000, highest table value = 3.000000, value = 0.015068 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell ctosc_gls_inst_2501 for parameter Tinp. Lowest table value = 0.020000, highest table value = 3.000000, value = 0.014420 (POW-046)
+
+  Cell Internal Power    = 3.59e+09 pW ( 79.8%)
+  Net Switching Power    = 9.10e+08 pW ( 20.2%)
+Total Dynamic Power      = 4.50e+09 pW (100.0%)
+
+Cell Leakage Power       = 2.87e+06 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             3.55e+09               7.85e+08               8.45e+04               4.34e+09    ( 96.4%)        i
+register                  2.88e+06               9.60e+05               1.24e+06               5.08e+06    (  0.1%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             3.17e+07               1.23e+08               1.55e+06               1.57e+08    (  3.5%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     3.59e+09 pW            9.10e+08 pW            2.87e+06 pW            4.50e+09 pW
+1

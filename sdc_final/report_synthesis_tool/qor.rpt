@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : qor
+Design : baseband_crypto_macro
+Version: T-2022.03-SP5
+Date   : Sun Oct 18 18:23:40 2026
+****************************************
+
+
+  Timing Path Group 'PCLK'
+  -----------------------------------
+  Levels of Logic:              11.00
+  Critical Path Length:          4.85
+  Critical Path Slack:           8.41
+  Critical Path Clk Period:     20.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'VCLK_APB'
+  -----------------------------------
+  Levels of Logic:               8.00
+  Critical Path Length:          3.42
+  Critical Path Slack:           4.08
+  Critical Path Clk Period:     20.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'VCLK_RF'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          2.60
+  Critical Path Slack:           6.90
+  Critical Path Clk Period:     20.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         30
+  Hierarchical Port Count:       2332
+  Leaf Cell Count:               4193
+  Buf/Inv Cell Count:             722
+  Buf Cell Count:                 568
+  Inv Cell Count:                 154
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2852
+  Sequential Cell Count:         1341
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    63463.170568
+  Noncombinational Area: 79899.922455
+  Buf/Inv Area:           8421.089983
+  Total Buffer Area:          7257.74
+  Total Inverter Area:        1163.35
+  Macro/Black Box Area:      0.000000
+  Net Area:               5188.286380
+  -----------------------------------
+  Cell Area:            143363.093022
+  Design Area:          148551.379402
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          4272
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: avanti.iitg.ac.in
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    1.13
+  Logic Optimization:                  2.53
+  Mapping Optimization:                2.60
+  -----------------------------------------
+  Overall Compile Time:                8.38
+  Overall Compile Wall Clock Time:     8.85
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

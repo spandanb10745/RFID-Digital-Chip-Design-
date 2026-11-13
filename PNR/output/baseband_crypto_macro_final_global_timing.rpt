@@ -1,0 +1,16 @@
+Information: Timer using 'SI, Timing Window Analysis'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+Design : baseband_crypto_macro
+Version: U-2022.12-SP3
+Date   : Sun Oct 25 09:43:09 2026
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1

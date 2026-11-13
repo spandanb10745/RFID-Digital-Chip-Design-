@@ -1,0 +1,75 @@
+Closing block 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design'
+Closing library 'baseband_crypto_macro.dlib'
+Information: Iteration for collection _sel9170 was terminated
+            	because the collection was modified or deleted. (SEL-012)
+Information: Loading library file '/storage/EE5239G2/RFID_v2/pnr_icc2/blocks/baseband_crypto_macro.dlib' (FILE-007)
+Information: Loading library file '/storage/EE5239G2/RFID_v2/pnr_icc2/scl180_std.ndm' (FILE-007)
+Information: Loading library file '/storage/EE5239G2/RFID_v2/pnr_icc2/scl180_filler.ndm' (FILE-007)
+Opening block 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design' in edit mode
+Using libraries: baseband_crypto_macro.dlib scl180_std scl180_filler
+Visiting block baseband_crypto_macro.dlib:baseband_crypto_macro_route.design
+Design 'baseband_crypto_macro' was successfully linked.
+Option for density blockage handling will be ignored.
+Running ICV version check
+ICV version check ok.
+Num filler cells found = 0, skipped = 0
+
+TrackFill Flow: Creating init setup...
+TrackFill Flow: Creating init setup... done.
+Creating track fill shapes by skipping 1 track between signal and fill shapes for layers: M1 M2 M3 TOP_M 
+TrackFill Flow: Default parameters written to file: /storage/EE5239G2/signoff_fill_run/track_fill_params.rh
+Saving top-block before calling ICV
+Information: Saving block 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design'
+
+Start to run ICV ...
+Running new impl for popen..
+............................................. 1% complete [0:00:01]
+............................................. 5% complete [0:00:02]
+............................................. 5% complete [0:00:02]
+............................................. 10% complete [0:00:03]
+............................................. 10% complete [0:00:03]
+............................................. 15% complete [0:00:03]
+............................................. 20% complete [0:00:03]
+............................................. 20% complete [0:00:03]
+............................................. 25% complete [0:00:03]
+............................................. 25% complete [0:00:03]
+............................................. 30% complete [0:00:03]
+............................................. 30% complete [0:00:03]
+............................................. 35% complete [0:00:04]
+............................................. 40% complete [0:00:04]
+............................................. 40% complete [0:00:04]
+............................................. 45% complete [0:00:04]
+............................................. 50% complete [0:00:05]
+............................................. 50% complete [0:00:05]
+............................................. 55% complete [0:00:06]
+............................................. 60% complete [0:00:06]
+............................................. 60% complete [0:00:06]
+............................................. 65% complete [0:00:06]
+............................................. 70% complete [0:00:07]
+............................................. 70% complete [0:00:07]
+............................................. 75% complete [0:00:07]
+............................................. 75% complete [0:00:07]
+............................................. 80% complete [0:00:08]
+............................................. 85% complete [0:00:08]
+............................................. 85% complete [0:00:08]
+............................................. 90% complete [0:00:08]
+............................................. 95% complete [0:00:08]
+............................................. 95% complete [0:00:08]
+...........Updated tech file has been written at: /storage/EE5239G2/signoff_fill_run/icv_run_1/tech.tf
+
+
+
+Total icv runtime = Overall engine Time=0:00:15 Highest command Mem=0.200 GB 
+
+Info: Starting compress metal fill stage.
+
+Info: compress metal fill finished successfully : 1 seconds
+
+Running ICV version check
+ICV version check ok.
+Num filler cells found = 0, skipped = 0
+Done remove fill
+
+Information: Saving 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design' to 'baseband_crypto_macro.dlib:baseband_crypto_macro_filled.design'. (DES-028)
+Saving library 'baseband_crypto_macro.dlib'
+>>> METAL FILL COMPLETE: baseband_crypto_macro_filled saved. Log: /storage/EE5239G2/RFID_v2/pnr_icc2/logs/metal_fill.log

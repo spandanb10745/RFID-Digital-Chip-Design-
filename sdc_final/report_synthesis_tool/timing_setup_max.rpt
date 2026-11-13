@@ -1,0 +1,910 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'baseband_crypto_macro' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : baseband_crypto_macro
+Version: T-2022.03-SP5
+Date   : Sun Oct 18 18:23:39 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/crypto_key_reg[50]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                   0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                   0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                   0.72       9.13 r
+  U_APB/U28/ZN (nd04d1)                    0.25       9.39 f
+  U_APB/U27/Z (an02d1)                     0.36       9.74 f
+  U_APB/U740/Z (buffd1)                    0.28      10.03 f
+  U_APB/U75/Z (buffd1)                     0.50      10.53 f
+  U_APB/U522/ZN (oaim22d1)                 0.32      10.85 f
+  U_APB/crypto_key_reg[50]/D (dfnrq1)      0.00      10.85 f
+  data arrival time                                  10.85
+
+  clock PCLK (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  U_APB/crypto_key_reg[50]/CP (dfnrq1)     0.00      19.50 r
+  library setup time                      -0.24      19.26
+  data required time                                 19.26
+  -----------------------------------------------------------
+  data required time                                 19.26
+  data arrival time                                 -10.85
+  -----------------------------------------------------------
+  slack (MET)                                         8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/crypto_key_reg[49]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                   0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                   0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                   0.72       9.13 r
+  U_APB/U28/ZN (nd04d1)                    0.25       9.39 f
+  U_APB/U27/Z (an02d1)                     0.36       9.74 f
+  U_APB/U740/Z (buffd1)                    0.28      10.03 f
+  U_APB/U75/Z (buffd1)                     0.50      10.53 f
+  U_APB/U521/ZN (oaim22d1)                 0.32      10.85 f
+  U_APB/crypto_key_reg[49]/D (dfnrq1)      0.00      10.85 f
+  data arrival time                                  10.85
+
+  clock PCLK (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  U_APB/crypto_key_reg[49]/CP (dfnrq1)     0.00      19.50 r
+  library setup time                      -0.24      19.26
+  data required time                                 19.26
+  -----------------------------------------------------------
+  data required time                                 19.26
+  data arrival time                                 -10.85
+  -----------------------------------------------------------
+  slack (MET)                                         8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[210]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.00       6.00 f
+  PADDR[9] (in)                                           0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)                            0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                                  0.52       6.54 r
+  U_APB/U87/Z (an04d1)                                    0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                                   0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                                  0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                                  0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                                  0.72       9.13 r
+  U_APB/U9/ZN (nd04d1)                                    0.25       9.39 f
+  U_APB/U8/Z (an02d1)                                     0.36       9.74 f
+  U_APB/U79/Z (buffd1)                                    0.28      10.03 f
+  U_APB/U19/Z (buffd1)                                    0.50      10.53 f
+  U_APB/U237/ZN (oaim22d1)                                0.32      10.85 f
+  U_APB/apb_test_data_reg[210]/D (dfnrq1)                 0.00      10.85 f
+  data arrival time                                                 10.85
+
+  clock PCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  U_APB/apb_test_data_reg[210]/CP (dfnrq1)                0.00      19.50 r
+  library setup time                                     -0.24      19.26
+  data required time                                                19.26
+  --------------------------------------------------------------------------
+  data required time                                                19.26
+  data arrival time                                                -10.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[209]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.00       6.00 f
+  PADDR[9] (in)                                           0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)                            0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                                  0.52       6.54 r
+  U_APB/U87/Z (an04d1)                                    0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                                   0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                                  0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                                  0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                                  0.72       9.13 r
+  U_APB/U9/ZN (nd04d1)                                    0.25       9.39 f
+  U_APB/U8/Z (an02d1)                                     0.36       9.74 f
+  U_APB/U79/Z (buffd1)                                    0.28      10.03 f
+  U_APB/U19/Z (buffd1)                                    0.50      10.53 f
+  U_APB/U236/ZN (oaim22d1)                                0.32      10.85 f
+  U_APB/apb_test_data_reg[209]/D (dfnrq1)                 0.00      10.85 f
+  data arrival time                                                 10.85
+
+  clock PCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  U_APB/apb_test_data_reg[209]/CP (dfnrq1)                0.00      19.50 r
+  library setup time                                     -0.24      19.26
+  data required time                                                19.26
+  --------------------------------------------------------------------------
+  data required time                                                19.26
+  data arrival time                                                -10.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/crypto_key_reg[53]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                   0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                   0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                   0.72       9.13 r
+  U_APB/U28/ZN (nd04d1)                    0.25       9.39 f
+  U_APB/U27/Z (an02d1)                     0.36       9.74 f
+  U_APB/U740/Z (buffd1)                    0.28      10.03 f
+  U_APB/U75/Z (buffd1)                     0.50      10.53 f
+  U_APB/U525/ZN (oaim22d1)                 0.32      10.85 f
+  U_APB/crypto_key_reg[53]/D (dfnrq1)      0.00      10.85 f
+  data arrival time                                  10.85
+
+  clock PCLK (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  U_APB/crypto_key_reg[53]/CP (dfnrq1)     0.00      19.50 r
+  library setup time                      -0.24      19.26
+  data required time                                 19.26
+  -----------------------------------------------------------
+  data required time                                 19.26
+  data arrival time                                 -10.85
+  -----------------------------------------------------------
+  slack (MET)                                         8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/crypto_key_reg[52]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                   0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                   0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                   0.72       9.13 r
+  U_APB/U28/ZN (nd04d1)                    0.25       9.39 f
+  U_APB/U27/Z (an02d1)                     0.36       9.74 f
+  U_APB/U740/Z (buffd1)                    0.28      10.03 f
+  U_APB/U75/Z (buffd1)                     0.50      10.53 f
+  U_APB/U524/ZN (oaim22d1)                 0.32      10.85 f
+  U_APB/crypto_key_reg[52]/D (dfnrq1)      0.00      10.85 f
+  data arrival time                                  10.85
+
+  clock PCLK (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  U_APB/crypto_key_reg[52]/CP (dfnrq1)     0.00      19.50 r
+  library setup time                      -0.24      19.26
+  data required time                                 19.26
+  -----------------------------------------------------------
+  data required time                                 19.26
+  data arrival time                                 -10.85
+  -----------------------------------------------------------
+  slack (MET)                                         8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[213]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.00       6.00 f
+  PADDR[9] (in)                                           0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)                            0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                                  0.52       6.54 r
+  U_APB/U87/Z (an04d1)                                    0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                                   0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                                  0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                                  0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                                  0.72       9.13 r
+  U_APB/U9/ZN (nd04d1)                                    0.25       9.39 f
+  U_APB/U8/Z (an02d1)                                     0.36       9.74 f
+  U_APB/U79/Z (buffd1)                                    0.28      10.03 f
+  U_APB/U19/Z (buffd1)                                    0.50      10.53 f
+  U_APB/U240/ZN (oaim22d1)                                0.32      10.85 f
+  U_APB/apb_test_data_reg[213]/D (dfnrq1)                 0.00      10.85 f
+  data arrival time                                                 10.85
+
+  clock PCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  U_APB/apb_test_data_reg[213]/CP (dfnrq1)                0.00      19.50 r
+  library setup time                                     -0.24      19.26
+  data required time                                                19.26
+  --------------------------------------------------------------------------
+  data required time                                                19.26
+  data arrival time                                                -10.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[212]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.00       6.00 f
+  PADDR[9] (in)                                           0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)                            0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                                  0.52       6.54 r
+  U_APB/U87/Z (an04d1)                                    0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                                   0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                                  0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                                  0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                                  0.72       9.13 r
+  U_APB/U9/ZN (nd04d1)                                    0.25       9.39 f
+  U_APB/U8/Z (an02d1)                                     0.36       9.74 f
+  U_APB/U79/Z (buffd1)                                    0.28      10.03 f
+  U_APB/U19/Z (buffd1)                                    0.50      10.53 f
+  U_APB/U239/ZN (oaim22d1)                                0.32      10.85 f
+  U_APB/apb_test_data_reg[212]/D (dfnrq1)                 0.00      10.85 f
+  data arrival time                                                 10.85
+
+  clock PCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  U_APB/apb_test_data_reg[212]/CP (dfnrq1)                0.00      19.50 r
+  library setup time                                     -0.24      19.26
+  data required time                                                19.26
+  --------------------------------------------------------------------------
+  data required time                                                19.26
+  data arrival time                                                -10.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[18]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.00       6.00 f
+  PADDR[9] (in)                                           0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)                            0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                                  0.52       6.54 r
+  U_APB/U87/Z (an04d1)                                    0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                                   0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                                  0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                                  0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                                  0.72       9.13 r
+  U_APB/U32/ZN (nd04d1)                                   0.25       9.39 f
+  U_APB/U31/Z (an02d1)                                    0.36       9.74 f
+  U_APB/U741/Z (buffd1)                                   0.28      10.03 f
+  U_APB/U76/Z (buffd1)                                    0.50      10.53 f
+  U_APB/U570/ZN (oaim22d1)                                0.32      10.85 f
+  U_APB/apb_test_data_reg[18]/D (dfnrq1)                  0.00      10.85 f
+  data arrival time                                                 10.85
+
+  clock PCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  U_APB/apb_test_data_reg[18]/CP (dfnrq1)                 0.00      19.50 r
+  library setup time                                     -0.24      19.26
+  data required time                                                19.26
+  --------------------------------------------------------------------------
+  data required time                                                19.26
+  data arrival time                                                -10.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[17]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.00       6.00 f
+  PADDR[9] (in)                                           0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)                            0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                                  0.52       6.54 r
+  U_APB/U87/Z (an04d1)                                    0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                                   0.25       7.17 f
+  U_APB/U734/ZN (inv0d0)                                  0.57       7.73 r
+  U_APB/U780/ZN (nd04d2)                                  0.68       8.42 f
+  U_APB/U735/ZN (inv0d2)                                  0.72       9.13 r
+  U_APB/U32/ZN (nd04d1)                                   0.25       9.39 f
+  U_APB/U31/Z (an02d1)                                    0.36       9.74 f
+  U_APB/U741/Z (buffd1)                                   0.28      10.03 f
+  U_APB/U76/Z (buffd1)                                    0.50      10.53 f
+  U_APB/U569/ZN (oaim22d1)                                0.32      10.85 f
+  U_APB/apb_test_data_reg[17]/D (dfnrq1)                  0.00      10.85 f
+  data arrival time                                                 10.85
+
+  clock PCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  U_APB/apb_test_data_reg[17]/CP (dfnrq1)                 0.00      19.50 r
+  library setup time                                     -0.24      19.26
+  data required time                                                19.26
+  --------------------------------------------------------------------------
+  data required time                                                19.26
+  data arrival time                                                -10.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.41
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[1] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U769/Z (an03d1)                    0.42       8.09 r
+  U_APB/U724/Z (buffd1)                    0.77       8.86 r
+  U_APB/U661/ZN (aoi22d1)                  0.23       9.09 f
+  U_APB/U660/ZN (oai221d1)                 0.33       9.42 r
+  U_APB/PRDATA[1] (apb_wrapper)            0.00       9.42 r
+  PRDATA[1] (out)                          0.00       9.42 r
+  data arrival time                                   9.42
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.42
+  -----------------------------------------------------------
+  slack (MET)                                         4.08
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[0] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U769/Z (an03d1)                    0.42       8.09 r
+  U_APB/U724/Z (buffd1)                    0.77       8.86 r
+  U_APB/U673/ZN (aoi22d1)                  0.23       9.09 f
+  U_APB/U672/ZN (oai221d1)                 0.33       9.42 r
+  U_APB/PRDATA[0] (apb_wrapper)            0.00       9.42 r
+  PRDATA[0] (out)                          0.00       9.42 r
+  data arrival time                                   9.42
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.42
+  -----------------------------------------------------------
+  slack (MET)                                         4.08
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[3] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U769/Z (an03d1)                    0.42       8.09 r
+  U_APB/U724/Z (buffd1)                    0.77       8.86 r
+  U_APB/U646/Z (aor222d1)                  0.51       9.36 r
+  U_APB/PRDATA[3] (apb_wrapper)            0.00       9.36 r
+  PRDATA[3] (out)                          0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         4.13
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[2] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U769/Z (an03d1)                    0.42       8.09 r
+  U_APB/U724/Z (buffd1)                    0.77       8.86 r
+  U_APB/U649/Z (aor222d1)                  0.51       9.36 r
+  U_APB/PRDATA[2] (apb_wrapper)            0.00       9.36 r
+  PRDATA[2] (out)                          0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         4.13
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[18] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U775/Z (an03d1)                    0.43       8.10 r
+  U_APB/U726/Z (buffd1)                    0.78       8.88 r
+  U_APB/U663/Z (aor22d1)                   0.45       9.33 r
+  U_APB/PRDATA[18] (apb_wrapper)           0.00       9.33 r
+  PRDATA[18] (out)                         0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         4.17
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[17] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U775/Z (an03d1)                    0.43       8.10 r
+  U_APB/U726/Z (buffd1)                    0.78       8.88 r
+  U_APB/U664/Z (aor22d1)                   0.45       9.33 r
+  U_APB/PRDATA[17] (apb_wrapper)           0.00       9.33 r
+  PRDATA[17] (out)                         0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         4.17
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[16] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U775/Z (an03d1)                    0.43       8.10 r
+  U_APB/U726/Z (buffd1)                    0.78       8.88 r
+  U_APB/U665/Z (aor22d1)                   0.45       9.33 r
+  U_APB/PRDATA[16] (apb_wrapper)           0.00       9.33 r
+  PRDATA[16] (out)                         0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         4.17
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[15] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U775/Z (an03d1)                    0.43       8.10 r
+  U_APB/U726/Z (buffd1)                    0.78       8.88 r
+  U_APB/U666/Z (aor22d1)                   0.45       9.33 r
+  U_APB/PRDATA[15] (apb_wrapper)           0.00       9.33 r
+  PRDATA[15] (out)                         0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         4.17
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[11] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U775/Z (an03d1)                    0.43       8.10 r
+  U_APB/U726/Z (buffd1)                    0.78       8.88 r
+  U_APB/U670/Z (aor22d1)                   0.45       9.33 r
+  U_APB/PRDATA[11] (apb_wrapper)           0.00       9.33 r
+  PRDATA[11] (out)                         0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         4.17
+
+
+  Startpoint: PADDR[9] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[9] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  PADDR[9] (in)                            0.02       6.02 f
+  U_APB/PADDR[9] (apb_wrapper)             0.00       6.02 f
+  U_APB/U774/ZN (nr04d1)                   0.52       6.54 r
+  U_APB/U87/Z (an04d1)                     0.37       6.92 r
+  U_APB/U86/ZN (nd04d1)                    0.25       7.17 f
+  U_APB/U81/ZN (nr03d2)                    0.50       7.67 r
+  U_APB/U775/Z (an03d1)                    0.43       8.10 r
+  U_APB/U727/Z (buffd1)                    0.78       8.88 r
+  U_APB/U640/Z (aor22d1)                   0.45       9.33 r
+  U_APB/PRDATA[9] (apb_wrapper)            0.00       9.33 r
+  PRDATA[9] (out)                          0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock VCLK_APB (rise edge)              20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -6.00      13.50
+  data required time                                 13.50
+  -----------------------------------------------------------
+  data required time                                 13.50
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         4.17
+
+
+  Startpoint: U_APB/ctrl_mode_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rfid_tx_bit
+            (output port clocked by VCLK_RF)
+  Path Group: VCLK_RF
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/ctrl_mode_reg[0]/CP (dfnrq1)       0.00 #     0.00 r
+  U_APB/ctrl_mode_reg[0]/Q (dfnrq1)        0.78       0.78 f
+  U_APB/ctrl_mode[0] (apb_wrapper)         0.00       0.78 f
+  U_MUX/ctrl_mode[0] (loopback_mux)        0.00       0.78 f
+  U_MUX/U870/ZN (inv0d0)                   0.80       1.58 r
+  U_MUX/U849/ZN (nd02d1)                   0.36       1.94 f
+  U_MUX/U3/ZN (nr02d2)                     0.67       2.60 r
+  U_MUX/rfid_tx_bit (loopback_mux)         0.00       2.60 r
+  rfid_tx_bit (out)                        0.00       2.60 r
+  data arrival time                                   2.60
+
+  clock VCLK_RF (rise edge)               20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                  -10.00       9.50
+  data required time                                  9.50
+  -----------------------------------------------------------
+  data required time                                  9.50
+  data arrival time                                  -2.60
+  -----------------------------------------------------------
+  slack (MET)                                         6.90
+
+
+1

@@ -1,0 +1,3215 @@
+Closing block 'baseband_crypto_macro.dlib:baseband_crypto_macro_cts.design'
+Information: The net parasitics of block baseband_crypto_macro are cleared. (TIM-123)
+Closing library 'baseband_crypto_macro.dlib'
+Information: Iteration for collection _sel1672 was terminated
+            	because the collection was modified or deleted. (SEL-012)
+Information: Loading library file '/storage/EE5239G2/RFID_v2/pnr_icc2/blocks/baseband_crypto_macro.dlib' (FILE-007)
+Information: Loading library file '/storage/EE5239G2/RFID_v2/pnr_icc2/scl180_std.ndm' (FILE-007)
+Information: Loading library file '/storage/EE5239G2/RFID_v2/pnr_icc2/scl180_filler.ndm' (FILE-007)
+Opening block 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design' in edit mode
+Using libraries: baseband_crypto_macro.dlib scl180_std scl180_filler
+Visiting block baseband_crypto_macro.dlib:baseband_crypto_macro_route.design
+Design 'baseband_crypto_macro' was successfully linked.
+>>> Reading antenna DB: /storage/EE5239G2/project/pv/drc/baseband_crypto_macro_antenna_bkp2.db
+>>> Reading antenna DB: /storage/EE5239G2/project/pv/drc/baseband_crypto_macro_antenna.db
+>>> Fixing AN.MTL.1.MT (TOP_M) #1 on net PWDATA[28] bbox=(165.38,317.17)->(165.82,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #2 on net PWDATA[28] bbox=(165.38,350.4)->(165.82,384.36)
+>>> Fixing AN.MTL.1.MT (TOP_M) #3 on net PWDATA[28] bbox=(165.38,384.36)->(165.82,457.61)
+>>> Fixing AN.MTL.1.MT (TOP_M) #4 on net PWDATA[28] bbox=(165.38,297.28)->(166.63,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #5 on net PWDATA[28] bbox=(164.975,457.61)->(166.225,508.32)
+>>> Fixing AN.MTL.1.MT (TOP_M) #6 on net PWDATA[22] bbox=(190.02,328.52)->(190.46,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #7 on net PWDATA[22] bbox=(190.02,350.4)->(190.46,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #8 on net PWDATA[22] bbox=(190.02,384.0)->(190.46,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #9 on net {crypto_key_w[45]} {PWDATA[22]} U_APB/n45 U_APB/n42 bbox=(190.02,276.54)->(191.27,328.52)
+>>> Fixing AN.MTL.1.MT (TOP_M) #10 on net PWDATA[22] bbox=(189.97,445.6)->(190.51,493.63)
+>>> Fixing AN.MTL.1.MT (TOP_M) #11 on net PWDATA[21] bbox=(195.62,328.52)->(196.06,350.72)
+>>> Fixing AN.MTL.1.MT (TOP_M) #12 on net PWDATA[21] bbox=(195.62,350.72)->(196.06,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #13 on net PWDATA[21] bbox=(195.62,384.0)->(196.06,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #14 on net PWDATA[21] bbox=(195.215,284.42)->(196.465,328.52)
+>>> Fixing AN.MTL.1.MT (TOP_M) #15 on net {U_CRYPTO/SL/GEN_SBOXES[8].SX/n18} U_CRYPTO/n244 U_CRYPTO/n47 {crypto_data_in_w[6]} {PWDATA[21]} bbox=(195.62,445.6)->(196.87,505.22)
+>>> Fixing AN.MTL.1.MT (TOP_M) #16 on net PWDATA[20] bbox=(203.46,328.52)->(203.9,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #17 on net PWDATA[20] bbox=(203.46,350.4)->(203.9,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #18 on net PWDATA[20] bbox=(203.46,384.0)->(203.9,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #19 on net {U_CRYPTO/SL/GEN_SBOXES[8].SX/n2} {U_CRYPTO/key_state[43]} {U_CRYPTO/data_key_added[35]} {PWDATA[20]} bbox=(202.65,445.6)->(203.9,500.34)
+>>> Fixing AN.MTL.1.MT (TOP_M) #20 on net {PWDATA[20]} U_APB/n37 bbox=(203.46,280.81)->(204.71,328.52)
+>>> Fixing AN.MTL.1.MT (TOP_M) #21 on net PWDATA[18] bbox=(207.94,328.52)->(208.38,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #22 on net PWDATA[18] bbox=(207.94,350.4)->(208.38,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #23 on net PWDATA[18] bbox=(207.94,384.0)->(208.38,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #24 on net PWDATA[18] bbox=(207.535,304.65)->(208.785,328.52)
+>>> Fixing AN.MTL.1.MT (TOP_M) #25 on net PWDATA[18] bbox=(207.94,445.6)->(209.19,506.44)
+>>> Fixing AN.MTL.1.MT (TOP_M) #26 on net PWDATA[17] bbox=(216.9,320.35)->(217.34,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #27 on net {U_CRYPTO/key_state[68]} {PWDATA[17]} bbox=(216.09,301.55)->(217.34,320.35)
+>>> Fixing AN.MTL.1.MT (TOP_M) #28 on net PWDATA[17] bbox=(216.9,350.4)->(217.34,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #29 on net PWDATA[17] bbox=(216.9,384.0)->(217.34,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #30 on net {crypto_data_in_w[23]} {U_CRYPTO/data_key_added[35]} {PWDATA[17]} bbox=(216.9,445.6)->(218.15,508.27)
+>>> Fixing AN.MTL.1.MT (TOP_M) #31 on net PWDATA[15] bbox=(222.5,320.35)->(222.94,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #32 on net PWDATA[15] bbox=(222.5,350.4)->(222.94,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #33 on net PWDATA[15] bbox=(222.5,384.0)->(222.94,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #34 on net PWDATA[15] bbox=(222.5,303.99)->(223.75,320.35)
+>>> Fixing AN.MTL.1.MT (TOP_M) #35 on net {U_CRYPTO/data_key_added[36]} {PWDATA[15]} bbox=(222.5,445.6)->(223.75,508.88)
+>>> Fixing AN.MTL.1.MT (TOP_M) #36 on net PWDATA[14] bbox=(224.74,320.35)->(225.18,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #37 on net PWDATA[14] bbox=(224.74,350.4)->(225.18,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #38 on net PWDATA[14] bbox=(224.74,384.0)->(225.18,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #39 on net PWDATA[14] bbox=(224.335,301.6)->(225.585,320.35)
+>>> Fixing AN.MTL.1.MT (TOP_M) #40 on net {U_CRYPTO/data_key_added[24]} {PWDATA[14]} bbox=(224.74,445.6)->(225.99,508.27)
+>>> Fixing AN.MTL.1.MT (TOP_M) #41 on net PWDATA[13] bbox=(233.7,317.17)->(234.14,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #42 on net PWDATA[13] bbox=(233.7,350.4)->(234.14,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #43 on net PWDATA[13] bbox=(233.7,384.0)->(234.14,445.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #44 on net U_APB/n820 {PWDATA[13]} bbox=(233.7,294.84)->(234.95,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #45 on net {U_CRYPTO/data_key_added[31]} {PWDATA[13]} bbox=(233.7,445.6)->(234.95,507.05)
+>>> Fixing AN.MTL.1.MT (TOP_M) #46 on net PWDATA[29] bbox=(249.38,317.17)->(249.82,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #47 on net PWDATA[29] bbox=(249.38,350.4)->(249.82,384.27)
+>>> Fixing AN.MTL.1.MT (TOP_M) #48 on net PWDATA[29] bbox=(249.38,384.27)->(249.82,446.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #49 on net U_APB/n59 {PWDATA[29]} bbox=(249.38,299.72)->(250.63,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #50 on net {PWDATA[29]} U_CRYPTO/n8 U_APB/n113 bbox=(248.79,446.0)->(250.04,522.96)
+>>> Fixing AN.MTL.1.MT (TOP_M) #51 on net PWDATA[2] bbox=(256.1,317.17)->(256.54,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #52 on net PWDATA[2] bbox=(256.1,350.4)->(256.54,384.2)
+>>> Fixing AN.MTL.1.MT (TOP_M) #53 on net PWDATA[2] bbox=(256.1,384.2)->(256.54,446.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #54 on net PWDATA[2] bbox=(256.1,301.55)->(257.35,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #55 on net {U_CRYPTO/data_key_added[38]} U_CRYPTO/HFSNET_40 {PWDATA[2]} bbox=(256.1,446.0)->(257.35,508.27)
+>>> Fixing AN.MTL.1.MT (TOP_M) #56 on net PWDATA[30] bbox=(260.58,528.47)->(261.83,530.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #57 on net PWDATA[4] bbox=(262.82,317.17)->(263.26,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #58 on net PWDATA[4] bbox=(262.82,350.4)->(263.26,384.2)
+>>> Fixing AN.MTL.1.MT (TOP_M) #59 on net PWDATA[4] bbox=(262.82,384.2)->(263.26,446.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #60 on net PWDATA[4] bbox=(262.23,304.65)->(263.48,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #61 on net PWDATA[4] bbox=(262.23,446.0)->(263.48,510.15)
+>>> Fixing AN.MTL.1.MT (TOP_M) #62 on net PWDATA[30] bbox=(263.94,317.17)->(264.38,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #63 on net PWDATA[30] bbox=(263.94,350.4)->(264.38,384.2)
+>>> Fixing AN.MTL.1.MT (TOP_M) #64 on net PWDATA[30] bbox=(263.94,384.2)->(264.38,446.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #65 on net U_APB/n131 {PWDATA[30]} bbox=(263.94,300.33)->(265.19,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #66 on net {PWDATA[4]} {PWDATA[30]} bbox=(263.35,446.0)->(264.6,529.06)
+>>> Fixing AN.MTL.1.MT (TOP_M) #67 on net PWDATA[29] bbox=(265.01,522.42)->(265.55,530.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #68 on net PWDATA[31] bbox=(269.54,317.17)->(269.98,350.72)
+>>> Fixing AN.MTL.1.MT (TOP_M) #69 on net PWDATA[31] bbox=(269.54,350.72)->(269.98,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #70 on net PWDATA[31] bbox=(269.54,384.0)->(269.98,446.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #71 on net PWDATA[31] bbox=(269.54,446.0)->(269.98,530.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #72 on net PWDATA[31] bbox=(269.135,299.77)->(270.385,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #73 on net PWDATA[11] bbox=(281.86,317.17)->(282.3,350.4)
+>>> Fixing AN.MTL.1.MT (TOP_M) #74 on net U_APB/n77 {PWDATA[11]} bbox=(281.05,307.65)->(282.3,317.17)
+>>> Fixing AN.MTL.1.MT (TOP_M) #75 on net PWDATA[11] bbox=(281.86,350.4)->(282.3,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #76 on net PWDATA[11] bbox=(281.86,384.0)->(282.3,445.88)
+>>> Fixing AN.MTL.1.MT (TOP_M) #77 on net PWDATA[11] bbox=(281.86,445.88)->(283.11,516.81)
+>>> Fixing AN.MTL.1.MT (TOP_M) #78 on net rfid_rx_bit bbox=(401.7,348.52)->(402.95,349.06)
+>>> Fixing AN.MTL.1.MT (TOP_M) #79 on net rfid_rx_bit bbox=(401.7,348.57)->(402.14,384.0)
+>>> Fixing AN.MTL.1.MT (TOP_M) #80 on net rfid_rx_bit bbox=(401.7,384.0)->(402.14,451.6)
+>>> Fixing AN.MTL.1.MT (TOP_M) #81 on net U_APB/tmp_net34 rfid_rx_bit bbox=(401.7,451.6)->(402.95,516.81)
+>>> Fixing AN.MTL.1.MT (TOP_M) #8 on net PWDATA[22] bbox=(190.02,384.0)->(190.46,448.37)
+>>> Fixing AN.MTL.1.MT (TOP_M) #10 on net PWDATA[22] bbox=(189.97,448.37)->(190.51,493.63)
+>>> Fixing AN.MTL.1.MT (TOP_M) #13 on net PWDATA[21] bbox=(195.62,384.0)->(196.06,448.37)
+>>> Fixing AN.MTL.1.MT (TOP_M) #15 on net {U_CRYPTO/SL/GEN_SBOXES[8].SX/n18} U_CRYPTO/n244 U_CRYPTO/n47 {crypto_data_in_w[6]} {PWDATA[21]} bbox=(195.62,448.37)->(196.87,505.22)
+>>> Setting -max_routing_layer M3 on 41 AN.MTL.1.MT nets (prevents TOP_M antenna without disturbing neighbors)
+>>> Violation summary by rule:
+>>>   AN.MTL.1.MT : 85
+>>> Created 117 thin antenna blockages across 41 violating nets.
+Information: The command 'remove_routes' cleared the undo history. (UNDO-016)
+Successfully removed 1989 route shapes, which 0 are no-net shapes.
+[icc2-lic Mon Nov  2 20:56:29 2026] Command 'route_eco' requires licenses
+[icc2-lic Mon Nov  2 20:56:29 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:56:29 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon Nov  2 20:56:29 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:56:29 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:56:29 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:56:29 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon Nov  2 20:56:29 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:56:29 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon Nov  2 20:56:29 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:56:29 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:56:29 2026] Check-out of alternate set of keys directly with queueing was successful
+Generating Timing information  
+Information: Timer using 1 threads
+Information: Corner corner_ff: no PVT mismatches. (PVT-032)
+Information: Corner corner_ss: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned ON for design 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design'. (TIM-125)
+Information: Design baseband_crypto_macro_route has 4432 nets, 0 global routed, 4389 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'baseband_crypto_macro'. (NEX-022)
+---extraction options---
+Corner: corner_ss
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_ccap_scale               : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_ccap_scale              : 1
+Corner: corner_ff
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_ccap_scale               : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_ccap_scale              : 1
+Global options:
+ late_ccap_threshold       : 0.003 pF
+ late_ccap_ratio           : 0.03
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.enable_coupling_cap    : true
+Extracting design: baseband_crypto_macro_route 
+Information: coupling capacitance is created explicitly. (NEX-029)
+Information: 4389 nets are successfully extracted. (NEX-028)
+Information: Design Average RC for design baseband_crypto_macro_route  (NEX-011)
+Information: r = 0.286793 ohm/um, via_r = 4.265333 ohm/cut, c = 0.165969 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 0.186589 ohm/um, via_r = 4.805665 ohm/cut, c = 0.154419 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 4430, routed nets = 4389, across physical hierarchy nets = 0, parasitics cached nets = 4430, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 enabled
+Timing Window Analysis:                    enabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+ML Acceleration:                           off
+************************************************************
+Design  Scenario func_ff (Mode mode_func Corner corner_ff)
+Generating Timing information  ... Done
+Information: Serialized np data
+INFO: timer data saved to /tmp/baseband_crypto_macro_route_70357_642051712.timdat
+[End of Generating Timing Information] Elapsed real time: 0:00:03 
+[End of Generating Timing Information] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+[ECO: DbIn Without Extraction] Elapsed real time: 0:00:00 
+[ECO: DbIn Without Extraction] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: DbIn Without Extraction] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[ECO: DbIn Without Extraction] Total (MB): Used    3  Alloctr    3  Proc 13707 
+[ECO: Before Refresh Via Ladder Phase] Elapsed real time: 0:00:00 
+[ECO: Before Refresh Via Ladder Phase] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Before Refresh Via Ladder Phase] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[ECO: Before Refresh Via Ladder Phase] Total (MB): Used    3  Alloctr    3  Proc 13707 
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = TOP_M
+Found antenna rule mode 1, diode mode 4:
+	layer M1:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M2:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M3:  max ratio 12, diode ratio {0 0 0 45} 
+	layer TOP_M:  max ratio 12, diode ratio {0 0 2000 7500} 
+	layer V2:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer V3:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer TOP_V:  max ratio 20, diode ratio {0 0 1 0 0} 
+Found antenna rule mode 4, diode mode 4:
+	layer M1:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M2:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M3:  max ratio 25, diode ratio {0 0 0 100} 
+	layer TOP_M:  max ratio 25, diode ratio {0 0 8000 30000} 
+	layer V2: , diode ratio {0 0 1 0 0} 
+	layer V3: , diode ratio {0 0 1 0 0} 
+	layer TOP_V: , diode ratio {0 0 1 0 0} 
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.15 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.15 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+
+    Found 0 via ladders to verify.
+
+VIA LADDER INFO: found 0 via ladder DRCs across 0 nets.
+Updating the database ...
+
+    Via ladders will be inserted on 0 of 0 ports with via ladder constraints.
+
+Updating the database ...
+[ECO: After Refresh Via Ladder Phase] Elapsed real time: 0:00:00 
+[ECO: After Refresh Via Ladder Phase] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: After Refresh Via Ladder Phase] Stage (MB): Used   20  Alloctr   20  Proc    0 
+[ECO: After Refresh Via Ladder Phase] Total (MB): Used   23  Alloctr   24  Proc 13707 
+[ECO: Analysis] Elapsed real time: 0:00:00 
+[ECO: Analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Analysis] Stage (MB): Used   20  Alloctr   20  Proc    0 
+[ECO: Analysis] Total (MB): Used   23  Alloctr   24  Proc 13707 
+Num of eco nets = 41
+Num of open eco nets = 41
+[ECO: Init] Elapsed real time: 0:00:00 
+[ECO: Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Init] Stage (MB): Used   20  Alloctr   20  Proc    0 
+[ECO: Init] Total (MB): Used   24  Alloctr   24  Proc 13707 
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used   28  Alloctr   29  Proc 13707 
+Info: route.global.delay_based_route_rejection is 16.
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.global.*'
+global.crosstalk_driven                                 :	 true                
+global.timing_driven                                    :	 true                
+
+Begin global routing.
+Loading timing information to the router from design
+Timing information loaded to the router.
+[End of Loading Timing] Elapsed real time: 0:00:00 
+[End of Loading Timing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (0.00um,0.00um,530.00um,530.00um)
+Number of routing layers = 4
+layer M1, dir Hor, min width = 0.23um, min space = 0.23um pitch = 0.56um
+layer M2, dir Ver, min width = 0.28um, min space = 0.28um pitch = 0.56um
+layer M3, dir Hor, min width = 0.28um, min space = 0.28um pitch = 0.61um
+layer TOP_M, dir Ver, min width = 0.44um, min space = 0.46um pitch = 1.12um
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Tech Data] Total (MB): Used   33  Alloctr   34  Proc 13707 
+Net statistics:
+Total number of nets     = 4432
+Number of nets to route  = 41
+Number of nets with min-layer-mode soft = 73
+Number of nets with min-layer-mode soft-cost-medium = 73
+Number of nets with max-layer-mode hard = 73
+4391 nets are fully connected,
+ of which 4391 are detail routed and 0 are global routed.
+Net length statistics: 
+Net Count(Ignore Fully Rted) 41, Total Half Perimeter Wire Length (HPWL) 8520 microns
+HPWL   0 ~   50 microns: Net Count        6	Total HPWL          186 microns
+HPWL  50 ~  100 microns: Net Count        1	Total HPWL           91 microns
+HPWL 100 ~  200 microns: Net Count       12	Total HPWL         1736 microns
+HPWL 200 ~  300 microns: Net Count       18	Total HPWL         4339 microns
+HPWL 300 ~  400 microns: Net Count        1	Total HPWL          321 microns
+HPWL 400 ~  500 microns: Net Count        0	Total HPWL            0 microns
+HPWL 500 ~  600 microns: Net Count        1	Total HPWL          569 microns
+HPWL 600 ~  700 microns: Net Count        2	Total HPWL         1278 microns
+HPWL 700 ~  800 microns: Net Count        0	Total HPWL            0 microns
+HPWL 800 ~  900 microns: Net Count        0	Total HPWL            0 microns
+HPWL 900 ~ 1000 microns: Net Count        0	Total HPWL            0 microns
+HPWL     > 1000 microns: Net Count        0	Total HPWL            0 microns
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[End of Build All Nets] Total (MB): Used   36  Alloctr   36  Proc 13707 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 95 gCells x 95 gCells
+Average gCell capacity  2.41	 on layer (1)	 M1
+Average gCell capacity  9.28	 on layer (2)	 M2
+Average gCell capacity  7.91	 on layer (3)	 M3
+Average gCell capacity  4.19	 on layer (4)	 TOP_M
+Average number of tracks per gCell 9.97	 on layer (1)	 M1
+Average number of tracks per gCell 9.97	 on layer (2)	 M2
+Average number of tracks per gCell 9.16	 on layer (3)	 M3
+Average number of tracks per gCell 4.99	 on layer (4)	 TOP_M
+Number of gCells = 36100
+Current Stage stats:
+[End of Build Congestion Map] Elapsed real time: 0:00:00 
+[End of Build Congestion Map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion Map] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Congestion Map] Total (MB): Used   36  Alloctr   37  Proc 13707 
+Current Stage stats:
+[End of Add Nets Demand] Elapsed real time: 0:00:00 
+[End of Add Nets Demand] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Add Nets Demand] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Add Nets Demand] Total (MB): Used   36  Alloctr   37  Proc 13707 
+Number of user frozen nets = 0
+Timing criticality report: total 7 (0.16)% critical nets.
+   Number of criticality 1 nets = 6 (0.14)%
+   Number of criticality 4 nets = 1 (0.02)%
+Information: RC layer preference is turned off for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[End of Build Data] Total (MB): Used   36  Alloctr   37  Proc 13707 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 95 gCells x 95 gCells
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used  176  Alloctr  176  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  212  Alloctr  213  Proc 13707 
+Information: Using 1 threads for routing. (ZRT-444)
+Information: Multiple gcell levels ON
+Information: Buffer distance is estimated to be ~6372.0000um (1137 gCells)
+
+Start GR phase 0
+Number of partitions: 1 (1 x 1)
+Size of partitions: 95 gCells x 95 gCells
+[rtAllBotParts] Elapsed real time: 0:00:00 
+[rtAllBotParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[rtTop] Elapsed real time: 0:00:00 
+[rtTop] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Initial Routing] Total (MB): Used  212  Alloctr  213  Proc 13707 
+Initial. Routing result:
+Initial. Both Dirs: Dmd-Cap  =   197 Max = 4 GRCs =   156 (0.86%)
+Initial. H routing: Dmd-Cap  =   125 Max = 3 (GRCs =  2) GRCs =   106 (1.17%)
+Initial. V routing: Dmd-Cap  =    72 Max = 4 (GRCs =  2) GRCs =    50 (0.55%)
+Initial. Both Dirs: Overflow =   407 Max = 4 GRCs =   301 (1.67%)
+Initial. H routing: Overflow =   154 Max = 3 (GRCs =  2) GRCs =   134 (1.48%)
+Initial. V routing: Overflow =   252 Max = 4 (GRCs =  3) GRCs =   167 (1.85%)
+Initial. M1         Overflow =    15 Max = 1 (GRCs = 16) GRCs =    16 (0.18%)
+Initial. M2         Overflow =   241 Max = 4 (GRCs =  3) GRCs =   157 (1.74%)
+Initial. M3         Overflow =   139 Max = 3 (GRCs =  2) GRCs =   118 (1.31%)
+Initial. TOP_M      Overflow =    11 Max = 2 (GRCs =  1) GRCs =    10 (0.11%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       94.0 2.56 1.09 0.43 0.10 0.40 0.06 0.00 0.00 0.00 1.14 0.00 0.00 0.17
+M2       20.6 13.3 0.76 23.5 0.51 13.2 10.7 7.63 4.75 1.33 1.85 0.37 0.65 0.71
+M3       22.7 7.08 10.1 10.1 8.35 12.2 8.18 8.74 7.29 0.18 3.59 1.10 0.18 0.03
+TOP_M    63.3 15.7 1.27 8.68 0.00 3.62 4.13 0.13 1.42 0.00 1.61 0.00 0.02 0.09
+Total    50.1 9.66 3.31 10.7 2.24 7.38 5.77 4.13 3.37 0.38 2.05 0.37 0.21 0.25
+
+
+Initial. Total Wire Length = 11905.77
+Initial. Layer M1 wire length = 209.49
+Initial. Layer M2 wire length = 6711.74
+Initial. Layer M3 wire length = 4984.54
+Initial. Layer TOP_M wire length = 0.00
+Initial. Total Number of Contacts = 581
+Initial. Via VIA12A count = 249
+Initial. Via VIA23 count = 329
+Initial. Via VIA34 count = 3
+Initial. completed.
+
+Start GR phase 1
+Mon Nov  2 20:56:34 2026
+Number of partitions: 1 (1 x 1)
+Size of partitions: 95 gCells x 95 gCells
+[rtAllParts] Elapsed real time: 0:00:00 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  212  Alloctr  213  Proc 13707 
+phase1. Routing result:
+phase1. Both Dirs: Dmd-Cap  =   177 Max = 4 GRCs =   137 (0.76%)
+phase1. H routing: Dmd-Cap  =   105 Max = 3 (GRCs =  1) GRCs =    87 (0.96%)
+phase1. V routing: Dmd-Cap  =    72 Max = 4 (GRCs =  2) GRCs =    50 (0.55%)
+phase1. Both Dirs: Overflow =   366 Max = 4 GRCs =   266 (1.47%)
+phase1. H routing: Overflow =   133 Max = 3 (GRCs =  1) GRCs =   114 (1.26%)
+phase1. V routing: Overflow =   233 Max = 4 (GRCs =  3) GRCs =   152 (1.68%)
+phase1. M1         Overflow =    15 Max = 1 (GRCs = 16) GRCs =    16 (0.18%)
+phase1. M2         Overflow =   222 Max = 4 (GRCs =  3) GRCs =   142 (1.57%)
+phase1. M3         Overflow =   118 Max = 3 (GRCs =  1) GRCs =    98 (1.09%)
+phase1. TOP_M      Overflow =    11 Max = 2 (GRCs =  1) GRCs =    10 (0.11%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       94.0 2.54 1.11 0.45 0.10 0.40 0.06 0.00 0.00 0.00 1.14 0.00 0.00 0.17
+M2       20.6 13.2 0.78 23.6 0.47 13.0 10.8 7.83 4.79 1.37 1.92 0.30 0.59 0.69
+M3       22.4 6.84 10.2 10.0 8.40 12.6 8.04 8.83 7.37 0.25 3.82 0.88 0.19 0.02
+TOP_M    63.3 15.7 1.27 8.68 0.00 3.62 4.13 0.13 1.42 0.00 1.61 0.00 0.02 0.09
+Total    50.1 9.57 3.35 10.6 2.24 7.42 5.76 4.20 3.39 0.41 2.12 0.29 0.20 0.24
+
+
+phase1. Total Wire Length = 12532.15
+phase1. Layer M1 wire length = 220.55
+phase1. Layer M2 wire length = 6862.16
+phase1. Layer M3 wire length = 5449.44
+phase1. Layer TOP_M wire length = 0.00
+phase1. Total Number of Contacts = 625
+phase1. Via VIA12A count = 253
+phase1. Via VIA23 count = 369
+phase1. Via VIA34 count = 3
+phase1. completed.
+
+Start GR phase 2
+Mon Nov  2 20:56:34 2026
+Number of partitions: 1 (1 x 1)
+Size of partitions: 95 gCells x 95 gCells
+[rtAllParts] Elapsed real time: 0:00:00 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  212  Alloctr  213  Proc 13707 
+phase2. Routing result:
+phase2. Both Dirs: Dmd-Cap  =   177 Max = 4 GRCs =   137 (0.76%)
+phase2. H routing: Dmd-Cap  =   105 Max = 3 (GRCs =  1) GRCs =    87 (0.96%)
+phase2. V routing: Dmd-Cap  =    72 Max = 4 (GRCs =  2) GRCs =    50 (0.55%)
+phase2. Both Dirs: Overflow =   362 Max = 4 GRCs =   263 (1.46%)
+phase2. H routing: Overflow =   131 Max = 3 (GRCs =  1) GRCs =   113 (1.25%)
+phase2. V routing: Overflow =   231 Max = 4 (GRCs =  3) GRCs =   150 (1.66%)
+phase2. M1         Overflow =    15 Max = 1 (GRCs = 16) GRCs =    16 (0.18%)
+phase2. M2         Overflow =   220 Max = 4 (GRCs =  3) GRCs =   140 (1.55%)
+phase2. M3         Overflow =   116 Max = 3 (GRCs =  1) GRCs =    97 (1.07%)
+phase2. TOP_M      Overflow =    11 Max = 2 (GRCs =  1) GRCs =    10 (0.11%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       94.0 2.55 1.11 0.44 0.10 0.40 0.06 0.00 0.00 0.00 1.14 0.00 0.00 0.17
+M2       20.5 13.2 0.75 23.7 0.47 13.0 10.7 7.84 4.80 1.29 1.96 0.28 0.59 0.69
+M3       22.3 6.99 10.1 10.0 8.37 12.6 8.03 9.01 7.27 0.24 3.80 0.88 0.19 0.01
+TOP_M    63.3 15.7 1.27 8.68 0.00 3.62 4.13 0.13 1.42 0.00 1.61 0.00 0.02 0.09
+Total    50.0 9.62 3.32 10.7 2.23 7.42 5.74 4.25 3.37 0.38 2.13 0.29 0.20 0.24
+
+
+phase2. Total Wire Length = 12420.65
+phase2. Layer M1 wire length = 214.95
+phase2. Layer M2 wire length = 6852.52
+phase2. Layer M3 wire length = 5353.18
+phase2. Layer TOP_M wire length = 0.00
+phase2. Total Number of Contacts = 619
+phase2. Via VIA12A count = 253
+phase2. Via VIA23 count = 363
+phase2. Via VIA34 count = 3
+phase2. completed.
+
+Start GR phase 3
+Mon Nov  2 20:56:34 2026
+Number of partitions: 1 (1 x 1)
+Size of partitions: 95 gCells x 95 gCells
+[rtAllParts] Elapsed real time: 0:00:00 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase3 Routing] Elapsed real time: 0:00:00 
+[End of Phase3 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase3 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase3 Routing] Total (MB): Used  212  Alloctr  213  Proc 13707 
+phase3. Routing result:
+phase3. Both Dirs: Dmd-Cap  =   177 Max = 4 GRCs =   137 (0.76%)
+phase3. H routing: Dmd-Cap  =   105 Max = 3 (GRCs =  1) GRCs =    87 (0.96%)
+phase3. V routing: Dmd-Cap  =    72 Max = 4 (GRCs =  2) GRCs =    50 (0.55%)
+phase3. Both Dirs: Overflow =   361 Max = 4 GRCs =   262 (1.45%)
+phase3. H routing: Overflow =   130 Max = 3 (GRCs =  1) GRCs =   112 (1.24%)
+phase3. V routing: Overflow =   231 Max = 4 (GRCs =  3) GRCs =   150 (1.66%)
+phase3. M1         Overflow =    15 Max = 1 (GRCs = 16) GRCs =    16 (0.18%)
+phase3. M2         Overflow =   220 Max = 4 (GRCs =  3) GRCs =   140 (1.55%)
+phase3. M3         Overflow =   115 Max = 3 (GRCs =  1) GRCs =    96 (1.06%)
+phase3. TOP_M      Overflow =    11 Max = 2 (GRCs =  1) GRCs =    10 (0.11%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       94.0 2.54 1.11 0.45 0.09 0.41 0.06 0.00 0.00 0.00 1.14 0.00 0.00 0.17
+M2       20.5 13.2 0.73 23.8 0.45 13.0 10.7 7.81 4.81 1.27 1.97 0.28 0.59 0.69
+M3       22.3 6.99 10.1 10.0 8.40 12.6 8.14 8.96 7.19 0.22 3.81 0.86 0.19 0.01
+TOP_M    63.3 15.7 1.27 8.68 0.00 3.62 4.13 0.13 1.42 0.00 1.61 0.00 0.02 0.09
+Total    50.0 9.62 3.31 10.7 2.24 7.43 5.78 4.23 3.35 0.37 2.13 0.29 0.20 0.24
+
+
+phase3. Total Wire Length = 12275.61
+phase3. Layer M1 wire length = 226.15
+phase3. Layer M2 wire length = 6852.52
+phase3. Layer M3 wire length = 5196.94
+phase3. Layer TOP_M wire length = 0.00
+phase3. Total Number of Contacts = 619
+phase3. Via VIA12A count = 253
+phase3. Via VIA23 count = 363
+phase3. Via VIA34 count = 3
+phase3. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:00 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Whole Chip Routing] Stage (MB): Used  179  Alloctr  180  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  212  Alloctr  213  Proc 13707 
+
+Congestion utilization per direction:
+Average vertical track utilization   = 30.62 %
+Peak    vertical track utilization   = 166.67 %
+Average horizontal track utilization = 32.91 %
+Peak    horizontal track utilization = 133.33 %
+
+[End of Global Routing] Elapsed real time: 0:00:00 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Global Routing] Stage (MB): Used  179  Alloctr  179  Proc    0 
+[End of Global Routing] Total (MB): Used  212  Alloctr  213  Proc 13707 
+Updating congestion ...
+Updating congestion ...
+[End of dbOut] Elapsed real time: 0:00:00 
+[End of dbOut] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of dbOut] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of dbOut] Total (MB): Used   61  Alloctr   62  Proc 13707 
+[ECO: GR] Elapsed real time: 0:00:01 
+[ECO: GR] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[ECO: GR] Stage (MB): Used   58  Alloctr   58  Proc    0 
+[ECO: GR] Total (MB): Used   61  Alloctr   62  Proc 13707 
+
+Start track assignment
+
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.track.*'
+track.crosstalk_driven                                  :	 true                
+track.timing_driven                                     :	 true                
+
+Information: Using 1 threads for routing. (ZRT-444)
+Information: RC layer preference is turned off for this design. (ZRT-613)
+
+[Track Assign: TA init] Elapsed real time: 0:00:00 
+[Track Assign: TA init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: TA init] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[Track Assign: TA init] Total (MB): Used   27  Alloctr   28  Proc 13707 
+
+Start initial assignment
+
+Assign Horizontal partitions, iteration 0 
+Routed partition 1/11       
+Routed partition 2/11       
+Routed partition 3/11       
+Routed partition 4/11       
+Routed partition 5/11       
+Routed partition 6/11       
+Routed partition 7/11       
+Routed partition 8/11       
+Routed partition 9/11       
+Routed partition 10/11      
+Routed partition 11/11      
+
+Assign Vertical partitions, iteration 0 
+Routed partition 1/11       
+Routed partition 2/11       
+Routed partition 3/11       
+Routed partition 4/11       
+Routed partition 5/11       
+Routed partition 6/11       
+Routed partition 7/11       
+Routed partition 8/11       
+Routed partition 9/11       
+Routed partition 10/11      
+Routed partition 11/11      
+
+Number of wires with overlap after iteration 0 = 624 of 1143
+
+
+[Track Assign: Iteration 0] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 0] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[Track Assign: Iteration 0] Total (MB): Used   28  Alloctr   29  Proc 13707 
+
+Reroute to fix overlaps (iter = 1)
+
+Assign Horizontal partitions, iteration 1 
+Routed partition 1/11       
+Routed partition 2/11       
+Routed partition 3/11       
+Routed partition 4/11       
+Routed partition 5/11       
+Routed partition 6/11       
+Routed partition 7/11       
+Routed partition 8/11       
+Routed partition 9/11       
+Routed partition 10/11      
+Routed partition 11/11      
+
+Assign Vertical partitions, iteration 1 
+Routed partition 1/11       
+Routed partition 2/11       
+Routed partition 3/11       
+Routed partition 4/11       
+Routed partition 5/11       
+Routed partition 6/11       
+Routed partition 7/11       
+Routed partition 8/11       
+Routed partition 9/11       
+Routed partition 10/11      
+Routed partition 11/11      
+
+[Track Assign: Iteration 1] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 1] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[Track Assign: Iteration 1] Total (MB): Used   28  Alloctr   29  Proc 13707 
+
+Number of wires with overlap after iteration 1 = 562 of 1373
+
+
+Wire length and via report:
+---------------------------
+Number of M1 wires: 106 		  : 0
+Number of M2 wires: 758 		 VIA12A: 248
+Number of M3 wires: 507 		 VIA23: 841
+Number of TOP_M wires: 2 		 VIA34: 3
+Total number of wires: 1373 		 vias: 1092
+
+Total M1 wire length: 269.3
+Total M2 wire length: 7246.4
+Total M3 wire length: 5759.2
+Total TOP_M wire length: 5.9
+Total wire length: 13280.8
+
+Longest M1 wire length: 141.7
+Longest M2 wire length: 171.4
+Longest M3 wire length: 103.6
+Longest TOP_M wire length: 3.9
+
+
+[Track Assign: Done] Elapsed real time: 0:00:00 
+[Track Assign: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Track Assign: Done] Total (MB): Used   25  Alloctr   26  Proc 13707 
+[ECO: CDR] Elapsed real time: 0:00:02 
+[ECO: CDR] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:02
+[ECO: CDR] Stage (MB): Used   22  Alloctr   22  Proc    0 
+[ECO: CDR] Total (MB): Used   25  Alloctr   26  Proc 13707 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.antenna_fixing_preference                        :	 hop_layers          
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+detail.hop_layers_to_fix_antenna                        :	 true                
+detail.insert_diodes_during_routing                     :	 false               
+detail.timing_driven                                    :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+Information: RC layer preference is turned off for this design. (ZRT-613)
+*****Start reporting antenna related parameters*****
+  Antenna/diode mode:
+    Antenna mode 1; diode mode 4
+      Metal lay (M1)0; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V2)1; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V3)2; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 45.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 2000.000 7500.000 0.000)
+    Antenna mode 4; diode mode 4
+      Metal lay (M1)0; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V2)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V3)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 100.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 8000.000 30000.000 0.000)
+  Top lay antenna ratio fix threshold == -1
+  Antenna max pin count threshold == -1
+  Check PG net == false
+  MergeGate == true
+  Break antenna to port mode == float
+  Break antenna to macro pin mode == normal
+*****End reporting antenna related parameters*****
+Warning: Skipping antenna analysis for net PCLK. The pin PCLK on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PRESETn. The pin PRESETn on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PSEL. The pin PSEL on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PENABLE. The pin PENABLE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWRITE. The pin PWRITE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[31]. The pin PADDR[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[30]. The pin PADDR[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[29]. The pin PADDR[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[28]. The pin PADDR[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[27]. The pin PADDR[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[26]. The pin PADDR[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[25]. The pin PADDR[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[24]. The pin PADDR[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[23]. The pin PADDR[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[22]. The pin PADDR[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[21]. The pin PADDR[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[20]. The pin PADDR[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[19]. The pin PADDR[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[18]. The pin PADDR[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[17]. The pin PADDR[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[16]. The pin PADDR[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[15]. The pin PADDR[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[14]. The pin PADDR[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[13]. The pin PADDR[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[12]. The pin PADDR[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[11]. The pin PADDR[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[10]. The pin PADDR[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[9]. The pin PADDR[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[8]. The pin PADDR[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[7]. The pin PADDR[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[6]. The pin PADDR[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[5]. The pin PADDR[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[4]. The pin PADDR[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[3]. The pin PADDR[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[2]. The pin PADDR[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[1]. The pin PADDR[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[0]. The pin PADDR[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[31]. The pin PWDATA[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[30]. The pin PWDATA[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[29]. The pin PWDATA[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[28]. The pin PWDATA[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[27]. The pin PWDATA[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[26]. The pin PWDATA[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[25]. The pin PWDATA[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[24]. The pin PWDATA[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[23]. The pin PWDATA[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[22]. The pin PWDATA[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[21]. The pin PWDATA[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[20]. The pin PWDATA[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[19]. The pin PWDATA[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[18]. The pin PWDATA[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[17]. The pin PWDATA[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[16]. The pin PWDATA[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[15]. The pin PWDATA[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[14]. The pin PWDATA[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[13]. The pin PWDATA[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[12]. The pin PWDATA[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[11]. The pin PWDATA[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[10]. The pin PWDATA[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[9]. The pin PWDATA[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[8]. The pin PWDATA[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[7]. The pin PWDATA[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[6]. The pin PWDATA[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[5]. The pin PWDATA[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[4]. The pin PWDATA[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[3]. The pin PWDATA[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[2]. The pin PWDATA[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[1]. The pin PWDATA[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[0]. The pin PWDATA[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net rfid_rx_bit. The pin rfid_rx_bit on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Skipping antenna analysis for 70 nets as they don't have enough gate area info.
+Warning: High fanout net ZCTSNET_13 can affect runtime for antenna fixing. (ZRT-626)
+Warning: High fanout net ZCTSNET_33 can affect runtime for antenna fixing. (ZRT-626)
+
+Begin ECO DRC check ...
+
+Checked	1/9 Partitions, Violations =	176
+Checked	2/9 Partitions, Violations =	778
+Checked	3/9 Partitions, Violations =	778
+Checked	4/9 Partitions, Violations =	778
+Checked	5/9 Partitions, Violations =	938
+Checked	6/9 Partitions, Violations =	1245
+Checked	7/9 Partitions, Violations =	1279
+Checked	8/9 Partitions, Violations =	1280
+Checked	9/9 Partitions, Violations =	1301
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	1301
+
+[DRC CHECK] Elapsed real time: 0:00:01 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+Total Wire Length =                    252380 micron
+Total Number of Contacts =             41812
+Total Number of Wires =                40867
+Total Number of PtConns =              1839
+Total Number of Routed Wires =       38875
+Total Routed Wire Length =           251504 micron
+Total Number of Routed Contacts =       41812
+	Layer              M1 :       6951 micron
+	Layer              M2 :     104207 micron
+	Layer              M3 :     117843 micron
+	Layer           TOP_M :      22503 micron
+	Via             VIA34 :        856
+	Via         VIA34_2x1 :       1864
+	Via    VIA34(rot)_1x2 :         46
+	Via    VIA34(rot)_2x1 :         31
+	Via         VIA34_1x2 :        189
+	Via             VIA23 :       3996
+	Via        VIA23(rot) :          5
+	Via         VIA23_1x2 :      10937
+	Via    VIA23(rot)_2x1 :         85
+	Via    VIA23(rot)_1x2 :        147
+	Via         VIA23_2x1 :       6648
+	Via            VIA12A :       2505
+	Via       VIA12A(rot) :        263
+	Via        VIA12A_2x1 :       2981
+	Via   VIA12A(rot)_1x2 :        960
+	Via   VIA12A(rot)_2x1 :        664
+	Via        VIA12A_1x2 :       9635
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 81.76% (34187 / 41812 vias)
+ 
+    Layer V2         = 83.73% (14240  / 17008   vias)
+        Weight 1     = 83.73% (14240   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 16.27% (2768    vias)
+    Layer V3         = 81.66% (17817  / 21818   vias)
+        Weight 1     = 81.66% (17817   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.34% (4001    vias)
+    Layer TOP_V      = 71.33% (2130   / 2986    vias)
+        Weight 1     = 71.33% (2130    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 28.67% (856     vias)
+ 
+  Total double via conversion rate    = 81.76% (34187 / 41812 vias)
+ 
+    Layer V2         = 83.73% (14240  / 17008   vias)
+    Layer V3         = 81.66% (17817  / 21818   vias)
+    Layer TOP_V      = 71.33% (2130   / 2986    vias)
+ 
+  The optimized via conversion rate based on total routed via count = 81.76% (34187 / 41812 vias)
+ 
+    Layer V2         = 83.73% (14240  / 17008   vias)
+        Weight 1     = 83.73% (14240   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 16.27% (2768    vias)
+    Layer V3         = 81.66% (17817  / 21818   vias)
+        Weight 1     = 81.66% (17817   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.34% (4001    vias)
+    Layer TOP_V      = 71.33% (2130   / 2986    vias)
+        Weight 1     = 71.33% (2130    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 28.67% (856     vias)
+ 
+Start net based rule analysis
+Antenna DRC for net crypto_key_w[45]; Net top lay M3
+	ICell U_APB/U517; master port B1
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/36.16709137
+Antenna DRC for net crypto_data_in_w[23]; Net top lay M3
+	ICell U_CRYPTO/U163; master port A1
+		Antenna/diode mode 1/4; wlay M3; gArea 0.44800001;  allowed ratio/ratio 45.00000000/78.68125153
+		Antenna/diode mode 4/4; wlay M3; gArea 0.44800001;  allowed ratio/ratio 100.00000000/300.51473999
+Antenna DRC for net crypto_data_in_w[6]; Net top lay M3
+	ICell U_CRYPTO/U197; master port A1
+		Antenna/diode mode 1/4; wlay M3; gArea 0.44800001;  allowed ratio/ratio 45.00000000/57.65000153
+		Antenna/diode mode 4/4; wlay M3; gArea 0.44800001;  allowed ratio/ratio 100.00000000/220.89643860
+Antenna DRC for net U_APB/n37; Net top lay M3
+	ICell U_APB/U194; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/31.62033844
+	ICell U_APB/U226; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 12.00000000/17.82330513
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/68.10275269
+	ICell U_APB/U559; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 12.00000000/15.06186485
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/57.64872742
+	ICell U_APB/U624; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 12.00000000/13.05974483
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/50.06927872
+Antenna DRC for net U_APB/n42; Net top lay M3
+	ICell U_APB/U135; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/28.88051033
+	ICell U_APB/U231; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 12.00000000/17.91228676
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/68.43962097
+	ICell U_APB/U391; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.94400001;  allowed ratio/ratio 12.00000000/17.45254326
+		Antenna/diode mode 4/4; wlay M2; gArea 0.94400001;  allowed ratio/ratio 25.00000000/66.38475037
+	ICell U_APB/U455; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 12.00000000/47.62966156
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/180.94110107
+	ICell U_APB/U484; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.94400001;  allowed ratio/ratio 12.00000000/17.45254326
+		Antenna/diode mode 4/4; wlay M2; gArea 0.94400001;  allowed ratio/ratio 25.00000000/66.38475037
+	ICell U_APB/U564; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/44.02817917
+	ICell U_APB/U629; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 12.00000000/27.74788094
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/105.67436218
+Antenna DRC for net U_APB/n45; Net top lay M3
+	ICell U_APB/U266; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/45.91461945
+	ICell U_APB/U394; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.47200000;  allowed ratio/ratio 25.00000000/26.14067841
+Antenna DRC for net U_APB/n77; Net top lay M3
+	ICell U_APB/U722; master port I
+		Antenna/diode mode 1/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 12.00000000/22.99629593
+		Antenna/diode mode 4/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 25.00000000/89.80555725
+Antenna DRC for net U_APB/n113; Net top lay M3
+	ICell U_APB/U734; master port I
+		Antenna/diode mode 1/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 12.00000000/15.18611145
+		Antenna/diode mode 1/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 12.00000000/23.64444351
+		Antenna/diode mode 1/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 45.00000000/64.32617950
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/74.49444580
+		Antenna/diode mode 4/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 25.00000000/95.00740814
+		Antenna/diode mode 4/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 100.00000000/247.43315125
+	ICell U_APB/U81; master port A1
+		Antenna/diode mode 1/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 45.00000000/64.32617950
+		Antenna/diode mode 4/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 100.00000000/247.43315125
+Antenna DRC for net U_APB/n131; Net top lay M3
+	ICell U_APB/ctrl_mode_reg[0]; master port D
+		Antenna/diode mode 4/4; wlay M3; gArea 0.18000001;  allowed ratio/ratio 100.00000000/113.30222321
+Antenna DRC for net U_APB/tmp_net34; Net top lay M3
+	ICell U_APB/ctmTdsLR_2_548; master port A1
+		Antenna/diode mode 1/4; wlay M2; gArea 0.30899999;  allowed ratio/ratio 12.00000000/20.08025932
+		Antenna/diode mode 4/4; wlay M2; gArea 0.30899999;  allowed ratio/ratio 25.00000000/76.97863770
+		Antenna/diode mode 4/4; wlay M3; gArea 0.30899999;  allowed ratio/ratio 100.00000000/154.71197510
+Antenna DRC for net U_CRYPTO/HFSNET_40; Net top lay M3
+	ICell U_CRYPTO/U55; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.42500001;  allowed ratio/ratio 25.00000000/27.51011848
+	ICell U_CRYPTO/U37; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.42500001;  allowed ratio/ratio 25.00000000/33.84517670
+	ICell U_CRYPTO/U41; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.85000002;  allowed ratio/ratio 25.00000000/41.24023438
+	ICell U_CRYPTO/U46; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.42500001;  allowed ratio/ratio 12.00000000/18.19670677
+		Antenna/diode mode 4/4; wlay M2; gArea 0.42500001;  allowed ratio/ratio 25.00000000/69.58588409
+	ICell U_CRYPTO/U48; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.85000002;  allowed ratio/ratio 25.00000000/41.24023438
+	ICell U_CRYPTO/U56; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.42500001;  allowed ratio/ratio 25.00000000/29.18117523
+Antenna DRC for net U_APB/n820; Net top lay M3
+	ICell U_APB/U67; master port A3
+		Antenna/diode mode 4/4; wlay M2; gArea 0.22100000;  allowed ratio/ratio 25.00000000/41.44072342
+	ICell U_APB/U468; master port C3
+		Antenna/diode mode 1/4; wlay M2; gArea 0.41000000;  allowed ratio/ratio 12.00000000/14.75121975
+		Antenna/diode mode 4/4; wlay M2; gArea 0.41000000;  allowed ratio/ratio 25.00000000/56.56780624
+	ICell U_APB/U9; master port A2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.22100000;  allowed ratio/ratio 25.00000000/32.42353058
+Antenna DRC for net U_CRYPTO/n8; Net top lay M3
+	ICell U_CRYPTO/U164; master port B2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/30.79948997
+	ICell U_CRYPTO/U170; master port B2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/28.17652893
+	ICell U_CRYPTO/U178; master port B2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 12.00000000/13.85000038
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/53.18928528
+	ICell U_CRYPTO/U142; master port B2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 12.00000000/21.00000000
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/80.25714111
+	ICell U_CRYPTO/U140; master port B2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.78399998;  allowed ratio/ratio 25.00000000/33.38864517
+	ICell U_CRYPTO/U128; master port B2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.78399998;  allowed ratio/ratio 25.00000000/25.82398033
+	ICell U_CRYPTO/U132; master port B2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 12.00000000/43.01428604
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/163.59693909
+	ICell U_CRYPTO/U148; master port B2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 12.00000000/15.08571434
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/57.86735153
+	ICell U_CRYPTO/U124; master port B2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.78399998;  allowed ratio/ratio 25.00000000/25.82398033
+	ICell U_CRYPTO/U144; master port B2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 12.00000000/15.72142887
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/61.03112411
+	ICell U_CRYPTO/U136; master port B2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.39199999;  allowed ratio/ratio 25.00000000/30.63724327
+	ICell U_CRYPTO/U134; master port B2
+		Antenna/diode mode 4/4; wlay M2; gArea 0.78399998;  allowed ratio/ratio 25.00000000/33.38864517
+	ICell U_CRYPTO/HFSBUF_805_485; master port I
+		Antenna/diode mode 1/4; wlay M2; gArea 0.19400001;  allowed ratio/ratio 12.00000000/55.49485016
+		Antenna/diode mode 4/4; wlay M2; gArea 0.19400001;  allowed ratio/ratio 25.00000000/211.61752319
+Antenna DRC for net U_CRYPTO/n47; Net top lay M3
+	ICell U_CRYPTO/U154; master port A
+		Antenna/diode mode 1/4; wlay M3; gArea 0.38900000;  allowed ratio/ratio 45.00000000/74.52751160
+		Antenna/diode mode 4/4; wlay M3; gArea 0.38900000;  allowed ratio/ratio 100.00000000/285.19177246
+Antenna DRC for net U_CRYPTO/n244; Net top lay M3
+	ICell U_CRYPTO/data_state_reg[27]; master port D
+		Antenna/diode mode 4/4; wlay M3; gArea 0.18000001;  allowed ratio/ratio 100.00000000/125.90444183
+Antenna DRC for net U_CRYPTO/data_key_added[36]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[9].SX/U18; master port B1
+		Antenna/diode mode 4/4; wlay M2; gArea 0.41900000;  allowed ratio/ratio 25.00000000/34.07685089
+Antenna DRC for net U_CRYPTO/data_key_added[31]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[7].SX/U12; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/36.02037048
+		Antenna/diode mode 4/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 25.00000000/35.92222214
+	ICell U_CRYPTO/SL/GEN_SBOXES[7].SX/U20; master port A2
+		Antenna/diode mode 1/4; wlay M2; gArea 0.31099999;  allowed ratio/ratio 12.00000000/20.75241089
+		Antenna/diode mode 4/4; wlay M2; gArea 0.31099999;  allowed ratio/ratio 25.00000000/79.51704407
+Antenna DRC for net U_CRYPTO/data_key_added[24]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[6].SX/U18; master port B1
+		Antenna/diode mode 4/4; wlay M2; gArea 0.41900000;  allowed ratio/ratio 25.00000000/40.24964142
+Antenna DRC for net U_CRYPTO/key_state[68]; Net top lay M3
+	ICell U_CRYPTO/U271; master port B1
+		Antenna/diode mode 4/4; wlay M2; gArea 0.46599999;  allowed ratio/ratio 25.00000000/37.00901413
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/166.44598389
+	ICell U_CRYPTO/U378; master port A2
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/166.44598389
+	ICell U_CRYPTO/U232; master port B1
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/166.44598389
+Antenna DRC for net U_CRYPTO/key_state[43]; Net top lay M3
+	ICell U_CRYPTO/U321; master port B1
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/109.05545807
+	ICell U_CRYPTO/U406; master port A2
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/109.05545807
+	ICell U_CRYPTO/U282; master port B1
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/109.05545807
+Antenna DRC for net U_CRYPTO/SL/GEN_SBOXES[8].SX/n2; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[8].SX/U20; master port A3
+		Antenna/diode mode 4/4; wlay M2; gArea 0.77700001;  allowed ratio/ratio 25.00000000/25.33358955
+	ICell U_CRYPTO/SL/GEN_SBOXES[8].SX/U15; master port A1
+		Antenna/diode mode 4/4; wlay M2; gArea 0.77700001;  allowed ratio/ratio 25.00000000/25.33358955
+Antenna DRC for net U_CRYPTO/SL/GEN_SBOXES[8].SX/n18; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[8].SX/U3; master port I
+		Antenna/diode mode 4/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 25.00000000/45.54074097
+Found 58 antenna instance ports
+End net based rule analysis
+[Antenna analysis] Elapsed real time: 0:00:00 
+[Antenna analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Antenna analysis] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Antenna analysis] Total (MB): Used   88  Alloctr   90  Proc 13707 
+Total number of nets = 4432, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+*****Start reporting antenna related parameters*****
+  Antenna/diode mode:
+    Antenna mode 1; diode mode 4
+      Metal lay (M1)0; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V2)1; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V3)2; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 45.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 2000.000 7500.000 0.000)
+    Antenna mode 4; diode mode 4
+      Metal lay (M1)0; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V2)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V3)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 100.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 8000.000 30000.000 0.000)
+  Top lay antenna ratio fix threshold == -1
+  Antenna max pin count threshold == -1
+  Check PG net == false
+  MergeGate == true
+  Break antenna to port mode == float
+  Break antenna to macro pin mode == normal
+*****End reporting antenna related parameters*****
+Warning: Skipping antenna analysis for net PCLK. The pin PCLK on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PRESETn. The pin PRESETn on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PSEL. The pin PSEL on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PENABLE. The pin PENABLE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWRITE. The pin PWRITE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[31]. The pin PADDR[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[30]. The pin PADDR[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[29]. The pin PADDR[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[28]. The pin PADDR[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[27]. The pin PADDR[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[26]. The pin PADDR[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[25]. The pin PADDR[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[24]. The pin PADDR[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[23]. The pin PADDR[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[22]. The pin PADDR[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[21]. The pin PADDR[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[20]. The pin PADDR[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[19]. The pin PADDR[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[18]. The pin PADDR[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[17]. The pin PADDR[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[16]. The pin PADDR[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[15]. The pin PADDR[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[14]. The pin PADDR[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[13]. The pin PADDR[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[12]. The pin PADDR[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[11]. The pin PADDR[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[10]. The pin PADDR[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[9]. The pin PADDR[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[8]. The pin PADDR[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[7]. The pin PADDR[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[6]. The pin PADDR[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[5]. The pin PADDR[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[4]. The pin PADDR[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[3]. The pin PADDR[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[2]. The pin PADDR[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[1]. The pin PADDR[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[0]. The pin PADDR[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[31]. The pin PWDATA[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[30]. The pin PWDATA[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[29]. The pin PWDATA[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[28]. The pin PWDATA[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[27]. The pin PWDATA[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[26]. The pin PWDATA[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[25]. The pin PWDATA[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[24]. The pin PWDATA[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[23]. The pin PWDATA[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[22]. The pin PWDATA[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[21]. The pin PWDATA[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[20]. The pin PWDATA[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[19]. The pin PWDATA[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[18]. The pin PWDATA[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[17]. The pin PWDATA[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[16]. The pin PWDATA[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[15]. The pin PWDATA[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[14]. The pin PWDATA[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[13]. The pin PWDATA[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[12]. The pin PWDATA[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[11]. The pin PWDATA[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[10]. The pin PWDATA[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[9]. The pin PWDATA[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[8]. The pin PWDATA[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[7]. The pin PWDATA[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[6]. The pin PWDATA[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[5]. The pin PWDATA[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[4]. The pin PWDATA[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[3]. The pin PWDATA[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[2]. The pin PWDATA[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[1]. The pin PWDATA[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[0]. The pin PWDATA[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net rfid_rx_bit. The pin rfid_rx_bit on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Skipping antenna analysis for 70 nets as they don't have enough gate area info.
+Warning: High fanout net ZCTSNET_13 can affect runtime for antenna fixing. (ZRT-626)
+Warning: High fanout net ZCTSNET_33 can affect runtime for antenna fixing. (ZRT-626)
+Start DR iteration 0: non-uniform partition
+Routed	1/87 Partitions, Violations =	1270
+Routed	2/87 Partitions, Violations =	1266
+Routed	3/87 Partitions, Violations =	1247
+Routed	4/87 Partitions, Violations =	1245
+Routed	5/87 Partitions, Violations =	1244
+Routed	6/87 Partitions, Violations =	1132
+Routed	7/87 Partitions, Violations =	1124
+Routed	8/87 Partitions, Violations =	1124
+Routed	9/87 Partitions, Violations =	1125
+Routed	10/87 Partitions, Violations =	1128
+Routed	11/87 Partitions, Violations =	1124
+Routed	12/87 Partitions, Violations =	1050
+Routed	13/87 Partitions, Violations =	1034
+Routed	14/87 Partitions, Violations =	1033
+Routed	15/87 Partitions, Violations =	1031
+Routed	16/87 Partitions, Violations =	994
+Routed	17/87 Partitions, Violations =	991
+Routed	18/87 Partitions, Violations =	906
+Routed	19/87 Partitions, Violations =	899
+Routed	20/87 Partitions, Violations =	897
+Routed	21/87 Partitions, Violations =	892
+Routed	22/87 Partitions, Violations =	853
+Routed	23/87 Partitions, Violations =	836
+Routed	24/87 Partitions, Violations =	833
+Routed	25/87 Partitions, Violations =	830
+Routed	26/87 Partitions, Violations =	828
+Routed	27/87 Partitions, Violations =	818
+Routed	28/87 Partitions, Violations =	817
+Routed	29/87 Partitions, Violations =	816
+Routed	30/87 Partitions, Violations =	811
+Routed	31/87 Partitions, Violations =	807
+Routed	32/87 Partitions, Violations =	806
+Routed	33/87 Partitions, Violations =	773
+Routed	34/87 Partitions, Violations =	757
+Routed	35/87 Partitions, Violations =	751
+Routed	36/87 Partitions, Violations =	744
+Routed	37/87 Partitions, Violations =	722
+Routed	38/87 Partitions, Violations =	719
+Routed	39/87 Partitions, Violations =	719
+Routed	40/87 Partitions, Violations =	693
+Routed	41/87 Partitions, Violations =	692
+Routed	42/87 Partitions, Violations =	674
+Routed	43/87 Partitions, Violations =	670
+Routed	44/87 Partitions, Violations =	643
+Routed	45/87 Partitions, Violations =	641
+Routed	46/87 Partitions, Violations =	624
+Routed	47/87 Partitions, Violations =	618
+Routed	48/87 Partitions, Violations =	615
+Routed	49/87 Partitions, Violations =	614
+Routed	50/87 Partitions, Violations =	601
+Routed	51/87 Partitions, Violations =	581
+Routed	52/87 Partitions, Violations =	580
+Routed	53/87 Partitions, Violations =	569
+Routed	54/87 Partitions, Violations =	563
+Routed	55/87 Partitions, Violations =	562
+Routed	56/87 Partitions, Violations =	562
+Routed	57/87 Partitions, Violations =	561
+Routed	58/87 Partitions, Violations =	559
+Routed	59/87 Partitions, Violations =	557
+Routed	60/87 Partitions, Violations =	551
+Routed	61/87 Partitions, Violations =	543
+Routed	62/87 Partitions, Violations =	539
+Routed	63/87 Partitions, Violations =	531
+Routed	64/87 Partitions, Violations =	530
+Routed	65/87 Partitions, Violations =	527
+Routed	66/87 Partitions, Violations =	516
+Routed	67/87 Partitions, Violations =	464
+Routed	68/87 Partitions, Violations =	463
+Routed	69/87 Partitions, Violations =	452
+Routed	70/87 Partitions, Violations =	448
+Routed	71/87 Partitions, Violations =	443
+Routed	72/87 Partitions, Violations =	441
+Routed	73/87 Partitions, Violations =	440
+Routed	74/87 Partitions, Violations =	414
+Routed	75/87 Partitions, Violations =	377
+Routed	76/87 Partitions, Violations =	373
+Routed	77/87 Partitions, Violations =	373
+Routed	78/87 Partitions, Violations =	359
+Routed	79/87 Partitions, Violations =	359
+Routed	80/87 Partitions, Violations =	345
+Routed	81/87 Partitions, Violations =	331
+Routed	82/87 Partitions, Violations =	331
+Routed	83/87 Partitions, Violations =	318
+Routed	84/87 Partitions, Violations =	297
+Routed	85/87 Partitions, Violations =	291
+Routed	86/87 Partitions, Violations =	291
+Routed	87/87 Partitions, Violations =	287
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	287
+	@@@@ Total number of instance ports with antenna violations =	62
+
+	Diff net spacing : 146
+	Short : 141
+
+[Iter 0] Elapsed real time: 0:00:03 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+[Iter 0] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 0] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 0 with 87 parts
+
+Start DR iteration 1: non-uniform partition
+Routed	1/45 Partitions, Violations =	267
+Routed	2/45 Partitions, Violations =	256
+Routed	3/45 Partitions, Violations =	245
+Routed	4/45 Partitions, Violations =	241
+Routed	5/45 Partitions, Violations =	225
+Routed	6/45 Partitions, Violations =	225
+Routed	7/45 Partitions, Violations =	220
+Routed	8/45 Partitions, Violations =	216
+Routed	9/45 Partitions, Violations =	191
+Routed	10/45 Partitions, Violations =	177
+Routed	11/45 Partitions, Violations =	177
+Routed	12/45 Partitions, Violations =	150
+Routed	13/45 Partitions, Violations =	150
+Routed	14/45 Partitions, Violations =	150
+Routed	15/45 Partitions, Violations =	150
+Routed	16/45 Partitions, Violations =	148
+Routed	17/45 Partitions, Violations =	138
+Routed	18/45 Partitions, Violations =	138
+Routed	19/45 Partitions, Violations =	123
+Routed	20/45 Partitions, Violations =	123
+Routed	21/45 Partitions, Violations =	103
+Routed	22/45 Partitions, Violations =	103
+Routed	23/45 Partitions, Violations =	103
+Routed	24/45 Partitions, Violations =	103
+Routed	25/45 Partitions, Violations =	104
+Routed	26/45 Partitions, Violations =	98
+Routed	27/45 Partitions, Violations =	98
+Routed	28/45 Partitions, Violations =	98
+Routed	29/45 Partitions, Violations =	75
+Routed	30/45 Partitions, Violations =	50
+Routed	31/45 Partitions, Violations =	50
+Routed	32/45 Partitions, Violations =	50
+Routed	33/45 Partitions, Violations =	49
+Routed	34/45 Partitions, Violations =	49
+Routed	35/45 Partitions, Violations =	47
+Routed	36/45 Partitions, Violations =	48
+Routed	37/45 Partitions, Violations =	45
+Routed	38/45 Partitions, Violations =	45
+Routed	39/45 Partitions, Violations =	30
+Routed	40/45 Partitions, Violations =	26
+Routed	41/45 Partitions, Violations =	26
+Routed	42/45 Partitions, Violations =	25
+Routed	43/45 Partitions, Violations =	23
+Routed	44/45 Partitions, Violations =	23
+Routed	45/45 Partitions, Violations =	14
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	14
+	@@@@ Total number of instance ports with antenna violations =	28
+
+	Diff net spacing : 3
+	Same net spacing : 1
+	Short : 10
+
+[Iter 1] Elapsed real time: 0:00:06 
+[Iter 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:06 total=0:00:06
+[Iter 1] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 1] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 1 with 45 parts
+
+Start DR iteration 2: non-uniform partition
+Routed	1/24 Partitions, Violations =	14
+Routed	2/24 Partitions, Violations =	14
+Routed	3/24 Partitions, Violations =	14
+Routed	4/24 Partitions, Violations =	14
+Routed	5/24 Partitions, Violations =	14
+Routed	6/24 Partitions, Violations =	14
+Routed	7/24 Partitions, Violations =	14
+Routed	8/24 Partitions, Violations =	14
+Routed	9/24 Partitions, Violations =	15
+Routed	10/24 Partitions, Violations =	15
+Routed	11/24 Partitions, Violations =	14
+Routed	12/24 Partitions, Violations =	14
+Routed	13/24 Partitions, Violations =	14
+Routed	14/24 Partitions, Violations =	14
+Routed	15/24 Partitions, Violations =	14
+Routed	16/24 Partitions, Violations =	14
+Routed	17/24 Partitions, Violations =	10
+Routed	18/24 Partitions, Violations =	10
+Routed	19/24 Partitions, Violations =	9
+Routed	20/24 Partitions, Violations =	9
+Routed	21/24 Partitions, Violations =	9
+Routed	22/24 Partitions, Violations =	9
+Routed	23/24 Partitions, Violations =	9
+Routed	24/24 Partitions, Violations =	9
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	9
+	@@@@ Total number of instance ports with antenna violations =	34
+
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 6
+
+[Iter 2] Elapsed real time: 0:00:08 
+[Iter 2] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[Iter 2] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 2] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 2 with 24 parts
+
+Start DR iteration 3: non-uniform partition
+Routed	1/23 Partitions, Violations =	9
+Routed	2/23 Partitions, Violations =	8
+Routed	3/23 Partitions, Violations =	8
+Routed	4/23 Partitions, Violations =	8
+Routed	5/23 Partitions, Violations =	9
+Routed	6/23 Partitions, Violations =	9
+Routed	7/23 Partitions, Violations =	9
+Routed	8/23 Partitions, Violations =	9
+Routed	9/23 Partitions, Violations =	9
+Routed	10/23 Partitions, Violations =	9
+Routed	11/23 Partitions, Violations =	9
+Routed	12/23 Partitions, Violations =	9
+Routed	13/23 Partitions, Violations =	9
+Routed	14/23 Partitions, Violations =	8
+Routed	15/23 Partitions, Violations =	8
+Routed	16/23 Partitions, Violations =	8
+Routed	17/23 Partitions, Violations =	8
+Routed	18/23 Partitions, Violations =	8
+Routed	19/23 Partitions, Violations =	8
+Routed	20/23 Partitions, Violations =	8
+Routed	21/23 Partitions, Violations =	8
+Routed	22/23 Partitions, Violations =	8
+Routed	23/23 Partitions, Violations =	8
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	@@@@ Total number of instance ports with antenna violations =	23
+
+	Diff net spacing : 1
+	Short : 7
+
+[Iter 3] Elapsed real time: 0:00:09 
+[Iter 3] Elapsed cpu  time: sys=0:00:00 usr=0:00:09 total=0:00:09
+[Iter 3] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 3] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 3 with 23 parts
+
+Start DR iteration 4: non-uniform partition
+Routed	1/21 Partitions, Violations =	8
+Routed	2/21 Partitions, Violations =	8
+Routed	3/21 Partitions, Violations =	8
+Routed	4/21 Partitions, Violations =	8
+Routed	5/21 Partitions, Violations =	7
+Routed	6/21 Partitions, Violations =	7
+Routed	7/21 Partitions, Violations =	7
+Routed	8/21 Partitions, Violations =	7
+Routed	9/21 Partitions, Violations =	7
+Routed	10/21 Partitions, Violations =	8
+Routed	11/21 Partitions, Violations =	8
+Routed	12/21 Partitions, Violations =	8
+Routed	13/21 Partitions, Violations =	8
+Routed	14/21 Partitions, Violations =	8
+Routed	15/21 Partitions, Violations =	8
+Routed	16/21 Partitions, Violations =	8
+Routed	17/21 Partitions, Violations =	8
+Routed	18/21 Partitions, Violations =	8
+Routed	19/21 Partitions, Violations =	8
+Routed	20/21 Partitions, Violations =	8
+Routed	21/21 Partitions, Violations =	8
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	@@@@ Total number of instance ports with antenna violations =	22
+
+	Diff net spacing : 2
+	Less than minimum width : 1
+	Same net spacing : 1
+	Short : 4
+
+[Iter 4] Elapsed real time: 0:00:11 
+[Iter 4] Elapsed cpu  time: sys=0:00:00 usr=0:00:11 total=0:00:11
+[Iter 4] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 4] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 4 with 21 parts
+
+Start DR iteration 5: non-uniform partition
+Routed	1/21 Partitions, Violations =	8
+Routed	2/21 Partitions, Violations =	8
+Routed	3/21 Partitions, Violations =	8
+Routed	4/21 Partitions, Violations =	7
+Routed	5/21 Partitions, Violations =	7
+Routed	6/21 Partitions, Violations =	7
+Routed	7/21 Partitions, Violations =	7
+Routed	8/21 Partitions, Violations =	7
+Routed	9/21 Partitions, Violations =	7
+Routed	10/21 Partitions, Violations =	7
+Routed	11/21 Partitions, Violations =	7
+Routed	12/21 Partitions, Violations =	7
+Routed	13/21 Partitions, Violations =	7
+Routed	14/21 Partitions, Violations =	7
+Routed	15/21 Partitions, Violations =	7
+Routed	16/21 Partitions, Violations =	7
+Routed	17/21 Partitions, Violations =	7
+Routed	18/21 Partitions, Violations =	7
+Routed	19/21 Partitions, Violations =	7
+Routed	20/21 Partitions, Violations =	7
+Routed	21/21 Partitions, Violations =	7
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	@@@@ Total number of instance ports with antenna violations =	20
+
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+[Iter 5] Elapsed real time: 0:00:12 
+[Iter 5] Elapsed cpu  time: sys=0:00:00 usr=0:00:12 total=0:00:12
+[Iter 5] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 5] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 5 with 21 parts
+
+Start DR iteration 6: non-uniform partition
+Routed	1/21 Partitions, Violations =	7
+Routed	2/21 Partitions, Violations =	7
+Routed	3/21 Partitions, Violations =	7
+Routed	4/21 Partitions, Violations =	7
+Routed	5/21 Partitions, Violations =	7
+Routed	6/21 Partitions, Violations =	7
+Routed	7/21 Partitions, Violations =	7
+Routed	8/21 Partitions, Violations =	7
+Routed	9/21 Partitions, Violations =	7
+Routed	10/21 Partitions, Violations =	7
+Routed	11/21 Partitions, Violations =	7
+Routed	12/21 Partitions, Violations =	7
+Routed	13/21 Partitions, Violations =	7
+Routed	14/21 Partitions, Violations =	7
+Routed	15/21 Partitions, Violations =	7
+Routed	16/21 Partitions, Violations =	7
+Routed	17/21 Partitions, Violations =	7
+Routed	18/21 Partitions, Violations =	7
+Routed	19/21 Partitions, Violations =	7
+Routed	20/21 Partitions, Violations =	7
+Routed	21/21 Partitions, Violations =	7
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	@@@@ Total number of instance ports with antenna violations =	20
+
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+[Iter 6] Elapsed real time: 0:00:13 
+[Iter 6] Elapsed cpu  time: sys=0:00:00 usr=0:00:13 total=0:00:13
+[Iter 6] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 6] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 6 with 21 parts
+
+Start DR iteration 7: non-uniform partition
+Routed	1/20 Partitions, Violations =	7
+Routed	2/20 Partitions, Violations =	7
+Routed	3/20 Partitions, Violations =	7
+Routed	4/20 Partitions, Violations =	7
+Routed	5/20 Partitions, Violations =	7
+Routed	6/20 Partitions, Violations =	7
+Routed	7/20 Partitions, Violations =	7
+Routed	8/20 Partitions, Violations =	7
+Routed	9/20 Partitions, Violations =	7
+Routed	10/20 Partitions, Violations =	7
+Routed	11/20 Partitions, Violations =	7
+Routed	12/20 Partitions, Violations =	7
+Routed	13/20 Partitions, Violations =	7
+Routed	14/20 Partitions, Violations =	7
+Routed	15/20 Partitions, Violations =	7
+Routed	16/20 Partitions, Violations =	7
+Routed	17/20 Partitions, Violations =	7
+Routed	18/20 Partitions, Violations =	7
+Routed	19/20 Partitions, Violations =	7
+Routed	20/20 Partitions, Violations =	7
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	@@@@ Total number of instance ports with antenna violations =	21
+
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+[Iter 7] Elapsed real time: 0:00:15 
+[Iter 7] Elapsed cpu  time: sys=0:00:00 usr=0:00:15 total=0:00:15
+[Iter 7] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 7] Total (MB): Used   88  Alloctr   90  Proc 13707 
+
+End DR iteration 7 with 20 parts
+
+Start DR iteration 8: non-uniform partition
+Routed	1/17 Partitions, Violations =	7
+Routed	2/17 Partitions, Violations =	7
+Routed	3/17 Partitions, Violations =	7
+Routed	4/17 Partitions, Violations =	7
+Routed	5/17 Partitions, Violations =	7
+Routed	6/17 Partitions, Violations =	7
+Routed	7/17 Partitions, Violations =	7
+Routed	8/17 Partitions, Violations =	7
+Routed	9/17 Partitions, Violations =	7
+Routed	10/17 Partitions, Violations =	7
+Routed	11/17 Partitions, Violations =	7
+Routed	12/17 Partitions, Violations =	7
+Routed	13/17 Partitions, Violations =	7
+Routed	14/17 Partitions, Violations =	7
+Routed	15/17 Partitions, Violations =	7
+Routed	16/17 Partitions, Violations =	7
+Routed	17/17 Partitions, Violations =	7
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	@@@@ Total number of instance ports with antenna violations =	30
+
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+[Iter 8] Elapsed real time: 0:00:18 
+[Iter 8] Elapsed cpu  time: sys=0:00:00 usr=0:00:18 total=0:00:18
+[Iter 8] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 8] Total (MB): Used   88  Alloctr   90  Proc 13707 
+
+End DR iteration 8 with 17 parts
+
+Start DR iteration 9: non-uniform partition
+Routed	1/23 Partitions, Violations =	7
+Routed	2/23 Partitions, Violations =	7
+Routed	3/23 Partitions, Violations =	7
+Routed	4/23 Partitions, Violations =	7
+Routed	5/23 Partitions, Violations =	7
+Routed	6/23 Partitions, Violations =	7
+Routed	7/23 Partitions, Violations =	7
+Routed	8/23 Partitions, Violations =	7
+Routed	9/23 Partitions, Violations =	7
+Routed	10/23 Partitions, Violations =	7
+Routed	11/23 Partitions, Violations =	7
+Routed	12/23 Partitions, Violations =	7
+Routed	13/23 Partitions, Violations =	7
+Routed	14/23 Partitions, Violations =	7
+Routed	15/23 Partitions, Violations =	7
+Routed	16/23 Partitions, Violations =	7
+Routed	17/23 Partitions, Violations =	7
+Routed	18/23 Partitions, Violations =	7
+Routed	19/23 Partitions, Violations =	7
+Routed	20/23 Partitions, Violations =	7
+Routed	21/23 Partitions, Violations =	7
+Routed	22/23 Partitions, Violations =	7
+Routed	23/23 Partitions, Violations =	7
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	@@@@ Total number of instance ports with antenna violations =	21
+
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+[Iter 9] Elapsed real time: 0:00:20 
+[Iter 9] Elapsed cpu  time: sys=0:00:00 usr=0:00:20 total=0:00:20
+[Iter 9] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 9] Total (MB): Used   88  Alloctr   90  Proc 13707 
+
+End DR iteration 9 with 23 parts
+
+Start DR iteration 10: non-uniform partition
+Routed	1/18 Partitions, Violations =	7
+Routed	2/18 Partitions, Violations =	7
+Routed	3/18 Partitions, Violations =	7
+Routed	4/18 Partitions, Violations =	7
+Routed	5/18 Partitions, Violations =	7
+Routed	6/18 Partitions, Violations =	7
+Routed	7/18 Partitions, Violations =	7
+Routed	8/18 Partitions, Violations =	7
+Routed	9/18 Partitions, Violations =	7
+Routed	10/18 Partitions, Violations =	7
+Routed	11/18 Partitions, Violations =	7
+Routed	12/18 Partitions, Violations =	7
+Routed	13/18 Partitions, Violations =	7
+Routed	14/18 Partitions, Violations =	7
+Routed	15/18 Partitions, Violations =	7
+Routed	16/18 Partitions, Violations =	7
+Routed	17/18 Partitions, Violations =	7
+Routed	18/18 Partitions, Violations =	7
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	@@@@ Total number of instance ports with antenna violations =	20
+
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+[Iter 10] Elapsed real time: 0:00:22 
+[Iter 10] Elapsed cpu  time: sys=0:00:00 usr=0:00:22 total=0:00:22
+[Iter 10] Stage (MB): Used   63  Alloctr   63  Proc    0 
+[Iter 10] Total (MB): Used   88  Alloctr   90  Proc 13707 
+
+End DR iteration 10 with 18 parts
+
+Stop DR since not converging
+
+	@@@@ Total nets not meeting constraints =	17
+
+
+Begin revisit internal-only type DRCs ...
+
+Checked	1/3 Partitions, Violations =	7
+Checked	2/3 Partitions, Violations =	7
+Checked	3/3 Partitions, Violations =	7
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+
+[REVISIT DRC] Elapsed real time: 0:00:00 
+[REVISIT DRC] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[REVISIT DRC] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[REVISIT DRC] Total (MB): Used   88  Alloctr   90  Proc 13707 
+
+Nets that have been changed:
+Net 1 = PCLK
+Net 2 = PRESETn
+Net 3 = PADDR[30]
+Net 4 = PADDR[17]
+Net 5 = PADDR[6]
+Net 6 = PADDR[4]
+Net 7 = PADDR[2]
+Net 8 = PADDR[0]
+Net 9 = PWDATA[31]
+Net 10 = PWDATA[30]
+Net 11 = PWDATA[29]
+Net 12 = PWDATA[28]
+Net 13 = PWDATA[27]
+Net 14 = PWDATA[22]
+Net 15 = PWDATA[21]
+Net 16 = PWDATA[20]
+Net 17 = PWDATA[18]
+Net 18 = PWDATA[17]
+Net 19 = PWDATA[15]
+Net 20 = PWDATA[14]
+Net 21 = PWDATA[13]
+Net 22 = PWDATA[11]
+Net 23 = PWDATA[7]
+Net 24 = PWDATA[4]
+Net 25 = PWDATA[2]
+Net 26 = PWDATA[0]
+Net 27 = PRDATA[6]
+Net 28 = rfid_rx_bit
+Net 29 = apb_trigger_m2_w
+Net 30 = HFSNET_85
+Net 31 = apb_read_data_w[58]
+Net 32 = apb_read_data_w[51]
+Net 33 = apb_read_data_w[46]
+Net 34 = apb_read_data_w[44]
+Net 35 = apb_read_data_w[43]
+Net 36 = apb_read_data_w[42]
+Net 37 = apb_read_data_w[10]
+Net 38 = crypto_key_w[78]
+Net 39 = crypto_key_w[75]
+Net 40 = crypto_key_w[74]
+Net 41 = crypto_key_w[73]
+Net 42 = crypto_key_w[71]
+Net 43 = crypto_key_w[68]
+Net 44 = crypto_key_w[64]
+Net 45 = crypto_key_w[60]
+Net 46 = crypto_key_w[59]
+Net 47 = crypto_key_w[57]
+Net 48 = crypto_key_w[56]
+Net 49 = crypto_key_w[55]
+Net 50 = crypto_key_w[50]
+Net 51 = crypto_key_w[48]
+Net 52 = crypto_key_w[47]
+Net 53 = crypto_key_w[46]
+Net 54 = crypto_key_w[45]
+Net 55 = crypto_key_w[44]
+Net 56 = crypto_key_w[43]
+Net 57 = crypto_key_w[42]
+Net 58 = crypto_key_w[41]
+Net 59 = crypto_key_w[39]
+Net 60 = crypto_key_w[38]
+Net 61 = crypto_key_w[36]
+Net 62 = crypto_key_w[32]
+Net 63 = crypto_key_w[28]
+Net 64 = crypto_key_w[26]
+Net 65 = crypto_key_w[22]
+Net 66 = crypto_key_w[20]
+Net 67 = crypto_key_w[15]
+Net 68 = crypto_key_w[14]
+Net 69 = crypto_key_w[11]
+Net 70 = crypto_key_w[4]
+Net 71 = crypto_key_w[3]
+Net 72 = apb_test_data_w[431]
+Net 73 = apb_test_data_w[428]
+Net 74 = apb_test_data_w[395]
+Net 75 = apb_test_data_w[393]
+Net 76 = apb_test_data_w[323]
+Net 77 = apb_test_data_w[320]
+Net 78 = apb_test_data_w[33]
+Net 79 = apb_test_data_w[31]
+Net 80 = apb_test_data_w[18]
+Net 81 = apb_test_data_w[9]
+Net 82 = apb_test_data_w[7]
+Net 83 = dbb_framed_data_w[57]
+Net 84 = dbb_framed_data_w[56]
+Net 85 = dbb_framed_data_w[42]
+Net 86 = dbb_framed_data_w[41]
+Net 87 = dbb_framed_data_w[40]
+Net 88 = dbb_framed_data_w[39]
+Net 89 = dbb_framed_data_w[30]
+Net 90 = dbb_framed_data_w[21]
+Net 91 = dbb_framed_data_w[18]
+Net 92 = dbb_framed_data_w[17]
+Net 93 = dbb_framed_data_w[16]
+Net 94 = dbb_framed_data_w[2]
+Net 95 = crypto_data_in_w[63]
+Net 96 = crypto_data_in_w[62]
+Net 97 = crypto_data_in_w[51]
+Net 98 = crypto_data_in_w[40]
+Net 99 = crypto_data_in_w[39]
+Net 100 = crypto_data_in_w[31]
+.... and 308 other nets
+Total number of changed nets = 408 (out of 4432)
+
+[DR: Done] Elapsed real time: 0:00:22 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:22 total=0:00:22
+[DR: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DR: Done] Total (MB): Used   25  Alloctr   26  Proc 13707 
+[ECO: DR] Elapsed real time: 0:00:24 
+[ECO: DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:24 total=0:00:24
+[ECO: DR] Stage (MB): Used   22  Alloctr   22  Proc    0 
+[ECO: DR] Total (MB): Used   25  Alloctr   26  Proc 13707 
+
+ECO Route finished with 0 open nets, of which 0 are frozen
+
+ECO Route finished with 7 violations and 20 instance ports antenna violations
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+
+
+Total Wire Length =                    252731 micron
+Total Number of Contacts =             41753
+Total Number of Wires =                41469
+Total Number of PtConns =              1937
+Total Number of Routed Wires =       39476
+Total Routed Wire Length =           251838 micron
+Total Number of Routed Contacts =       41753
+	Layer              M1 :       6839 micron
+	Layer              M2 :     104064 micron
+	Layer              M3 :     117964 micron
+	Layer           TOP_M :      22972 micron
+	Via             VIA34 :       1055
+	Via         VIA34_2x1 :       1756
+	Via    VIA34(rot)_1x2 :         46
+	Via    VIA34(rot)_2x1 :         29
+	Via         VIA34_1x2 :        178
+	Via             VIA23 :       4680
+	Via        VIA23(rot) :          6
+	Via         VIA23_1x2 :      10553
+	Via    VIA23(rot)_2x1 :         80
+	Via    VIA23(rot)_1x2 :        144
+	Via         VIA23_2x1 :       6228
+	Via            VIA12A :       2813
+	Via       VIA12A(rot) :        290
+	Via        VIA12A_2x1 :       2900
+	Via   VIA12A(rot)_1x2 :        938
+	Via   VIA12A(rot)_2x1 :        656
+	Via        VIA12A_1x2 :       9401
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+  Total double via conversion rate    = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+ 
+  The optimized via conversion rate based on total routed via count = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+
+Total number of nets = 4432
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 7
+Total number of antenna violations = 31
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Total Wire Length =                    252731 micron
+Total Number of Contacts =             41753
+Total Number of Wires =                41469
+Total Number of PtConns =              1937
+Total Number of Routed Wires =       39476
+Total Routed Wire Length =           251838 micron
+Total Number of Routed Contacts =       41753
+	Layer              M1 :       6839 micron
+	Layer              M2 :     104064 micron
+	Layer              M3 :     117964 micron
+	Layer           TOP_M :      22972 micron
+	Via             VIA34 :       1055
+	Via         VIA34_2x1 :       1756
+	Via    VIA34(rot)_1x2 :         46
+	Via    VIA34(rot)_2x1 :         29
+	Via         VIA34_1x2 :        178
+	Via             VIA23 :       4680
+	Via        VIA23(rot) :          6
+	Via         VIA23_1x2 :      10553
+	Via    VIA23(rot)_2x1 :         80
+	Via    VIA23(rot)_1x2 :        144
+	Via         VIA23_2x1 :       6228
+	Via            VIA12A :       2813
+	Via       VIA12A(rot) :        290
+	Via        VIA12A_2x1 :       2900
+	Via   VIA12A(rot)_1x2 :        938
+	Via   VIA12A(rot)_2x1 :        656
+	Via        VIA12A_1x2 :       9401
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+  Total double via conversion rate    = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+ 
+  The optimized via conversion rate based on total routed via count = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+...updated 408 nets with eco mode
+[ECO: End] Elapsed real time: 0:00:24 
+[ECO: End] Elapsed cpu  time: sys=0:00:00 usr=0:00:24 total=0:00:24
+[ECO: End] Stage (MB): Used   -2  Alloctr   -2  Proc    0 
+[ECO: End] Total (MB): Used    0  Alloctr    1  Proc 13707 
+>>> Longest remaining TOP_M segment per rerouted net (um):
+>>>   PWDATA[28]                   0.00
+>>>   PWDATA[22]                   0.00
+>>>   crypto_key_w[45]             0.00
+>>>   U_APB/n45                    0.00
+>>>   U_APB/n42                    0.00
+>>>   PWDATA[21]                   0.00
+>>>   U_CRYPTO/SL/GEN_SBOXES[8].SX/n18     0.00
+>>>   U_CRYPTO/n244                0.00
+>>>   U_CRYPTO/n47                 0.00
+>>>   crypto_data_in_w[6]          0.00
+>>>   PWDATA[20]                   0.00
+>>>   U_CRYPTO/SL/GEN_SBOXES[8].SX/n2     0.00
+>>>   U_CRYPTO/key_state[43]       0.00
+>>>   U_CRYPTO/data_key_added[35]     0.00
+>>>   U_APB/n37                    0.00
+>>>   PWDATA[18]                   0.00
+>>>   PWDATA[17]                   0.00
+>>>   U_CRYPTO/key_state[68]       0.00
+>>>   crypto_data_in_w[23]         0.00
+>>>   PWDATA[15]                   0.00
+>>>   U_CRYPTO/data_key_added[36]     0.00
+>>>   PWDATA[14]                   0.00
+>>>   U_CRYPTO/data_key_added[24]     0.00
+>>>   PWDATA[13]                   0.00
+>>>   U_APB/n820                   0.00
+>>>   U_CRYPTO/data_key_added[31]     0.00
+>>>   PWDATA[29]                   0.00
+>>>   U_APB/n59                    0.00
+>>>   U_CRYPTO/n8                  0.00
+>>>   U_APB/n113                   0.00
+>>>   PWDATA[2]                    0.00
+>>>   U_CRYPTO/data_key_added[38]     0.00
+>>>   U_CRYPTO/HFSNET_40           0.00
+>>>   PWDATA[30]                   0.00
+>>>   PWDATA[4]                    0.00
+>>>   U_APB/n131                   0.00
+>>>   PWDATA[31]                   0.00
+>>>   PWDATA[11]                   0.00
+>>>   U_APB/n77                    0.00
+>>>   rfid_rx_bit                  0.00
+>>>   U_APB/tmp_net34              0.00
+[icc2-lic Mon Nov  2 20:56:58 2026] Command 'route_eco' requires licenses
+[icc2-lic Mon Nov  2 20:56:58 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:56:58 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon Nov  2 20:56:58 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:56:58 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:56:58 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:56:58 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon Nov  2 20:56:58 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:56:58 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon Nov  2 20:56:58 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:56:58 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:56:58 2026] Check-out of alternate set of keys directly with queueing was successful
+Information: The command 'route_eco' cleared the undo history. (UNDO-016)
+Generating Timing information  
+Information: Deserialized np data
+INFO: timer data loaded from /tmp/baseband_crypto_macro_route_70357_642051712.timdat
+Information: The RC mode used is DR for design 'baseband_crypto_macro'. (NEX-022)
+Extracting design: baseband_crypto_macro_route 
+Information: coupling capacitance is created explicitly. (NEX-029)
+Information: 4430 nets are successfully extracted. (NEX-028)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Design  Scenario func_ff (Mode mode_func Corner corner_ff)
+Generating Timing information  ... Done
+Information: Serialized np data
+INFO: timer data saved to /tmp/baseband_crypto_macro_route_70357_642051712.timdat
+[End of Generating Timing Information] Elapsed real time: 0:00:03 
+[End of Generating Timing Information] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = TOP_M
+Found antenna rule mode 1, diode mode 4:
+	layer M1:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M2:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M3:  max ratio 12, diode ratio {0 0 0 45} 
+	layer TOP_M:  max ratio 12, diode ratio {0 0 2000 7500} 
+	layer V2:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer V3:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer TOP_V:  max ratio 20, diode ratio {0 0 1 0 0} 
+Found antenna rule mode 4, diode mode 4:
+	layer M1:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M2:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M3:  max ratio 25, diode ratio {0 0 0 100} 
+	layer TOP_M:  max ratio 25, diode ratio {0 0 8000 30000} 
+	layer V2: , diode ratio {0 0 1 0 0} 
+	layer V3: , diode ratio {0 0 1 0 0} 
+	layer TOP_V: , diode ratio {0 0 1 0 0} 
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.15 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.15 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+[ECO: DbIn With Extraction] Elapsed real time: 0:00:00 
+[ECO: DbIn With Extraction] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: DbIn With Extraction] Stage (MB): Used   14  Alloctr   14  Proc    0 
+[ECO: DbIn With Extraction] Total (MB): Used   17  Alloctr   18  Proc 13707 
+[ECO: Before Refresh Via Ladder Phase] Elapsed real time: 0:00:00 
+[ECO: Before Refresh Via Ladder Phase] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Before Refresh Via Ladder Phase] Stage (MB): Used   14  Alloctr   14  Proc    0 
+[ECO: Before Refresh Via Ladder Phase] Total (MB): Used   17  Alloctr   18  Proc 13707 
+
+    Found 0 via ladders to verify.
+
+VIA LADDER INFO: found 0 via ladder DRCs across 0 nets.
+Updating the database ...
+
+    Via ladders will be inserted on 0 of 0 ports with via ladder constraints.
+
+Updating the database ...
+[ECO: After Refresh Via Ladder Phase] Elapsed real time: 0:00:00 
+[ECO: After Refresh Via Ladder Phase] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: After Refresh Via Ladder Phase] Stage (MB): Used   20  Alloctr   20  Proc    0 
+[ECO: After Refresh Via Ladder Phase] Total (MB): Used   23  Alloctr   24  Proc 13707 
+[ECO: Analysis] Elapsed real time: 0:00:00 
+[ECO: Analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Analysis] Stage (MB): Used   20  Alloctr   20  Proc    0 
+[ECO: Analysis] Total (MB): Used   23  Alloctr   24  Proc 13707 
+There are no open nets in the design.
+
+ECO Route finished with 0 open nets, of which 0 are frozen
+
+ECO Route finished with 7 violations
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	7
+	Diff net spacing : 2
+	Same net spacing : 1
+	Short : 4
+
+
+
+Total Wire Length =                    252734 micron
+Total Number of Contacts =             41753
+Total Number of Wires =                41463
+Total Number of PtConns =              1937
+Total Number of Routed Wires =       39470
+Total Routed Wire Length =           251840 micron
+Total Number of Routed Contacts =       41753
+	Layer              M1 :       6838 micron
+	Layer              M2 :     104066 micron
+	Layer              M3 :     117965 micron
+	Layer           TOP_M :      22972 micron
+	Via             VIA34 :       1055
+	Via         VIA34_2x1 :       1756
+	Via    VIA34(rot)_1x2 :         46
+	Via    VIA34(rot)_2x1 :         29
+	Via         VIA34_1x2 :        178
+	Via             VIA23 :       4680
+	Via        VIA23(rot) :          6
+	Via         VIA23_1x2 :      10553
+	Via    VIA23(rot)_2x1 :         80
+	Via    VIA23(rot)_1x2 :        144
+	Via         VIA23_2x1 :       6228
+	Via            VIA12A :       2813
+	Via       VIA12A(rot) :        290
+	Via        VIA12A_2x1 :       2900
+	Via   VIA12A(rot)_1x2 :        938
+	Via   VIA12A(rot)_2x1 :        656
+	Via        VIA12A_1x2 :       9401
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+  Total double via conversion rate    = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+ 
+  The optimized via conversion rate based on total routed via count = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+
+Total number of nets = 4432
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 7
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Total Wire Length =                    252734 micron
+Total Number of Contacts =             41753
+Total Number of Wires =                41463
+Total Number of PtConns =              1937
+Total Number of Routed Wires =       39470
+Total Routed Wire Length =           251840 micron
+Total Number of Routed Contacts =       41753
+	Layer              M1 :       6838 micron
+	Layer              M2 :     104066 micron
+	Layer              M3 :     117965 micron
+	Layer           TOP_M :      22972 micron
+	Via             VIA34 :       1055
+	Via         VIA34_2x1 :       1756
+	Via    VIA34(rot)_1x2 :         46
+	Via    VIA34(rot)_2x1 :         29
+	Via         VIA34_1x2 :        178
+	Via             VIA23 :       4680
+	Via        VIA23(rot) :          6
+	Via         VIA23_1x2 :      10553
+	Via    VIA23(rot)_2x1 :         80
+	Via    VIA23(rot)_1x2 :        144
+	Via         VIA23_2x1 :       6228
+	Via            VIA12A :       2813
+	Via       VIA12A(rot) :        290
+	Via        VIA12A_2x1 :       2900
+	Via   VIA12A(rot)_1x2 :        938
+	Via   VIA12A(rot)_2x1 :        656
+	Via        VIA12A_1x2 :       9401
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+  Total double via conversion rate    = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+ 
+  The optimized via conversion rate based on total routed via count = 78.82% (32909 / 41753 vias)
+ 
+    Layer V2         = 81.74% (13895  / 16998   vias)
+        Weight 1     = 81.74% (13895   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.26% (3103    vias)
+    Layer V3         = 78.40% (17005  / 21691   vias)
+        Weight 1     = 78.40% (17005   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.60% (4686    vias)
+    Layer TOP_V      = 65.57% (2009   / 3064    vias)
+        Weight 1     = 65.57% (2009    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 34.43% (1055    vias)
+ 
+Updating the database ...
+...updated 0 nets with eco mode
+[ECO: End] Elapsed real time: 0:00:00 
+[ECO: End] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: End] Stage (MB): Used   -2  Alloctr   -2  Proc    0 
+[ECO: End] Total (MB): Used    0  Alloctr    1  Proc 13707 
+[icc2-lic Mon Nov  2 20:57:02 2026] Command 'route_detail' requires licenses
+[icc2-lic Mon Nov  2 20:57:02 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:57:02 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon Nov  2 20:57:02 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:57:02 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:57:02 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:57:02 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon Nov  2 20:57:02 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:57:02 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon Nov  2 20:57:02 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:57:02 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:57:02 2026] Check-out of alternate set of keys directly with queueing was successful
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = TOP_M
+Found antenna rule mode 1, diode mode 4:
+	layer M1:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M2:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M3:  max ratio 12, diode ratio {0 0 0 45} 
+	layer TOP_M:  max ratio 12, diode ratio {0 0 2000 7500} 
+	layer V2:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer V3:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer TOP_V:  max ratio 20, diode ratio {0 0 1 0 0} 
+Found antenna rule mode 4, diode mode 4:
+	layer M1:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M2:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M3:  max ratio 25, diode ratio {0 0 0 100} 
+	layer TOP_M:  max ratio 25, diode ratio {0 0 8000 30000} 
+	layer V2: , diode ratio {0 0 1 0 0} 
+	layer V3: , diode ratio {0 0 1 0 0} 
+	layer TOP_V: , diode ratio {0 0 1 0 0} 
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.15 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 7.15 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.antenna_fixing_preference                        :	 hop_layers          
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+detail.hop_layers_to_fix_antenna                        :	 true                
+detail.insert_diodes_during_routing                     :	 false               
+detail.timing_driven                                    :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/9 Partitions, Violations =	1
+Checked	2/9 Partitions, Violations =	1
+Checked	3/9 Partitions, Violations =	1
+Checked	4/9 Partitions, Violations =	1
+Checked	5/9 Partitions, Violations =	3
+Checked	6/9 Partitions, Violations =	4
+Checked	7/9 Partitions, Violations =	4
+Checked	8/9 Partitions, Violations =	4
+Checked	9/9 Partitions, Violations =	4
+[DRC CHECK] Elapsed real time: 0:00:01 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used   87  Alloctr   88  Proc 13707 
+Loading timing information to the router from design
+Timing information loaded to the router.
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.antenna_fixing_preference                        :	 hop_layers          
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+detail.hop_layers_to_fix_antenna                        :	 true                
+detail.insert_diodes_during_routing                     :	 false               
+detail.timing_driven                                    :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+Information: RC layer preference is turned off for this design. (ZRT-613)
+[Dr init] Elapsed real time: 0:00:01 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Dr init] Stage (MB): Used   27  Alloctr   27  Proc    0 
+[Dr init] Total (MB): Used   30  Alloctr   31  Proc 13707 
+Total number of nets = 4432, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Routing in incremental mode, starting from iteration 34
+
+*****Start reporting antenna related parameters*****
+  Antenna/diode mode:
+    Antenna mode 1; diode mode 4
+      Metal lay (M1)0; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V2)1; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V3)2; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 45.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 2000.000 7500.000 0.000)
+    Antenna mode 4; diode mode 4
+      Metal lay (M1)0; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V2)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V3)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 100.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 8000.000 30000.000 0.000)
+  Top lay antenna ratio fix threshold == -1
+  Antenna max pin count threshold == -1
+  Check PG net == false
+  MergeGate == true
+  Break antenna to port mode == float
+  Break antenna to macro pin mode == normal
+*****End reporting antenna related parameters*****
+Warning: Skipping antenna analysis for net PCLK. The pin PCLK on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PRESETn. The pin PRESETn on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PSEL. The pin PSEL on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PENABLE. The pin PENABLE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWRITE. The pin PWRITE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[31]. The pin PADDR[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[30]. The pin PADDR[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[29]. The pin PADDR[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[28]. The pin PADDR[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[27]. The pin PADDR[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[26]. The pin PADDR[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[25]. The pin PADDR[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[24]. The pin PADDR[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[23]. The pin PADDR[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[22]. The pin PADDR[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[21]. The pin PADDR[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[20]. The pin PADDR[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[19]. The pin PADDR[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[18]. The pin PADDR[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[17]. The pin PADDR[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[16]. The pin PADDR[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[15]. The pin PADDR[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[14]. The pin PADDR[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[13]. The pin PADDR[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[12]. The pin PADDR[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[11]. The pin PADDR[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[10]. The pin PADDR[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[9]. The pin PADDR[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[8]. The pin PADDR[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[7]. The pin PADDR[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[6]. The pin PADDR[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[5]. The pin PADDR[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[4]. The pin PADDR[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[3]. The pin PADDR[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[2]. The pin PADDR[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[1]. The pin PADDR[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[0]. The pin PADDR[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[31]. The pin PWDATA[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[30]. The pin PWDATA[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[29]. The pin PWDATA[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[28]. The pin PWDATA[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[27]. The pin PWDATA[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[26]. The pin PWDATA[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[25]. The pin PWDATA[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[24]. The pin PWDATA[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[23]. The pin PWDATA[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[22]. The pin PWDATA[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[21]. The pin PWDATA[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[20]. The pin PWDATA[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[19]. The pin PWDATA[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[18]. The pin PWDATA[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[17]. The pin PWDATA[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[16]. The pin PWDATA[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[15]. The pin PWDATA[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[14]. The pin PWDATA[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[13]. The pin PWDATA[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[12]. The pin PWDATA[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[11]. The pin PWDATA[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[10]. The pin PWDATA[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[9]. The pin PWDATA[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[8]. The pin PWDATA[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[7]. The pin PWDATA[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[6]. The pin PWDATA[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[5]. The pin PWDATA[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[4]. The pin PWDATA[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[3]. The pin PWDATA[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[2]. The pin PWDATA[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[1]. The pin PWDATA[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[0]. The pin PWDATA[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net rfid_rx_bit. The pin rfid_rx_bit on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Skipping antenna analysis for 70 nets as they don't have enough gate area info.
+Warning: High fanout net ZCTSNET_13 can affect runtime for antenna fixing. (ZRT-626)
+Warning: High fanout net ZCTSNET_33 can affect runtime for antenna fixing. (ZRT-626)
+Start DR iteration 34: non-uniform partition
+Routed	1/33 Partitions, Violations =	4
+Routed	2/33 Partitions, Violations =	3
+Routed	3/33 Partitions, Violations =	3
+Routed	4/33 Partitions, Violations =	3
+Routed	5/33 Partitions, Violations =	3
+Routed	6/33 Partitions, Violations =	3
+Routed	7/33 Partitions, Violations =	3
+Routed	8/33 Partitions, Violations =	3
+Routed	9/33 Partitions, Violations =	3
+Routed	10/33 Partitions, Violations =	3
+Routed	11/33 Partitions, Violations =	3
+Routed	12/33 Partitions, Violations =	3
+Routed	13/33 Partitions, Violations =	3
+Routed	14/33 Partitions, Violations =	3
+Routed	15/33 Partitions, Violations =	3
+Routed	16/33 Partitions, Violations =	3
+Routed	17/33 Partitions, Violations =	3
+Routed	18/33 Partitions, Violations =	3
+Routed	19/33 Partitions, Violations =	3
+Routed	20/33 Partitions, Violations =	3
+Routed	21/33 Partitions, Violations =	3
+Routed	22/33 Partitions, Violations =	3
+Routed	23/33 Partitions, Violations =	3
+Routed	24/33 Partitions, Violations =	1
+Routed	25/33 Partitions, Violations =	0
+Routed	26/33 Partitions, Violations =	0
+Routed	27/33 Partitions, Violations =	0
+Routed	28/33 Partitions, Violations =	0
+Routed	29/33 Partitions, Violations =	0
+Routed	30/33 Partitions, Violations =	0
+Routed	31/33 Partitions, Violations =	0
+Routed	32/33 Partitions, Violations =	0
+Routed	33/33 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+	@@@@ Total number of instance ports with antenna violations =	28
+
+
+[Iter 34] Elapsed real time: 0:00:03 
+[Iter 34] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+[Iter 34] Stage (MB): Used   85  Alloctr   85  Proc    0 
+[Iter 34] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 34 with 33 parts
+
+Start DR iteration 35: non-uniform partition
+Routed	1/29 Partitions, Violations =	0
+Routed	2/29 Partitions, Violations =	0
+Routed	3/29 Partitions, Violations =	0
+Routed	4/29 Partitions, Violations =	0
+Routed	5/29 Partitions, Violations =	0
+Routed	6/29 Partitions, Violations =	0
+Routed	7/29 Partitions, Violations =	0
+Routed	8/29 Partitions, Violations =	0
+Routed	9/29 Partitions, Violations =	0
+Routed	10/29 Partitions, Violations =	0
+Routed	11/29 Partitions, Violations =	0
+Routed	12/29 Partitions, Violations =	0
+Routed	13/29 Partitions, Violations =	0
+Routed	14/29 Partitions, Violations =	0
+Routed	15/29 Partitions, Violations =	0
+Routed	16/29 Partitions, Violations =	0
+Routed	17/29 Partitions, Violations =	0
+Routed	18/29 Partitions, Violations =	0
+Routed	19/29 Partitions, Violations =	0
+Routed	20/29 Partitions, Violations =	0
+Routed	21/29 Partitions, Violations =	0
+Routed	22/29 Partitions, Violations =	0
+Routed	23/29 Partitions, Violations =	0
+Routed	24/29 Partitions, Violations =	0
+Routed	25/29 Partitions, Violations =	0
+Routed	26/29 Partitions, Violations =	0
+Routed	27/29 Partitions, Violations =	0
+Routed	28/29 Partitions, Violations =	0
+Routed	29/29 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+	@@@@ Total number of instance ports with antenna violations =	28
+
+
+[Iter 35] Elapsed real time: 0:00:04 
+[Iter 35] Elapsed cpu  time: sys=0:00:00 usr=0:00:04 total=0:00:04
+[Iter 35] Stage (MB): Used   85  Alloctr   85  Proc    0 
+[Iter 35] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 35 with 29 parts
+
+Start DR iteration 36: non-uniform partition
+Routed	1/27 Partitions, Violations =	0
+Routed	2/27 Partitions, Violations =	0
+Routed	3/27 Partitions, Violations =	0
+Routed	4/27 Partitions, Violations =	0
+Routed	5/27 Partitions, Violations =	0
+Routed	6/27 Partitions, Violations =	0
+Routed	7/27 Partitions, Violations =	0
+Routed	8/27 Partitions, Violations =	0
+Routed	9/27 Partitions, Violations =	0
+Routed	10/27 Partitions, Violations =	0
+Routed	11/27 Partitions, Violations =	0
+Routed	12/27 Partitions, Violations =	0
+Routed	13/27 Partitions, Violations =	0
+Routed	14/27 Partitions, Violations =	0
+Routed	15/27 Partitions, Violations =	0
+Routed	16/27 Partitions, Violations =	0
+Routed	17/27 Partitions, Violations =	0
+Routed	18/27 Partitions, Violations =	0
+Routed	19/27 Partitions, Violations =	0
+Routed	20/27 Partitions, Violations =	0
+Routed	21/27 Partitions, Violations =	0
+Routed	22/27 Partitions, Violations =	0
+Routed	23/27 Partitions, Violations =	0
+Routed	24/27 Partitions, Violations =	0
+Routed	25/27 Partitions, Violations =	0
+Routed	26/27 Partitions, Violations =	0
+Routed	27/27 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+	@@@@ Total number of instance ports with antenna violations =	27
+
+
+[Iter 36] Elapsed real time: 0:00:06 
+[Iter 36] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[Iter 36] Stage (MB): Used   85  Alloctr   85  Proc    0 
+[Iter 36] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 36 with 27 parts
+
+Start DR iteration 37: non-uniform partition
+Routed	1/25 Partitions, Violations =	0
+Routed	2/25 Partitions, Violations =	0
+Routed	3/25 Partitions, Violations =	0
+Routed	4/25 Partitions, Violations =	0
+Routed	5/25 Partitions, Violations =	0
+Routed	6/25 Partitions, Violations =	0
+Routed	7/25 Partitions, Violations =	0
+Routed	8/25 Partitions, Violations =	0
+Routed	9/25 Partitions, Violations =	0
+Routed	10/25 Partitions, Violations =	0
+Routed	11/25 Partitions, Violations =	0
+Routed	12/25 Partitions, Violations =	0
+Routed	13/25 Partitions, Violations =	0
+Routed	14/25 Partitions, Violations =	0
+Routed	15/25 Partitions, Violations =	0
+Routed	16/25 Partitions, Violations =	0
+Routed	17/25 Partitions, Violations =	0
+Routed	18/25 Partitions, Violations =	0
+Routed	19/25 Partitions, Violations =	0
+Routed	20/25 Partitions, Violations =	0
+Routed	21/25 Partitions, Violations =	0
+Routed	22/25 Partitions, Violations =	0
+Routed	23/25 Partitions, Violations =	0
+Routed	24/25 Partitions, Violations =	0
+Routed	25/25 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+	@@@@ Total number of instance ports with antenna violations =	27
+
+
+[Iter 37] Elapsed real time: 0:00:07 
+[Iter 37] Elapsed cpu  time: sys=0:00:00 usr=0:00:07 total=0:00:07
+[Iter 37] Stage (MB): Used   85  Alloctr   85  Proc    0 
+[Iter 37] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 37 with 25 parts
+
+Start DR iteration 38: non-uniform partition
+Routed	1/26 Partitions, Violations =	0
+Routed	2/26 Partitions, Violations =	0
+Routed	3/26 Partitions, Violations =	0
+Routed	4/26 Partitions, Violations =	0
+Routed	5/26 Partitions, Violations =	0
+Routed	6/26 Partitions, Violations =	0
+Routed	7/26 Partitions, Violations =	0
+Routed	8/26 Partitions, Violations =	0
+Routed	9/26 Partitions, Violations =	0
+Routed	10/26 Partitions, Violations =	0
+Routed	11/26 Partitions, Violations =	0
+Routed	12/26 Partitions, Violations =	0
+Routed	13/26 Partitions, Violations =	0
+Routed	14/26 Partitions, Violations =	0
+Routed	15/26 Partitions, Violations =	0
+Routed	16/26 Partitions, Violations =	0
+Routed	17/26 Partitions, Violations =	0
+Routed	18/26 Partitions, Violations =	0
+Routed	19/26 Partitions, Violations =	0
+Routed	20/26 Partitions, Violations =	0
+Routed	21/26 Partitions, Violations =	0
+Routed	22/26 Partitions, Violations =	0
+Routed	23/26 Partitions, Violations =	0
+Routed	24/26 Partitions, Violations =	0
+Routed	25/26 Partitions, Violations =	0
+Routed	26/26 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+	@@@@ Total number of instance ports with antenna violations =	31
+
+
+[Iter 38] Elapsed real time: 0:00:10 
+[Iter 38] Elapsed cpu  time: sys=0:00:00 usr=0:00:10 total=0:00:10
+[Iter 38] Stage (MB): Used   85  Alloctr   85  Proc    0 
+[Iter 38] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 38 with 26 parts
+
+Start DR iteration 39: non-uniform partition
+Routed	1/29 Partitions, Violations =	0
+Routed	2/29 Partitions, Violations =	0
+Routed	3/29 Partitions, Violations =	0
+Routed	4/29 Partitions, Violations =	0
+Routed	5/29 Partitions, Violations =	0
+Routed	6/29 Partitions, Violations =	0
+Routed	7/29 Partitions, Violations =	0
+Routed	8/29 Partitions, Violations =	0
+Routed	9/29 Partitions, Violations =	0
+Routed	10/29 Partitions, Violations =	0
+Routed	11/29 Partitions, Violations =	0
+Routed	12/29 Partitions, Violations =	0
+Routed	13/29 Partitions, Violations =	0
+Routed	14/29 Partitions, Violations =	0
+Routed	15/29 Partitions, Violations =	0
+Routed	16/29 Partitions, Violations =	0
+Routed	17/29 Partitions, Violations =	0
+Routed	18/29 Partitions, Violations =	0
+Routed	19/29 Partitions, Violations =	0
+Routed	20/29 Partitions, Violations =	0
+Routed	21/29 Partitions, Violations =	0
+Routed	22/29 Partitions, Violations =	0
+Routed	23/29 Partitions, Violations =	0
+Routed	24/29 Partitions, Violations =	0
+Routed	25/29 Partitions, Violations =	0
+Routed	26/29 Partitions, Violations =	0
+Routed	27/29 Partitions, Violations =	0
+Routed	28/29 Partitions, Violations =	0
+Routed	29/29 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+	@@@@ Total number of instance ports with antenna violations =	27
+
+
+[Iter 39] Elapsed real time: 0:00:12 
+[Iter 39] Elapsed cpu  time: sys=0:00:00 usr=0:00:12 total=0:00:12
+[Iter 39] Stage (MB): Used   85  Alloctr   85  Proc    0 
+[Iter 39] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 39 with 29 parts
+
+Start DR iteration 40: non-uniform partition
+Routed	1/26 Partitions, Violations =	0
+Routed	2/26 Partitions, Violations =	0
+Routed	3/26 Partitions, Violations =	1
+Routed	4/26 Partitions, Violations =	1
+Routed	5/26 Partitions, Violations =	1
+Routed	6/26 Partitions, Violations =	0
+Routed	7/26 Partitions, Violations =	0
+Routed	8/26 Partitions, Violations =	0
+Routed	9/26 Partitions, Violations =	0
+Routed	10/26 Partitions, Violations =	0
+Routed	11/26 Partitions, Violations =	0
+Routed	12/26 Partitions, Violations =	0
+Routed	13/26 Partitions, Violations =	0
+Routed	14/26 Partitions, Violations =	0
+Routed	15/26 Partitions, Violations =	0
+Routed	16/26 Partitions, Violations =	0
+Routed	17/26 Partitions, Violations =	0
+Routed	18/26 Partitions, Violations =	0
+Routed	19/26 Partitions, Violations =	0
+Routed	20/26 Partitions, Violations =	0
+Routed	21/26 Partitions, Violations =	0
+Routed	22/26 Partitions, Violations =	0
+Routed	23/26 Partitions, Violations =	0
+Routed	24/26 Partitions, Violations =	0
+Routed	25/26 Partitions, Violations =	0
+Routed	26/26 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+	@@@@ Total number of instance ports with antenna violations =	27
+
+
+[Iter 40] Elapsed real time: 0:00:14 
+[Iter 40] Elapsed cpu  time: sys=0:00:00 usr=0:00:14 total=0:00:14
+[Iter 40] Stage (MB): Used   85  Alloctr   85  Proc    0 
+[Iter 40] Total (MB): Used   88  Alloctr   89  Proc 13707 
+
+End DR iteration 40 with 26 parts
+
+Stop DR since not converging
+
+	@@@@ Total nets not meeting constraints =	24
+
+
+Begin revisit internal-only type DRCs ...
+
+Checked	1/1 Partitions, Violations =	0
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+[REVISIT DRC] Elapsed real time: 0:00:00 
+[REVISIT DRC] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[REVISIT DRC] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[REVISIT DRC] Total (MB): Used   88  Alloctr   89  Proc 13707 
+[DR] Elapsed real time: 0:00:14 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:14 total=0:00:14
+[DR] Stage (MB): Used   22  Alloctr   22  Proc    0 
+[DR] Total (MB): Used   25  Alloctr   26  Proc 13707 
+[DR: Done] Elapsed real time: 0:00:14 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:14 total=0:00:14
+[DR: Done] Stage (MB): Used   22  Alloctr   22  Proc    0 
+[DR: Done] Total (MB): Used   25  Alloctr   26  Proc 13707 
+
+DR finished with 0 open nets, of which 0 are frozen
+
+DR finished with 0 violations and 27 instance ports antenna violations
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+
+
+Total Wire Length =                    252558 micron
+Total Number of Contacts =             41655
+Total Number of Wires =                41437
+Total Number of PtConns =              1965
+Total Number of Routed Wires =       39449
+Total Routed Wire Length =           251661 micron
+Total Number of Routed Contacts =       41655
+	Layer              M1 :       6824 micron
+	Layer              M2 :     103903 micron
+	Layer              M3 :     117826 micron
+	Layer           TOP_M :      23108 micron
+	Via             VIA34 :       1133
+	Via    VIA34(rot)_1x2 :         45
+	Via    VIA34(rot)_2x1 :         29
+	Via         VIA34_1x2 :        173
+	Via         VIA34_2x1 :       1711
+	Via             VIA23 :       4713
+	Via        VIA23(rot) :          6
+	Via    VIA23(rot)_1x2 :        144
+	Via    VIA23(rot)_2x1 :         78
+	Via         VIA23_1x2 :      10495
+	Via         VIA23_2x1 :       6141
+	Via            VIA12A :       2876
+	Via       VIA12A(rot) :        290
+	Via   VIA12A(rot)_1x2 :        933
+	Via   VIA12A(rot)_2x1 :        653
+	Via        VIA12A_1x2 :       9353
+	Via        VIA12A_2x1 :       2882
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 78.35% (32637 / 41655 vias)
+ 
+    Layer V2         = 81.36% (13821  / 16987   vias)
+        Weight 1     = 81.36% (13821   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.64% (3166    vias)
+    Layer V3         = 78.13% (16858  / 21577   vias)
+        Weight 1     = 78.13% (16858   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.87% (4719    vias)
+    Layer TOP_V      = 63.35% (1958   / 3091    vias)
+        Weight 1     = 63.35% (1958    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 36.65% (1133    vias)
+ 
+  Total double via conversion rate    = 78.35% (32637 / 41655 vias)
+ 
+    Layer V2         = 81.36% (13821  / 16987   vias)
+    Layer V3         = 78.13% (16858  / 21577   vias)
+    Layer TOP_V      = 63.35% (1958   / 3091    vias)
+ 
+  The optimized via conversion rate based on total routed via count = 78.35% (32637 / 41655 vias)
+ 
+    Layer V2         = 81.36% (13821  / 16987   vias)
+        Weight 1     = 81.36% (13821   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.64% (3166    vias)
+    Layer V3         = 78.13% (16858  / 21577   vias)
+        Weight 1     = 78.13% (16858   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.87% (4719    vias)
+    Layer TOP_V      = 63.35% (1958   / 3091    vias)
+        Weight 1     = 63.35% (1958    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 36.65% (1133    vias)
+ 
+
+Total number of nets = 4432
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = 37
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+...updated 204 nets
+Information: The net parasitics of block baseband_crypto_macro are cleared. (TIM-123)
+[icc2-lic Mon Nov  2 20:57:16 2026] Command 'check_routes' requires licenses
+[icc2-lic Mon Nov  2 20:57:16 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:57:16 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon Nov  2 20:57:16 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:57:16 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:57:16 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:57:16 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon Nov  2 20:57:16 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:57:16 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon Nov  2 20:57:16 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:57:16 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:57:16 2026] Check-out of alternate set of keys directly with queueing was successful
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = TOP_M
+Found antenna rule mode 1, diode mode 4:
+	layer M1:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M2:  max ratio 12, diode ratio {0 0 0 75} 
+	layer M3:  max ratio 12, diode ratio {0 0 0 45} 
+	layer TOP_M:  max ratio 12, diode ratio {0 0 2000 7500} 
+	layer V2:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer V3:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer TOP_V:  max ratio 20, diode ratio {0 0 1 0 0} 
+Found antenna rule mode 4, diode mode 4:
+	layer M1:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M2:  max ratio 25, diode ratio {0 0 0 180} 
+	layer M3:  max ratio 25, diode ratio {0 0 0 100} 
+	layer TOP_M:  max ratio 25, diode ratio {0 0 8000 30000} 
+	layer V2: , diode ratio {0 0 1 0 0} 
+	layer V3: , diode ratio {0 0 1 0 0} 
+	layer TOP_V: , diode ratio {0 0 1 0 0} 
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 10.73 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 10.73 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 4432, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 4432 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   23  Alloctr   24  Proc 13707 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.antenna_fixing_preference                        :	 hop_layers          
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+detail.hop_layers_to_fix_antenna                        :	 true                
+detail.insert_diodes_during_routing                     :	 false               
+detail.timing_driven                                    :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+*****Start reporting antenna related parameters*****
+  Antenna/diode mode:
+    Antenna mode 1; diode mode 4
+      Metal lay (M1)0; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V2)1; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 75.000 0.000)
+      Cut lay (V3)2; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 45.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 12.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 2000.000 7500.000 0.000)
+    Antenna mode 4; diode mode 4
+      Metal lay (M1)0; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V2)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 180.000 0.000)
+      Cut lay (V3)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 100.000 0.000)
+      Cut lay (TOP_V)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (TOP_M)3; maxRatio 25.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 8000.000 30000.000 0.000)
+  Top lay antenna ratio fix threshold == -1
+  Antenna max pin count threshold == -1
+  Check PG net == false
+  MergeGate == true
+  Break antenna to port mode == float
+  Break antenna to macro pin mode == normal
+*****End reporting antenna related parameters*****
+Warning: Skipping antenna analysis for net PCLK. The pin PCLK on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PRESETn. The pin PRESETn on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PSEL. The pin PSEL on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PENABLE. The pin PENABLE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWRITE. The pin PWRITE on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[31]. The pin PADDR[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[30]. The pin PADDR[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[29]. The pin PADDR[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[28]. The pin PADDR[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[27]. The pin PADDR[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[26]. The pin PADDR[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[25]. The pin PADDR[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[24]. The pin PADDR[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[23]. The pin PADDR[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[22]. The pin PADDR[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[21]. The pin PADDR[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[20]. The pin PADDR[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[19]. The pin PADDR[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[18]. The pin PADDR[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[17]. The pin PADDR[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[16]. The pin PADDR[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[15]. The pin PADDR[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[14]. The pin PADDR[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[13]. The pin PADDR[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[12]. The pin PADDR[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[11]. The pin PADDR[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[10]. The pin PADDR[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[9]. The pin PADDR[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[8]. The pin PADDR[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[7]. The pin PADDR[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[6]. The pin PADDR[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[5]. The pin PADDR[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[4]. The pin PADDR[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[3]. The pin PADDR[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[2]. The pin PADDR[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[1]. The pin PADDR[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PADDR[0]. The pin PADDR[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[31]. The pin PWDATA[31] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[30]. The pin PWDATA[30] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[29]. The pin PWDATA[29] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[28]. The pin PWDATA[28] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[27]. The pin PWDATA[27] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[26]. The pin PWDATA[26] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[25]. The pin PWDATA[25] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[24]. The pin PWDATA[24] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[23]. The pin PWDATA[23] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[22]. The pin PWDATA[22] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[21]. The pin PWDATA[21] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[20]. The pin PWDATA[20] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[19]. The pin PWDATA[19] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[18]. The pin PWDATA[18] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[17]. The pin PWDATA[17] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[16]. The pin PWDATA[16] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[15]. The pin PWDATA[15] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[14]. The pin PWDATA[14] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[13]. The pin PWDATA[13] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[12]. The pin PWDATA[12] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[11]. The pin PWDATA[11] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[10]. The pin PWDATA[10] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[9]. The pin PWDATA[9] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[8]. The pin PWDATA[8] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[7]. The pin PWDATA[7] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[6]. The pin PWDATA[6] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[5]. The pin PWDATA[5] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[4]. The pin PWDATA[4] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[3]. The pin PWDATA[3] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[2]. The pin PWDATA[2] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[1]. The pin PWDATA[1] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net PWDATA[0]. The pin PWDATA[0] on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net rfid_rx_bit. The pin rfid_rx_bit on cell baseband_crypto_macro_route does not have enough gate area information. (ZRT-311)
+Skipping antenna analysis for 70 nets as they don't have enough gate area info.
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/9 Partitions, Violations =	0
+Checked	2/9 Partitions, Violations =	0
+Checked	3/9 Partitions, Violations =	0
+Checked	4/9 Partitions, Violations =	0
+Checked	5/9 Partitions, Violations =	0
+Checked	6/9 Partitions, Violations =	0
+Checked	7/9 Partitions, Violations =	0
+Checked	8/9 Partitions, Violations =	0
+Checked	9/9 Partitions, Violations =	0
+[DRC CHECK] Elapsed real time: 0:00:01 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used   85  Alloctr   86  Proc 13707 
+Start net based rule analysis
+Antenna DRC for net crypto_data_in_w[23]; Net top lay M3
+	ICell U_CRYPTO/U163; master port A1
+		Antenna/diode mode 1/4; wlay M3; gArea 0.44800001;  allowed ratio/ratio 45.00000000/77.16562653
+		Antenna/diode mode 4/4; wlay M3; gArea 0.44800001;  allowed ratio/ratio 100.00000000/294.77700806
+Antenna DRC for net crypto_data_in_w[6]; Net top lay M3
+	ICell U_CRYPTO/U197; master port A1
+		Antenna/diode mode 4/4; wlay M3; gArea 0.44800001;  allowed ratio/ratio 100.00000000/133.06785583
+Antenna DRC for net U_APB/n87; Net top lay M2
+	ICell U_APB/U785; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_APB/n113; Net top lay M3
+	ICell U_APB/U734; master port I
+		Antenna/diode mode 1/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 45.00000000/121.87645721
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/41.81111145
+		Antenna/diode mode 4/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 25.00000000/46.62036896
+		Antenna/diode mode 4/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 100.00000000/466.41995239
+	ICell U_APB/U81; master port A1
+		Antenna/diode mode 1/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 45.00000000/121.87645721
+		Antenna/diode mode 4/4; wlay M3; gArea 0.53100002;  allowed ratio/ratio 100.00000000/466.41995239
+Antenna DRC for net U_APB/n131; Net top lay M3
+	ICell U_APB/ctrl_mode_reg[0]; master port D
+		Antenna/diode mode 4/4; wlay M3; gArea 0.18000001;  allowed ratio/ratio 100.00000000/112.53666687
+Antenna DRC for net U_APB/tmp_net34; Net top lay M3
+	ICell U_APB/ctmTdsLR_2_548; master port A1
+		Antenna/diode mode 1/4; wlay M2; gArea 0.30899999;  allowed ratio/ratio 12.00000000/24.69255638
+		Antenna/diode mode 4/4; wlay M2; gArea 0.30899999;  allowed ratio/ratio 25.00000000/94.43948364
+		Antenna/diode mode 4/4; wlay M3; gArea 0.30899999;  allowed ratio/ratio 100.00000000/135.15856934
+Antenna DRC for net U_MUX/n37; Net top lay M3
+	ICell U_MUX/U874; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_DBB/U_FSM/n24; Net top lay M2
+	ICell U_DBB/U_FSM/U9; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_DBB/U_FRAMER/n1; Net top lay M3
+	ICell U_DBB/U_FRAMER/U199; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_DBB/U_FRAMER/preamble_reg[0]; Net top lay M3
+	ICell U_DBB/U_FRAMER/U209; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_DBB/U_FRAMER/bit_count[0]; Net top lay M3
+	ICell U_DBB/U_FRAMER/add_78/U1; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/n449; Net top lay M3
+	ICell U_CRYPTO/ctmTdsLR_3_1332; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/data_key_added[63]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[15].SX/U12; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/data_key_added[57]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[14].SX/U9; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/data_key_added[55]; Net top lay TOP_M
+	ICell U_CRYPTO/SL/GEN_SBOXES[13].SX/U12; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/data_key_added[31]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[7].SX/U12; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/30.76944542
+Antenna DRC for net U_CRYPTO/data_key_added[17]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[4].SX/U9; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/data_key_added[15]; Net top lay TOP_M
+	ICell U_CRYPTO/SL/GEN_SBOXES[3].SX/U12; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/data_key_added[14]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[3].SX/U10; master port I
+		Antenna/diode mode 1/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 12.00000000/17.48703766
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/30.81851768
+		Antenna/diode mode 4/4; wlay M2; gArea 0.10800000;  allowed ratio/ratio 25.00000000/68.94907379
+Antenna DRC for net U_CRYPTO/data_key_added[0]; Net top lay M3
+	ICell U_CRYPTO/SL/GEN_SBOXES[0].SX/U8; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/key_state[68]; Net top lay M3
+	ICell U_CRYPTO/U271; master port B1
+		Antenna/diode mode 4/4; wlay M2; gArea 0.46599999;  allowed ratio/ratio 25.00000000/36.82703781
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/154.21520996
+	ICell U_CRYPTO/U378; master port A2
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/154.21520996
+	ICell U_CRYPTO/U232; master port B1
+		Antenna/diode mode 4/4; wlay M3; gArea 1.18299997;  allowed ratio/ratio 100.00000000/154.21520996
+Antenna DRC for net U_CRYPTO/state[1]; Net top lay M3
+	ICell U_CRYPTO/ctmTdsLR_2_1331; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/state[0]; Net top lay TOP_M
+	ICell U_CRYPTO/U6; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/28.46296310
+Antenna DRC for net U_CRYPTO/SL/GEN_SBOXES[9].SX/n18; Net top lay TOP_M
+	ICell U_CRYPTO/SL/GEN_SBOXES[9].SX/U3; master port I
+		Antenna/diode mode 4/4; wlay M1; gArea 0.10800000;  allowed ratio/ratio 25.00000000/36.31481552
+Found 27 antenna instance ports
+End net based rule analysis
+[Antenna analysis] Elapsed real time: 0:00:00 
+[Antenna analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Antenna analysis] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Antenna analysis] Total (MB): Used   85  Alloctr   87  Proc 13707 
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+
+Total Wire Length =                    252558 micron
+Total Number of Contacts =             41655
+Total Number of Wires =                41436
+Total Number of PtConns =              1966
+Total Number of Routed Wires =       39449
+Total Routed Wire Length =           251661 micron
+Total Number of Routed Contacts =       41655
+	Layer              M1 :       6824 micron
+	Layer              M2 :     103903 micron
+	Layer              M3 :     117826 micron
+	Layer           TOP_M :      23108 micron
+	Via             VIA34 :       1133
+	Via    VIA34(rot)_1x2 :         45
+	Via    VIA34(rot)_2x1 :         29
+	Via         VIA34_1x2 :        173
+	Via         VIA34_2x1 :       1711
+	Via             VIA23 :       4713
+	Via        VIA23(rot) :          6
+	Via    VIA23(rot)_1x2 :        144
+	Via    VIA23(rot)_2x1 :         78
+	Via         VIA23_1x2 :      10495
+	Via         VIA23_2x1 :       6141
+	Via            VIA12A :       2876
+	Via       VIA12A(rot) :        290
+	Via   VIA12A(rot)_1x2 :        933
+	Via   VIA12A(rot)_2x1 :        653
+	Via        VIA12A_1x2 :       9353
+	Via        VIA12A_2x1 :       2882
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 78.35% (32637 / 41655 vias)
+ 
+    Layer V2         = 81.36% (13821  / 16987   vias)
+        Weight 1     = 81.36% (13821   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.64% (3166    vias)
+    Layer V3         = 78.13% (16858  / 21577   vias)
+        Weight 1     = 78.13% (16858   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.87% (4719    vias)
+    Layer TOP_V      = 63.35% (1958   / 3091    vias)
+        Weight 1     = 63.35% (1958    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 36.65% (1133    vias)
+ 
+  Total double via conversion rate    = 78.35% (32637 / 41655 vias)
+ 
+    Layer V2         = 81.36% (13821  / 16987   vias)
+    Layer V3         = 78.13% (16858  / 21577   vias)
+    Layer TOP_V      = 63.35% (1958   / 3091    vias)
+ 
+  The optimized via conversion rate based on total routed via count = 78.35% (32637 / 41655 vias)
+ 
+    Layer V2         = 81.36% (13821  / 16987   vias)
+        Weight 1     = 81.36% (13821   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 18.64% (3166    vias)
+    Layer V3         = 78.13% (16858  / 21577   vias)
+        Weight 1     = 78.13% (16858   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 21.87% (4719    vias)
+    Layer TOP_V      = 63.35% (1958   / 3091    vias)
+        Weight 1     = 63.35% (1958    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 36.65% (1133    vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 4432, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = 37
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+
+Information: Saving block 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design'
+Information: Saving block 'baseband_crypto_macro.dlib:baseband_crypto_macro_route.design'
+Saving library 'baseband_crypto_macro.dlib'
+>>> REV 4 ANTENNA FIX COMPLETE! Rerun the Calibre antenna check, then metal_fill.tcl and pv.tcl.

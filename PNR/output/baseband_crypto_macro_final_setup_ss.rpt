@@ -1,0 +1,1982 @@
+[icc2-lic Sun Oct 25 09:43:12 2026] Command 'report_timing' requires licenses
+[icc2-lic Sun Oct 25 09:43:12 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:12 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:12 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:12 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:12 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:12 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:12 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:12 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Oct 25 09:43:12 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:12 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:12 2026] Check-out of alternate set of keys directly with queueing was successful
+Warning: Scenario func_ff is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full_clock_expanded
+        -delay_type max
+        -max_paths 50
+        -report_by design
+Design : baseband_crypto_macro
+Version: U-2022.12-SP3
+Date   : Sun Oct 25 09:43:12 2026
+****************************************
+Information: Timer using 'SI, Timing Window Analysis'. (TIM-050)
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[2] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U776/ZN (nd03d0)                           0.64      9.56 f
+  U_APB/U733/ZN (inv0d0)                           0.98     10.54 r
+  U_APB/U649/Z (aor222d1)                          0.69     11.23 r
+  PRDATA[2] (out)                                  0.00     11.23 r
+  data arrival time                                         11.23
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -11.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.56
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[3] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U776/ZN (nd03d0)                           0.64      9.56 f
+  U_APB/U733/ZN (inv0d0)                           0.98     10.54 r
+  U_APB/ctmTdsLR_1_2612/ZN (oaim21d1)              0.64     11.18 r
+  PRDATA[3] (out)                                  0.03     11.22 r
+  data arrival time                                         11.22
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -11.22
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.57
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[1] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U769/Z (an03d2)                            1.05      9.97 r
+  U_APB/U661/ZN (aoi22d1)                          0.39     10.36 f
+  U_APB/U660/ZN (oai221d1)                         0.23     10.60 r
+  HFSBUF_4_403/Z (buffd1)                          0.50     11.09 r
+  PRDATA[1] (out)                                  0.02     11.11 r
+  data arrival time                                         11.11
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -11.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.68
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[0] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U769/Z (an03d2)                            1.05      9.97 r
+  U_APB/U673/ZN (aoi22d1)                          0.39     10.35 f
+  U_APB/U672/ZN (oai221d1)                         0.21     10.56 r
+  HFSBUF_4_404/Z (buffd1)                          0.44     11.01 r
+  PRDATA[0] (out)                                  0.05     11.06 r
+  data arrival time                                         11.06
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -11.06
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.73
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[21] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U658/Z (aor22d1)                           0.66     10.62 r
+  PRDATA[21] (out)                                 0.17     10.78 r
+  data arrival time                                         10.78
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.78
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.01
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[31] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U647/Z (aor22d1)                           0.68     10.63 r
+  PRDATA[31] (out)                                 0.13     10.77 r
+  data arrival time                                         10.77
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.77
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.02
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[29] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U650/Z (aor22d1)                           0.66     10.62 r
+  PRDATA[29] (out)                                 0.11     10.72 r
+  data arrival time                                         10.72
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.72
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.06
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[27] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U652/Z (aor22d1)                           0.63     10.59 r
+  PRDATA[27] (out)                                 0.11     10.70 r
+  data arrival time                                         10.70
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.70
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.09
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[23] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U656/Z (aor22d1)                           0.62     10.57 r
+  PRDATA[23] (out)                                 0.11     10.68 r
+  data arrival time                                         10.68
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.68
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.11
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[22] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U657/Z (aor22d1)                           0.58     10.53 r
+  PRDATA[22] (out)                                 0.09     10.62 r
+  data arrival time                                         10.62
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.62
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.17
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[11] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U670/Z (aor22d1)                           0.59     10.54 r
+  PRDATA[11] (out)                                 0.07     10.61 r
+  data arrival time                                         10.61
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.61
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.18
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[17] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U664/Z (aor22d1)                           0.58     10.54 r
+  PRDATA[17] (out)                                 0.07     10.61 r
+  data arrival time                                         10.61
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.61
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.18
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[9] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U640/Z (aor22d1)                           0.57     10.53 r
+  PRDATA[9] (out)                                  0.08     10.60 r
+  data arrival time                                         10.60
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.60
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.18
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[15] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U666/Z (aor22d1)                           0.58     10.54 r
+  PRDATA[15] (out)                                 0.07     10.60 r
+  data arrival time                                         10.60
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.60
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.19
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[19] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U662/Z (aor22d1)                           0.60     10.55 r
+  PRDATA[19] (out)                                 0.05     10.60 r
+  data arrival time                                         10.60
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.60
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.19
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[28] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U651/Z (aor22d1)                           0.59     10.55 r
+  PRDATA[28] (out)                                 0.05     10.60 r
+  data arrival time                                         10.60
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.60
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.19
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[25] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U654/Z (aor22d1)                           0.59     10.54 r
+  PRDATA[25] (out)                                 0.03     10.57 r
+  data arrival time                                         10.57
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.57
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.22
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[13] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U668/Z (aor22d1)                           0.56     10.51 r
+  PRDATA[13] (out)                                 0.05     10.57 r
+  data arrival time                                         10.57
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.57
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.22
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[26] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U653/Z (aor22d1)                           0.58     10.53 r
+  PRDATA[26] (out)                                 0.03     10.56 r
+  data arrival time                                         10.56
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.56
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.22
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[30] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U648/Z (aor22d1)                           0.59     10.55 r
+  PRDATA[30] (out)                                 0.00     10.55 r
+  data arrival time                                         10.55
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.55
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.24
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[10] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U671/Z (aor22d1)                           0.55     10.50 r
+  PRDATA[10] (out)                                 0.02     10.51 r
+  data arrival time                                         10.51
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.51
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.27
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[16] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U665/Z (aor22d1)                           0.53     10.48 r
+  PRDATA[16] (out)                                 0.02     10.50 r
+  data arrival time                                         10.50
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.50
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.28
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[24] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U655/Z (aor22d1)                           0.53     10.48 r
+  PRDATA[24] (out)                                 0.02     10.50 r
+  data arrival time                                         10.50
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.50
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.29
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[8] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U641/Z (aor22d1)                           0.55     10.50 r
+  PRDATA[8] (out)                                  0.00     10.50 r
+  data arrival time                                         10.50
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.50
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.29
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[20] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U659/Z (aor22d1)                           0.52     10.47 r
+  PRDATA[20] (out)                                 0.02     10.49 r
+  data arrival time                                         10.49
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.49
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.29
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[7] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U642/Z (aor22d1)                           0.54     10.49 r
+  PRDATA[7] (out)                                  0.00     10.49 r
+  data arrival time                                         10.49
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.49
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.30
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[5] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U644/Z (aor22d1)                           0.53     10.48 r
+  PRDATA[5] (out)                                  0.01     10.49 r
+  data arrival time                                         10.49
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.49
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.30
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[14] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U667/Z (aor22d1)                           0.54     10.49 r
+  PRDATA[14] (out)                                 0.00     10.49 r
+  data arrival time                                         10.49
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.49
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.30
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[12] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U669/Z (aor22d1)                           0.53     10.48 r
+  PRDATA[12] (out)                                 0.01     10.49 r
+  data arrival time                                         10.49
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.49
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.30
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[6] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U643/Z (aor22d1)                           0.53     10.48 r
+  PRDATA[6] (out)                                  0.00     10.48 r
+  data arrival time                                         10.48
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.48
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.31
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[4] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U645/Z (aor22d1)                           0.52     10.47 r
+  PRDATA[4] (out)                                  0.00     10.47 r
+  data arrival time                                         10.47
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.47
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.31
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: PRDATA[18] (output port clocked by VCLK_APB)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U81/ZN (nr03d1)                            0.81      8.91 r
+  U_APB/U775/Z (an03d2)                            1.04      9.95 r
+  U_APB/U663/Z (aor22d1)                           0.51     10.46 r
+  PRDATA[18] (out)                                 0.01     10.47 r
+  data arrival time                                         10.47
+
+  clock VCLK_APB (rise edge)                      20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                           -6.00     13.79
+  data required time                                        13.79
+  ------------------------------------------------------------------------
+  data required time                                        13.79
+  data arrival time                                        -10.47
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.31
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[213] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U240/ZN (oaim22d1)                         0.45     12.75 f
+  U_APB/copt_h_inst_2784/Z (dl01d1)                0.59     13.34 f
+  U_APB/apb_test_data_reg[213]/D (dfnrq2)          0.00     13.34 f
+  data arrival time                                         13.34
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_22311_2290/Z (bufbdk)                    0.40     20.40 r
+  U_APB/apb_test_data_reg[213]/CP (dfnrq2)         0.00     20.41 r
+
+  clock uncertainty                               -0.50     19.91
+  library setup time                              -0.17     19.74
+  data required time                                        19.74
+  ------------------------------------------------------------------------
+  data required time                                        19.74
+  data arrival time                                        -13.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.40
+
+
+
+  Startpoint: U_APB/ctrl_mode_reg[0] (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rfid_tx_bit (output port clocked by VCLK_RF)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock PCLK (rise edge)                           0.00      0.00
+  source latency                                   0.00      0.00
+  PCLK (in)                                        0.00      0.00 r
+  ZCTSBUF_22311_2290/Z (bufbdk)                    0.40      0.40 r
+  ZCTSBUF_22191_2289/Z (buffd2)                    0.31      0.71 r
+  U_APB/ctrl_mode_reg[0]/CP (dfnrq2)               0.00      0.71 r
+
+  U_APB/ctrl_mode_reg[0]/CP (dfnrq2)               0.00      0.71 r
+  U_APB/ctrl_mode_reg[0]/Q (dfnrq2)                0.78      1.49 f
+  U_MUX/U870/ZN (inv0d0)                           0.62      2.11 r
+  U_MUX/U849/ZN (nd02d1)                           0.27      2.38 f
+  U_MUX/ctmTdsLR_1_2604/Z (an12d1)                 0.94      3.32 r
+  rfid_tx_bit (out)                                0.01      3.33 r
+  data arrival time                                          3.33
+
+  clock VCLK_RF (rise edge)                       20.00     20.00
+  clock network delay (ideal)                      0.29     20.29
+  clock uncertainty                               -0.50     19.79
+  output external delay                          -10.00      9.79
+  data required time                                         9.79
+  ------------------------------------------------------------------------
+  data required time                                         9.79
+  data arrival time                                         -3.33
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.45
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[178] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U7/ZN (nd04d0)                             0.60     10.58 f
+  U_APB/ctmTdsLR_1_1082/Z (an02d2)                 0.78     11.37 f
+  U_APB/HFSBUF_291_430/Z (bufbd1)                  0.77     12.14 f
+  U_APB/U205/ZN (oaim22d1)                         0.42     12.56 f
+  U_APB/copt_h_inst_2781/Z (dl01d1)                0.59     13.15 f
+  U_APB/apb_test_data_reg[178]/D (dfnrq1)          0.00     13.15 f
+  data arrival time                                         13.15
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  ZCTSBUF_52829_2306/Z (buffda)                    0.27     20.64 r
+  U_APB/apb_test_data_reg[178]/CP (dfnrq1)         0.00     20.64 r
+
+  clock uncertainty                               -0.50     20.14
+  library setup time                              -0.19     19.95
+  data required time                                        19.95
+  ------------------------------------------------------------------------
+  data required time                                        19.95
+  data arrival time                                        -13.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.80
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[153] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U5/ZN (nd04d0)                             0.61     10.59 f
+  U_APB/ctmTdsLR_1_1083/Z (an02d2)                 0.77     11.36 f
+  U_APB/HFSBUF_134_427/Z (bufbd1)                  0.72     12.09 f
+  U_APB/U180/ZN (oaim22d1)                         0.40     12.48 f
+  U_APB/copt_h_inst_2754/Z (dl01d1)                0.59     13.07 f
+  U_APB/apb_test_data_reg[153]/D (dfnrq2)          0.01     13.08 f
+  data arrival time                                         13.08
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  ZCTSBUF_51266_2307/Z (buffda)                    0.27     20.63 r
+  U_APB/apb_test_data_reg[153]/CP (dfnrq2)         0.00     20.64 r
+
+  clock uncertainty                               -0.50     20.14
+  library setup time                              -0.20     19.94
+  data required time                                        19.94
+  ------------------------------------------------------------------------
+  data required time                                        19.94
+  data arrival time                                        -13.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.86
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[223] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U250/ZN (oaim22d1)                         0.45     12.75 f
+  U_APB/apb_test_data_reg[223]/D (dfnrq2)          0.01     12.76 f
+  data arrival time                                         12.76
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[223]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.22     19.65
+  data required time                                        19.65
+  ------------------------------------------------------------------------
+  data required time                                        19.65
+  data arrival time                                        -12.76
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.89
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[95] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U67/ZN (nd04d0)                            0.52     10.51 f
+  U_APB/ctmTdsLR_1_1081/Z (an02d2)                 0.74     11.25 f
+  U_APB/HFSBUF_252_436/Z (buffd1)                  0.67     11.92 f
+  U_APB/U122/ZN (oaim22d1)                         0.35     12.27 f
+  U_APB/copt_h_inst_2793/Z (dl01d1)                0.58     12.86 f
+  U_APB/apb_test_data_reg[95]/D (dfnrq1)           0.00     12.86 f
+  data arrival time                                         12.86
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_22311_2290/Z (bufbdk)                    0.40     20.40 r
+  U_APB/apb_test_data_reg[95]/CP (dfnrq1)          0.02     20.42 r
+
+  clock uncertainty                               -0.50     19.92
+  library setup time                              -0.17     19.75
+  data required time                                        19.75
+  ------------------------------------------------------------------------
+  data required time                                        19.75
+  data arrival time                                        -12.86
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.89
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[214] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U241/ZN (oaim22d1)                         0.45     12.75 f
+  U_APB/apb_test_data_reg[214]/D (dfnrq2)          0.00     12.75 f
+  data arrival time                                         12.75
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[214]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.22     19.65
+  data required time                                        19.65
+  ------------------------------------------------------------------------
+  data required time                                        19.65
+  data arrival time                                        -12.75
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.90
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[212] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U239/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[212]/D (dfnrq2)          0.01     12.75 f
+  data arrival time                                         12.75
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[212]/CP (dfnrq2)         0.01     20.38 r
+
+  clock uncertainty                               -0.50     19.88
+  library setup time                              -0.21     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.75
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.91
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[220] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U247/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[220]/D (dfnrq2)          0.00     12.75 f
+  data arrival time                                         12.75
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[220]/CP (dfnrq2)         0.01     20.38 r
+
+  clock uncertainty                               -0.50     19.88
+  library setup time                              -0.22     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.75
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.91
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[210] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U237/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[210]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[210]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.22     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[204] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U231/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[204]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[204]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.21     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[209] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U236/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[209]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[209]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.22     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[203] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U230/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[203]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[203]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.21     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[207] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U234/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[207]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[207]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.22     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[219] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U246/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[219]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[219]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.21     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[216] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U243/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[216]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[216]/CP (dfnrq2)         0.01     20.37 r
+
+  clock uncertainty                               -0.50     19.87
+  library setup time                              -0.21     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[208] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U235/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[208]/D (dfnrq2)          0.00     12.74 f
+  data arrival time                                         12.74
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_62768_2309/Z (bufbdf)                    0.36     20.36 r
+  U_APB/apb_test_data_reg[208]/CP (dfnrq2)         0.01     20.38 r
+
+  clock uncertainty                               -0.50     19.88
+  library setup time                              -0.21     19.66
+  data required time                                        19.66
+  ------------------------------------------------------------------------
+  data required time                                        19.66
+  data arrival time                                        -12.74
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.92
+
+
+
+  Startpoint: PADDR[16] (input port clocked by VCLK_APB)
+  Endpoint: U_APB/apb_test_data_reg[211] (rising edge-triggered flip-flop clocked by PCLK)
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK_APB (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.29      0.31
+  input external delay                             6.00      6.31 f
+  PADDR[16] (in)                                   0.03      6.31 f
+  U_APB/U674/ZN (nd13d1)                           0.19      6.51 f
+  U_APB/U768/ZN (nr04d1)                           0.81      7.31 r
+  U_APB/U86/ZN (nd04d1)                            0.79      8.10 f
+  U_APB/U734/ZN (inv0d0)                           0.76      8.86 r
+  U_APB/ctmTdsLR_2_1073/ZN (nd12d1)                0.52      9.37 f
+  U_APB/U735/ZN (inv0d1)                           0.61      9.98 r
+  U_APB/U9/ZN (nd04d0)                             0.57     10.55 f
+  U_APB/U8/Z (an02d1)                              0.82     11.37 f
+  U_APB/HFSBUF_160_446/Z (bufbd1)                  0.93     12.30 f
+  U_APB/U238/ZN (oaim22d1)                         0.44     12.74 f
+  U_APB/apb_test_data_reg[211]/D (dfnrq2)          0.00     12.75 f
+  data arrival time                                         12.75
+
+  clock PCLK (rise edge)                          20.00     20.00
+  source latency                                   0.00     20.00
+  PCLK (in)                                        0.00     20.00 r
+  ZCTSBUF_22311_2290/Z (bufbdk)                    0.40     20.40 r
+  U_APB/apb_test_data_reg[211]/CP (dfnrq2)         0.00     20.41 r
+
+  clock uncertainty                               -0.50     19.91
+  library setup time                              -0.22     19.69
+  data required time                                        19.69
+  ------------------------------------------------------------------------
+  data required time                                        19.69
+  data arrival time                                        -12.75
+  ------------------------------------------------------------------------
+  slack (MET)                                                6.94
+
+
+1

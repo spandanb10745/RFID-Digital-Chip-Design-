@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : area
+Design : baseband_crypto_macro
+Version: T-2022.03-SP5
+Date   : Sun Oct 18 18:23:39 2026
+****************************************
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /storage/PDK_iitg/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+Number of ports:                         2436
+Number of nets:                          6604
+Number of cells:                         4223
+Number of combinational cells:           2852
+Number of sequential cells:              1341
+Number of macros/black boxes:               0
+Number of buf/inv:                        722
+Number of references:                       6
+
+Combinational area:              63463.170568
+Buf/Inv area:                     8421.089983
+Noncombinational area:           79899.922455
+Macro/Black Box area:                0.000000
+Net Interconnect area:            5188.286380
+
+Total cell area:                143363.093022
+Total area:                     148551.379402
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-   Black-
+                                  Total        Total    national    national    boxes   Design
+--------------------------------  -----------  -------  ----------  ----------  ------  --------------------------------
+baseband_crypto_macro             143363.0930    100.0     43.9000      0.0000  0.0000  baseband_crypto_macro
+U_APB                              49221.0010     34.3  18298.9801  30922.0210  0.0000  apb_wrapper
+U_CRYPTO                           29133.4304     20.3  10722.7700  12869.2804  0.0000  present_top
+U_CRYPTO/KS                          473.5400      0.3    156.8000      0.0000  0.0000  key_schedule
+U_CRYPTO/KS/SB                       316.7400      0.2    316.7400      0.0000  0.0000  sbox_1
+U_CRYPTO/PL                            0.0000      0.0      0.0000      0.0000  0.0000  perm_layer
+U_CRYPTO/SL                         5067.8400      3.5      0.0000      0.0000  0.0000  sub_layer
+U_CRYPTO/SL/GEN_SBOXES[0].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_0
+U_CRYPTO/SL/GEN_SBOXES[10].SX        316.7400      0.2    316.7400      0.0000  0.0000  sbox_7
+U_CRYPTO/SL/GEN_SBOXES[11].SX        316.7400      0.2    316.7400      0.0000  0.0000  sbox_6
+U_CRYPTO/SL/GEN_SBOXES[12].SX        316.7400      0.2    316.7400      0.0000  0.0000  sbox_5
+U_CRYPTO/SL/GEN_SBOXES[13].SX        316.7400      0.2    316.7400      0.0000  0.0000  sbox_4
+U_CRYPTO/SL/GEN_SBOXES[14].SX        316.7400      0.2    316.7400      0.0000  0.0000  sbox_3
+U_CRYPTO/SL/GEN_SBOXES[15].SX        316.7400      0.2    316.7400      0.0000  0.0000  sbox_2
+U_CRYPTO/SL/GEN_SBOXES[1].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_16
+U_CRYPTO/SL/GEN_SBOXES[2].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_15
+U_CRYPTO/SL/GEN_SBOXES[3].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_14
+U_CRYPTO/SL/GEN_SBOXES[4].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_13
+U_CRYPTO/SL/GEN_SBOXES[5].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_12
+U_CRYPTO/SL/GEN_SBOXES[6].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_11
+U_CRYPTO/SL/GEN_SBOXES[7].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_10
+U_CRYPTO/SL/GEN_SBOXES[8].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_9
+U_CRYPTO/SL/GEN_SBOXES[9].SX         316.7400      0.2    316.7400      0.0000  0.0000  sbox_8
+U_DBB                              14146.1703      9.9      0.0000      0.0000  0.0000  dbb_top_OSR6_MAJORITY3
+U_DBB/U_FRAMER                     12725.6103      8.9   3995.5400   8519.9403  0.0000  dbb_framer
+U_DBB/U_FRAMER/add_78                210.1300      0.1    210.1300      0.0000  0.0000  dbb_framer_DW01_inc_0_DW01_inc_2
+U_DBB/U_FSM                         1016.0400      0.7    476.6800    539.3600  0.0000  dbb_manchester_fsm_OSR6
+U_DBB/U_OS                           225.7800      0.2     47.0400    178.7400  0.0000  dbb_oversampler_WINDOW3
+U_DBB/U_SYNC                         150.5200      0.1     31.3600    119.1600  0.0000  dbb_sync
+U_DBB/U_VOTE                          28.2200      0.0     28.2200      0.0000  0.0000  dbb_voter_WINDOW3
+U_MUX                              50818.5913     35.4  24067.1705  26751.4208  0.0000  loopback_mux
+--------------------------------  -----------  -------  ----------  ----------  ------  --------------------------------
+Total                                                   63463.1706  79899.9225  0.0000
+
+1

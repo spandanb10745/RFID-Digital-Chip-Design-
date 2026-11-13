@@ -1,0 +1,254 @@
+Closing block 'baseband_crypto_macro.dlib:baseband_crypto_macro.design'
+Opening block 'baseband_crypto_macro.dlib:baseband_crypto_macro_setup.design' in edit mode
+Using libraries: baseband_crypto_macro.dlib scl180_std scl180_filler
+Visiting block baseband_crypto_macro.dlib:baseband_crypto_macro_setup.design
+Design 'baseband_crypto_macro' was successfully linked.
+****************************************
+Report : check_netlist
+        -cells
+        -nets
+        -ports
+Design : baseband_crypto_macro
+Version: U-2022.12-SP3
+Date   : Mon Nov  2 20:50:00 2026
+****************************************
+[icc2-lic Mon Nov  2 20:50:00 2026] Command 'initialize_floorplan' requires licenses
+[icc2-lic Mon Nov  2 20:50:00 2026] Sending authorization request for 'ICCompilerII'
+[icc2-lic Mon Nov  2 20:50:00 2026] Authorization request for 'ICCompilerII' failed (-5)
+[icc2-lic Mon Nov  2 20:50:00 2026] Sending authorization request for 'ICCompilerII-4'
+[icc2-lic Mon Nov  2 20:50:01 2026] Authorization request for 'ICCompilerII-4' failed (-5)
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending authorization request for 'ICCompilerII-8'
+[icc2-lic Mon Nov  2 20:50:01 2026] Authorization request for 'ICCompilerII-8' succeeded
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending authorization request for 'ICCompilerII-NX'
+[icc2-lic Mon Nov  2 20:50:01 2026] Authorization request for 'ICCompilerII-NX' succeeded
+[icc2-lic Mon Nov  2 20:50:01 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon Nov  2 20:50:01 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon Nov  2 20:50:01 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:50:01 2026] Check-out of alternate set of keys directly with queueing was successful
+Warning: this option -core_utilization is not valid when you specify the -boundary option. (DPI-204)
+Removing existing floorplan objects
+Creating core...
+Core utilization ratio = 59.71%
+Unplacing all cells...
+Creating site array...
+Creating routing tracks...
+Initializing floorplan completed.
+Information: The command 'remove_individual_pin_constraints' cleared the undo history. (UNDO-016)
+Information: Block pin constraints pin_spacing, allowed_layers, sides are set for top block baseband_crypto_macro_setup. (DPPA-403)
+[icc2-lic Mon Nov  2 20:50:01 2026] Command 'place_pins' requires licenses
+[icc2-lic Mon Nov  2 20:50:01 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon Nov  2 20:50:01 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon Nov  2 20:50:01 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon Nov  2 20:50:01 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon Nov  2 20:50:01 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon Nov  2 20:50:01 2026] Check-out of alternate set of keys directly with queueing was successful
+Information: Starting 'place_pins' (FLW-8000)
+Information: Time: 2026-11-02 20:50:01 / Session: 0.01 hr / Command: 0.00 hr / Memory: 566 MB (FLW-8100)
+Load DB...
+CPU Time for load db: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+
+Min routing layer: M1
+Max routing layer: TOP_M
+
+Non default block pin constraint setting(s) of top block: baseband_crypto_macro
+pin_spacing:    2
+allowed_layers: M2 TOP_M 
+sides:          2
+
+CPU Time for Top Level Pre-Route Processing: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Number of block ports: 104
+Number of block pin locations assigned from router: 0
+CPU Time for Pin Preparation: 00:00:00.00u 00:00:00.00s 00:00:00.00e: 
+Number of PG ports on blocks: 0
+Number of pins created: 104
+CPU Time for Pin Creation: 00:00:00.02u 00:00:00.00s 00:00:00.02e: 
+Total Pin Placement CPU Time: 00:00:00.02u 00:00:00.00s 00:00:00.02e: 
+Information: Ending 'place_pins' (FLW-8001)
+Information: Time: 2026-11-02 20:50:02 / Session: 0.01 hr / Command: 0.00 hr / Memory: 566 MB (FLW-8100)
+0 total number of pre-routes loaded
+0 total number of vias loaded
+1 total number of edges loaded
+----------------------- Start Of Missing Pin Check ------------------------
+------------------------ End Of Missing Pin Check -------------------------
+
+-------------------- Start Of Technology Spacing Check --------------------
+--------------------- End Of Technology Spacing Check ---------------------
+
+------------------------ Start Of Pin Short Check -------------------------
+------------------------- End Of Pin Short Check --------------------------
+
+No violation has been found
+***Summary***
+---------------------------------------------------------------------------
+Type of Violation        |                                            Count
+-------------------------+-------------------------------------------------
+Missing Pins             |                                               0
+Pin Short                |                                               0
+Technology Spacing       |                                               0
+-------------------------+-------------------------------------------------
+Total Violations         |                                               0
+---------------------------------------------------------------------------
+****************************************
+Report : report_pin_placement
+Design : baseband_crypto_macro
+Version: U-2022.12-SP3
+Date   : Mon Nov  2 20:50:02 2026
+****************************************
+block baseband_crypto_macro pin PCLK layer M2 side 2 offset 469.68
+block baseband_crypto_macro pin PRESETn layer M2 side 2 offset 465.2
+block baseband_crypto_macro pin PSEL layer M2 side 2 offset 460.72
+block baseband_crypto_macro pin PENABLE layer M2 side 2 offset 456.24
+block baseband_crypto_macro pin PWRITE layer M2 side 2 offset 451.76
+block baseband_crypto_macro pin PADDR[31] layer TOP_M side 2 offset 148.8
+block baseband_crypto_macro pin PADDR[30] layer TOP_M side 2 offset 153.28
+block baseband_crypto_macro pin PADDR[29] layer TOP_M side 2 offset 157.76
+block baseband_crypto_macro pin PADDR[28] layer M2 side 2 offset 32.32
+block baseband_crypto_macro pin PADDR[27] layer M2 side 2 offset 36.8
+block baseband_crypto_macro pin PADDR[26] layer M2 side 2 offset 41.28
+block baseband_crypto_macro pin PADDR[25] layer M2 side 2 offset 45.76
+block baseband_crypto_macro pin PADDR[24] layer M2 side 2 offset 50.24
+block baseband_crypto_macro pin PADDR[23] layer M2 side 2 offset 54.72
+block baseband_crypto_macro pin PADDR[22] layer M2 side 2 offset 59.2
+block baseband_crypto_macro pin PADDR[21] layer M2 side 2 offset 63.68
+block baseband_crypto_macro pin PADDR[20] layer M2 side 2 offset 68.16
+block baseband_crypto_macro pin PADDR[19] layer M2 side 2 offset 72.64
+block baseband_crypto_macro pin PADDR[18] layer M2 side 2 offset 77.12
+block baseband_crypto_macro pin PADDR[17] layer M2 side 2 offset 81.6
+block baseband_crypto_macro pin PADDR[16] layer M2 side 2 offset 86.08
+block baseband_crypto_macro pin PADDR[15] layer M2 side 2 offset 90.56
+block baseband_crypto_macro pin PADDR[14] layer M2 side 2 offset 95.04
+block baseband_crypto_macro pin PADDR[13] layer M2 side 2 offset 99.52
+block baseband_crypto_macro pin PADDR[12] layer M2 side 2 offset 104
+block baseband_crypto_macro pin PADDR[11] layer M2 side 2 offset 108.48
+block baseband_crypto_macro pin PADDR[10] layer M2 side 2 offset 112.96
+block baseband_crypto_macro pin PADDR[9] layer M2 side 2 offset 117.44
+block baseband_crypto_macro pin PADDR[8] layer M2 side 2 offset 121.92
+block baseband_crypto_macro pin PADDR[7] layer M2 side 2 offset 126.4
+block baseband_crypto_macro pin PADDR[6] layer M2 side 2 offset 130.88
+block baseband_crypto_macro pin PADDR[5] layer M2 side 2 offset 135.36
+block baseband_crypto_macro pin PADDR[4] layer M2 side 2 offset 139.84
+block baseband_crypto_macro pin PADDR[3] layer M2 side 2 offset 144.32
+block baseband_crypto_macro pin PADDR[2] layer M2 side 2 offset 148.8
+block baseband_crypto_macro pin PADDR[1] layer M2 side 2 offset 153.28
+block baseband_crypto_macro pin PADDR[0] layer M2 side 2 offset 157.76
+block baseband_crypto_macro pin PWDATA[31] layer TOP_M side 2 offset 269.76
+block baseband_crypto_macro pin PWDATA[30] layer TOP_M side 2 offset 260.8
+block baseband_crypto_macro pin PWDATA[29] layer TOP_M side 2 offset 265.28
+block baseband_crypto_macro pin PWDATA[28] layer M2 side 2 offset 166.16
+block baseband_crypto_macro pin PWDATA[27] layer M2 side 2 offset 170.64
+block baseband_crypto_macro pin PWDATA[26] layer M2 side 2 offset 175.12
+block baseband_crypto_macro pin PWDATA[25] layer M2 side 2 offset 179.6
+block baseband_crypto_macro pin PWDATA[24] layer M2 side 2 offset 184.08
+block baseband_crypto_macro pin PWDATA[23] layer M2 side 2 offset 188.56
+block baseband_crypto_macro pin PWDATA[22] layer M2 side 2 offset 193.04
+block baseband_crypto_macro pin PWDATA[21] layer M2 side 2 offset 197.52
+block baseband_crypto_macro pin PWDATA[20] layer M2 side 2 offset 202
+block baseband_crypto_macro pin PWDATA[19] layer M2 side 2 offset 206.48
+block baseband_crypto_macro pin PWDATA[18] layer M2 side 2 offset 210.96
+block baseband_crypto_macro pin PWDATA[17] layer M2 side 2 offset 215.44
+block baseband_crypto_macro pin PWDATA[16] layer M2 side 2 offset 219.92
+block baseband_crypto_macro pin PWDATA[15] layer M2 side 2 offset 224.4
+block baseband_crypto_macro pin PWDATA[14] layer M2 side 2 offset 228.88
+block baseband_crypto_macro pin PWDATA[13] layer M2 side 2 offset 233.36
+block baseband_crypto_macro pin PWDATA[12] layer M2 side 2 offset 237.84
+block baseband_crypto_macro pin PWDATA[11] layer M2 side 2 offset 291.6
+block baseband_crypto_macro pin PWDATA[10] layer M2 side 2 offset 242.32
+block baseband_crypto_macro pin PWDATA[9] layer M2 side 2 offset 287.12
+block baseband_crypto_macro pin PWDATA[8] layer M2 side 2 offset 246.8
+block baseband_crypto_macro pin PWDATA[7] layer M2 side 2 offset 282.64
+block baseband_crypto_macro pin PWDATA[6] layer M2 side 2 offset 251.28
+block baseband_crypto_macro pin PWDATA[5] layer M2 side 2 offset 278.16
+block baseband_crypto_macro pin PWDATA[4] layer M2 side 2 offset 255.76
+block baseband_crypto_macro pin PWDATA[3] layer M2 side 2 offset 273.68
+block baseband_crypto_macro pin PWDATA[2] layer M2 side 2 offset 260.24
+block baseband_crypto_macro pin PWDATA[1] layer M2 side 2 offset 269.2
+block baseband_crypto_macro pin PWDATA[0] layer M2 side 2 offset 264.72
+block baseband_crypto_macro pin PRDATA[31] layer TOP_M side 2 offset 311.2
+block baseband_crypto_macro pin PRDATA[30] layer TOP_M side 2 offset 306.72
+block baseband_crypto_macro pin PRDATA[29] layer TOP_M side 2 offset 302.24
+block baseband_crypto_macro pin PRDATA[28] layer M2 side 2 offset 427.68
+block baseband_crypto_macro pin PRDATA[27] layer M2 side 2 offset 423.2
+block baseband_crypto_macro pin PRDATA[26] layer M2 side 2 offset 418.72
+block baseband_crypto_macro pin PRDATA[25] layer M2 side 2 offset 414.24
+block baseband_crypto_macro pin PRDATA[24] layer M2 side 2 offset 409.76
+block baseband_crypto_macro pin PRDATA[23] layer M2 side 2 offset 405.28
+block baseband_crypto_macro pin PRDATA[22] layer M2 side 2 offset 400.8
+block baseband_crypto_macro pin PRDATA[21] layer M2 side 2 offset 396.32
+block baseband_crypto_macro pin PRDATA[20] layer M2 side 2 offset 391.84
+block baseband_crypto_macro pin PRDATA[19] layer M2 side 2 offset 387.36
+block baseband_crypto_macro pin PRDATA[18] layer M2 side 2 offset 382.88
+block baseband_crypto_macro pin PRDATA[17] layer M2 side 2 offset 378.4
+block baseband_crypto_macro pin PRDATA[16] layer M2 side 2 offset 373.92
+block baseband_crypto_macro pin PRDATA[15] layer M2 side 2 offset 369.44
+block baseband_crypto_macro pin PRDATA[14] layer M2 side 2 offset 364.96
+block baseband_crypto_macro pin PRDATA[13] layer M2 side 2 offset 360.48
+block baseband_crypto_macro pin PRDATA[12] layer M2 side 2 offset 356
+block baseband_crypto_macro pin PRDATA[11] layer M2 side 2 offset 351.52
+block baseband_crypto_macro pin PRDATA[10] layer M2 side 2 offset 347.04
+block baseband_crypto_macro pin PRDATA[9] layer M2 side 2 offset 342.56
+block baseband_crypto_macro pin PRDATA[8] layer M2 side 2 offset 338.08
+block baseband_crypto_macro pin PRDATA[7] layer M2 side 2 offset 333.6
+block baseband_crypto_macro pin PRDATA[6] layer M2 side 2 offset 329.12
+block baseband_crypto_macro pin PRDATA[5] layer M2 side 2 offset 324.64
+block baseband_crypto_macro pin PRDATA[4] layer M2 side 2 offset 320.16
+block baseband_crypto_macro pin PRDATA[3] layer M2 side 2 offset 315.68
+block baseband_crypto_macro pin PRDATA[2] layer M2 side 2 offset 311.2
+block baseband_crypto_macro pin PRDATA[1] layer M2 side 2 offset 306.72
+block baseband_crypto_macro pin PRDATA[0] layer M2 side 2 offset 302.24
+block baseband_crypto_macro pin PREADY layer M2 side 2 offset 447.28
+block baseband_crypto_macro pin rfid_rx_bit layer M2 side 2 offset 442.8
+block baseband_crypto_macro pin rfid_tx_bit layer M2 side 2 offset 438.32
+****************************************
+Report : report_utilization
+Design : baseband_crypto_macro
+Version: U-2022.12-SP3
+Date   : Mon Nov  2 20:50:02 2026
+****************************************
+Utilization Ratio:			0.6006
+Utilization options:
+ - Area calculation based on:		site_row of block baseband_crypto_macro_setup
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				238728.0000
+Total Capacity Area:			238728.0000
+Total Area of cells:			143368.5120
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+Total Area of excluded objects:		0.0000
+Ratio of excluded objects:		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.6006
+
+Information: Saving 'baseband_crypto_macro.dlib:baseband_crypto_macro_setup.design' to 'baseband_crypto_macro.dlib:baseband_crypto_macro_floorplan.design'. (DES-028)
+Saving library 'baseband_crypto_macro.dlib'
+>>> STAGE 2 COMPLETE: baseband_crypto_macro_floorplan saved. Log: /storage/EE5239G2/RFID_v2/pnr_icc2/logs/2_floorplanning.log

@@ -1,0 +1,775 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : baseband_crypto_macro
+Version: T-2022.03-SP5
+Date   : Sun Oct 18 18:23:39 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+  Startpoint: U_DBB/U_SYNC/sync_out_reg
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_OS/window_out_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_SYNC/sync_out_reg/CP (dfnrq1)                   0.00 #     0.00 r
+  U_DBB/U_SYNC/sync_out_reg/Q (dfnrq1)                    0.46       0.46 r
+  U_DBB/U_SYNC/sync_out (dbb_sync)                        0.00       0.46 r
+  U_DBB/U_OS/sync_in (dbb_oversampler_WINDOW3)            0.00       0.46 r
+  U_DBB/U_OS/U5/Z (an02d1)                                0.17       0.63 r
+  U_DBB/U_OS/window_out_reg[0]/D (dfnrq1)                 0.00       0.63 r
+  data arrival time                                                  0.63
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_OS/window_out_reg[0]/CP (dfnrq1)                0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: U_DBB/U_SYNC/flop1_reg
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_SYNC/sync_out_reg
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_SYNC/flop1_reg/CP (dfnrq1)                      0.00 #     0.00 r
+  U_DBB/U_SYNC/flop1_reg/Q (dfnrq1)                       0.46       0.46 r
+  U_DBB/U_SYNC/U3/Z (an02d1)                              0.18       0.64 r
+  U_DBB/U_SYNC/sync_out_reg/D (dfnrq1)                    0.00       0.64 r
+  data arrival time                                                  0.64
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_SYNC/sync_out_reg/CP (dfnrq1)                   0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: U_DBB/U_FRAMER/preamble_reg_reg[6]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_FRAMER/preamble_reg_reg[6]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_FRAMER/preamble_reg_reg[6]/CP (dfnrn1)          0.00 #     0.00 r
+  U_DBB/U_FRAMER/preamble_reg_reg[6]/QN (dfnrn1)          0.53       0.53 r
+  U_DBB/U_FRAMER/U156/ZN (oai22d1)                        0.12       0.64 f
+  U_DBB/U_FRAMER/preamble_reg_reg[6]/D (dfnrn1)           0.00       0.64 f
+  data arrival time                                                  0.64
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_FRAMER/preamble_reg_reg[6]/CP (dfnrn1)          0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: U_DBB/U_FRAMER/shift_data_reg[62]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_FRAMER/shift_data_reg[62]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_FRAMER/shift_data_reg[62]/CP (dfnrn1)           0.00 #     0.00 r
+  U_DBB/U_FRAMER/shift_data_reg[62]/QN (dfnrn1)           0.53       0.53 r
+  U_DBB/U_FRAMER/U89/ZN (oai22d1)                         0.12       0.64 f
+  U_DBB/U_FRAMER/shift_data_reg[62]/D (dfnrn1)            0.00       0.64 f
+  data arrival time                                                  0.64
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_FRAMER/shift_data_reg[62]/CP (dfnrn1)           0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: U_DBB/U_FRAMER/shift_data_reg[62]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_FRAMER/framed_data_reg[63]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_FRAMER/shift_data_reg[62]/CP (dfnrn1)           0.00 #     0.00 r
+  U_DBB/U_FRAMER/shift_data_reg[62]/QN (dfnrn1)           0.53       0.53 r
+  U_DBB/U_FRAMER/U26/ZN (oaim22d1)                        0.12       0.65 f
+  U_DBB/U_FRAMER/framed_data_reg[63]/D (dfnrq1)           0.00       0.65 f
+  data arrival time                                                  0.65
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_FRAMER/framed_data_reg[63]/CP (dfnrq1)          0.00       0.10 r
+  library hold time                                      -0.08       0.02
+  data required time                                                 0.02
+  --------------------------------------------------------------------------
+  data required time                                                 0.02
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: U_APB/status_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_APB/status_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/status_reg_reg[1]/CP (dfnrn1)      0.00 #     0.00 r
+  U_APB/status_reg_reg[1]/QN (dfnrn1)      0.53       0.53 r
+  U_APB/U465/ZN (oai22d1)                  0.14       0.67 f
+  U_APB/status_reg_reg[1]/D (dfnrn1)       0.00       0.67 f
+  data arrival time                                   0.67
+
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  U_APB/status_reg_reg[1]/CP (dfnrn1)      0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: U_APB/status_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_APB/status_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/status_reg_reg[0]/CP (dfnrn1)      0.00 #     0.00 r
+  U_APB/status_reg_reg[0]/QN (dfnrn1)      0.53       0.53 r
+  U_APB/U467/ZN (oai22d1)                  0.14       0.67 f
+  U_APB/status_reg_reg[0]/D (dfnrn1)       0.00       0.67 f
+  data arrival time                                   0.67
+
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  U_APB/status_reg_reg[0]/CP (dfnrn1)      0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: U_DBB/U_OS/window_out_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_OS/window_out_reg[1]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_OS/window_out_reg[0]/CP (dfnrq1)                0.00 #     0.00 r
+  U_DBB/U_OS/window_out_reg[0]/Q (dfnrq1)                 0.50       0.50 r
+  U_DBB/U_OS/U4/Z (an02d1)                                0.19       0.69 r
+  U_DBB/U_OS/window_out_reg[1]/D (dfnrq1)                 0.00       0.69 r
+  data arrival time                                                  0.69
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_OS/window_out_reg[1]/CP (dfnrq1)                0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: U_DBB/U_OS/window_out_reg[1]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_OS/window_out_reg[2]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_OS/window_out_reg[1]/CP (dfnrq1)                0.00 #     0.00 r
+  U_DBB/U_OS/window_out_reg[1]/Q (dfnrq1)                 0.52       0.52 r
+  U_DBB/U_OS/U3/Z (an02d1)                                0.19       0.71 r
+  U_DBB/U_OS/window_out_reg[2]/D (dfnrq1)                 0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_OS/window_out_reg[2]/CP (dfnrq1)                0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: U_DBB/U_FRAMER/shift_data_reg[1]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U_DBB/U_FRAMER/shift_data_reg[1]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_DBB/U_FRAMER/shift_data_reg[1]/CP (dfnrn1)            0.00 #     0.00 r
+  U_DBB/U_FRAMER/shift_data_reg[1]/QN (dfnrn1)            0.58       0.58 r
+  U_DBB/U_FRAMER/U150/ZN (oai22d1)                        0.13       0.71 f
+  U_DBB/U_FRAMER/shift_data_reg[1]/D (dfnrn1)             0.00       0.71 f
+  data arrival time                                                  0.71
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U_DBB/U_FRAMER/shift_data_reg[1]/CP (dfnrn1)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: U_MUX/mux_busy_reg
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PREADY (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_MUX/mux_busy_reg/CP (dfnrq1)           0.00 #     0.00 r
+  U_MUX/mux_busy_reg/Q (dfnrq1)            0.51       0.51 r
+  U_MUX/mux_busy (loopback_mux)            0.00       0.51 r
+  U_APB/mux_busy (apb_wrapper)             0.00       0.51 r
+  U_APB/U865/ZN (inv0d1)                   0.17       0.68 f
+  U_APB/PREADY (apb_wrapper)               0.00       0.68 f
+  PREADY (out)                             0.00       0.68 f
+  data arrival time                                   0.68
+
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  output external delay                   -0.50      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.68
+  -----------------------------------------------------------
+  slack (MET)                                         1.08
+
+
+  Startpoint: U_APB/status_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[1] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/status_reg_reg[1]/CP (dfnrn1)      0.00 #     0.00 r
+  U_APB/status_reg_reg[1]/QN (dfnrn1)      0.53       0.53 r
+  U_APB/U660/ZN (oai221d1)                 0.29       0.82 f
+  U_APB/PRDATA[1] (apb_wrapper)            0.00       0.82 f
+  PRDATA[1] (out)                          0.00       0.82 f
+  data arrival time                                   0.82
+
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  output external delay                   -0.50      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.82
+  -----------------------------------------------------------
+  slack (MET)                                         1.22
+
+
+  Startpoint: U_APB/status_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[0] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/status_reg_reg[0]/CP (dfnrn1)      0.00 #     0.00 r
+  U_APB/status_reg_reg[0]/QN (dfnrn1)      0.53       0.53 r
+  U_APB/U672/ZN (oai221d1)                 0.29       0.82 f
+  U_APB/PRDATA[0] (apb_wrapper)            0.00       0.82 f
+  PRDATA[0] (out)                          0.00       0.82 f
+  data arrival time                                   0.82
+
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  output external delay                   -0.50      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.82
+  -----------------------------------------------------------
+  slack (MET)                                         1.22
+
+
+  Startpoint: U_APB/status_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[3] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/status_reg_reg[3]/CP (dfnrq1)      0.00 #     0.00 r
+  U_APB/status_reg_reg[3]/Q (dfnrq1)       0.51       0.51 r
+  U_APB/U646/Z (aor222d1)                  0.36       0.87 r
+  U_APB/PRDATA[3] (apb_wrapper)            0.00       0.87 r
+  PRDATA[3] (out)                          0.00       0.87 r
+  data arrival time                                   0.87
+
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  output external delay                   -0.50      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         1.27
+
+
+  Startpoint: U_APB/status_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[2] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/status_reg_reg[2]/CP (dfnrq1)      0.00 #     0.00 r
+  U_APB/status_reg_reg[2]/Q (dfnrq1)       0.51       0.51 r
+  U_APB/U649/Z (aor222d1)                  0.36       0.87 r
+  U_APB/PRDATA[2] (apb_wrapper)            0.00       0.87 r
+  PRDATA[2] (out)                          0.00       0.87 r
+  data arrival time                                   0.87
+
+  clock VCLK_APB (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  output external delay                   -0.50      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         1.27
+
+
+  Startpoint: U_CRYPTO/ciphertext_reg[8]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[8] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_CRYPTO/ciphertext_reg[8]/CP (dfnrq1)                  0.00 #     0.00 r
+  U_CRYPTO/ciphertext_reg[8]/Q (dfnrq1)                   0.51       0.51 r
+  U_CRYPTO/ciphertext[8] (present_top)                    0.00       0.51 r
+  U_MUX/crypto_ciphertext[8] (loopback_mux)               0.00       0.51 r
+  U_MUX/U563/Z (aor22d1)                                  0.25       0.76 r
+  U_MUX/apb_read_data[8] (loopback_mux)                   0.00       0.76 r
+  U_APB/apb_read_data[8] (apb_wrapper)                    0.00       0.76 r
+  U_APB/U641/Z (aor22d1)                                  0.31       1.07 r
+  U_APB/PRDATA[8] (apb_wrapper)                           0.00       1.07 r
+  PRDATA[8] (out)                                         0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -0.50      -0.40
+  data required time                                                -0.40
+  --------------------------------------------------------------------------
+  data required time                                                -0.40
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: U_CRYPTO/ciphertext_reg[7]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[7] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_CRYPTO/ciphertext_reg[7]/CP (dfnrq1)                  0.00 #     0.00 r
+  U_CRYPTO/ciphertext_reg[7]/Q (dfnrq1)                   0.51       0.51 r
+  U_CRYPTO/ciphertext[7] (present_top)                    0.00       0.51 r
+  U_MUX/crypto_ciphertext[7] (loopback_mux)               0.00       0.51 r
+  U_MUX/U564/Z (aor22d1)                                  0.25       0.76 r
+  U_MUX/apb_read_data[7] (loopback_mux)                   0.00       0.76 r
+  U_APB/apb_read_data[7] (apb_wrapper)                    0.00       0.76 r
+  U_APB/U642/Z (aor22d1)                                  0.31       1.07 r
+  U_APB/PRDATA[7] (apb_wrapper)                           0.00       1.07 r
+  PRDATA[7] (out)                                         0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -0.50      -0.40
+  data required time                                                -0.40
+  --------------------------------------------------------------------------
+  data required time                                                -0.40
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: U_CRYPTO/ciphertext_reg[6]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[6] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_CRYPTO/ciphertext_reg[6]/CP (dfnrq1)                  0.00 #     0.00 r
+  U_CRYPTO/ciphertext_reg[6]/Q (dfnrq1)                   0.51       0.51 r
+  U_CRYPTO/ciphertext[6] (present_top)                    0.00       0.51 r
+  U_MUX/crypto_ciphertext[6] (loopback_mux)               0.00       0.51 r
+  U_MUX/U565/Z (aor22d1)                                  0.25       0.76 r
+  U_MUX/apb_read_data[6] (loopback_mux)                   0.00       0.76 r
+  U_APB/apb_read_data[6] (apb_wrapper)                    0.00       0.76 r
+  U_APB/U643/Z (aor22d1)                                  0.31       1.07 r
+  U_APB/PRDATA[6] (apb_wrapper)                           0.00       1.07 r
+  PRDATA[6] (out)                                         0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -0.50      -0.40
+  data required time                                                -0.40
+  --------------------------------------------------------------------------
+  data required time                                                -0.40
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: U_CRYPTO/ciphertext_reg[5]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[5] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_CRYPTO/ciphertext_reg[5]/CP (dfnrq1)                  0.00 #     0.00 r
+  U_CRYPTO/ciphertext_reg[5]/Q (dfnrq1)                   0.51       0.51 r
+  U_CRYPTO/ciphertext[5] (present_top)                    0.00       0.51 r
+  U_MUX/crypto_ciphertext[5] (loopback_mux)               0.00       0.51 r
+  U_MUX/U570/Z (aor22d1)                                  0.25       0.76 r
+  U_MUX/apb_read_data[5] (loopback_mux)                   0.00       0.76 r
+  U_APB/apb_read_data[5] (apb_wrapper)                    0.00       0.76 r
+  U_APB/U644/Z (aor22d1)                                  0.31       1.07 r
+  U_APB/PRDATA[5] (apb_wrapper)                           0.00       1.07 r
+  PRDATA[5] (out)                                         0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -0.50      -0.40
+  data required time                                                -0.40
+  --------------------------------------------------------------------------
+  data required time                                                -0.40
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: U_CRYPTO/ciphertext_reg[4]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: PRDATA[4] (output port clocked by VCLK_APB)
+  Path Group: VCLK_APB
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_CRYPTO/ciphertext_reg[4]/CP (dfnrq1)                  0.00 #     0.00 r
+  U_CRYPTO/ciphertext_reg[4]/Q (dfnrq1)                   0.51       0.51 r
+  U_CRYPTO/ciphertext[4] (present_top)                    0.00       0.51 r
+  U_MUX/crypto_ciphertext[4] (loopback_mux)               0.00       0.51 r
+  U_MUX/U581/Z (aor22d1)                                  0.25       0.76 r
+  U_MUX/apb_read_data[4] (loopback_mux)                   0.00       0.76 r
+  U_APB/apb_read_data[4] (apb_wrapper)                    0.00       0.76 r
+  U_APB/U645/Z (aor22d1)                                  0.31       1.07 r
+  U_APB/PRDATA[4] (apb_wrapper)                           0.00       1.07 r
+  PRDATA[4] (out)                                         0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock VCLK_APB (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -0.50      -0.40
+  data required time                                                -0.40
+  --------------------------------------------------------------------------
+  data required time                                                -0.40
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: U_APB/ctrl_mode_reg[1]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rfid_tx_bit
+            (output port clocked by VCLK_RF)
+  Path Group: VCLK_RF
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baseband_crypto_macro
+                     280000                tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock PCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  U_APB/ctrl_mode_reg[1]/CP (dfnrq1)       0.00 #     0.00 r
+  U_APB/ctrl_mode_reg[1]/Q (dfnrq1)        0.57       0.57 r
+  U_APB/ctrl_mode[1] (apb_wrapper)         0.00       0.57 r
+  U_MUX/ctrl_mode[1] (loopback_mux)        0.00       0.57 r
+  U_MUX/U871/ZN (inv0d1)                   0.21       0.77 f
+  U_MUX/U849/ZN (nd02d1)                   0.24       1.01 r
+  U_MUX/U3/ZN (nr02d2)                     0.21       1.23 f
+  U_MUX/rfid_tx_bit (loopback_mux)         0.00       1.23 f
+  rfid_tx_bit (out)                        0.00       1.23 f
+  data arrival time                                   1.23
+
+  clock VCLK_RF (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  output external delay                   -1.00      -0.90
+  data required time                                 -0.90
+  -----------------------------------------------------------
+  data required time                                 -0.90
+  data arrival time                                  -1.23
+  -----------------------------------------------------------
+  slack (MET)                                         2.13
+
+
+1

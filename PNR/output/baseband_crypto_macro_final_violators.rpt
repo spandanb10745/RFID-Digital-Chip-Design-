@@ -1,0 +1,99 @@
+[icc2-lic Sun Oct 25 09:43:09 2026] Command 'report_constraints' requires licenses
+[icc2-lic Sun Oct 25 09:43:09 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out of alternate set of keys directly with queueing was successful
+[icc2-lic Sun Oct 25 09:43:09 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Oct 25 09:43:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Oct 25 09:43:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Oct 25 09:43:09 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : constraint
+        -all_violators
+Design : baseband_crypto_macro
+Version: U-2022.12-SP3
+Date   : Sun Oct 25 09:43:09 2026
+****************************************
+
+   late_timing
+   -----------
+
+Information: Timer using 'SI, Timing Window Analysis'. (TIM-050)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Warning: Scenario func_ss is not configured for hold analysis: skipping. (UIC-058)
+Error: None of the specified scenarios are active for hold analysis. (UIC-057)
+Information: Timer using 'SI, Timing Window Analysis'. (TIM-050)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   Mode: mode_func Corner: corner_ss
+   Scenario: func_ss
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   ZCTSNET_9                    0.40           0.38           0.02  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: mode_func Corner: corner_ss
+   Scenario: func_ss
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   U_APB/HFSNET_94              0.30           0.21           0.09  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+
+   Mode: mode_func Corner: corner_ss
+   Scenario: func_ss
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+  Mode: mode_func
+  Corner: corner_ss
+  Scenario: func_ss
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 0
+1
